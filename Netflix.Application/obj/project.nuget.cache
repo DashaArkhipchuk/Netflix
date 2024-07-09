@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "nZDFRpRsUr8=",
+  "success": true,
+  "projectFilePath": "D:\\Netflix\\Netflix.Application\\Netflix.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\darin\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

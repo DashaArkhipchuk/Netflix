@@ -1,0 +1,15 @@
+D:\Netflix\Netflix.Application\bin\Debug\net8.0\Netflix.Application.deps.json
+D:\Netflix\Netflix.Application\bin\Debug\net8.0\Netflix.Application.dll
+D:\Netflix\Netflix.Application\bin\Debug\net8.0\Netflix.Application.pdb
+D:\Netflix\Netflix.Application\bin\Debug\net8.0\Netflix.Domain.dll
+D:\Netflix\Netflix.Application\bin\Debug\net8.0\Netflix.Domain.pdb
+D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.csproj.AssemblyReference.cache
+D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.AssemblyInfoInputs.cache
+D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.AssemblyInfo.cs
+D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.csproj.CoreCompileInputs.cache
+D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix..3ACC5625.Up2Date
+D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.dll
+D:\Netflix\Netflix.Application\obj\Debug\net8.0\refint\Netflix.Application.dll
+D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.pdb
+D:\Netflix\Netflix.Application\obj\Debug\net8.0\ref\Netflix.Application.dll

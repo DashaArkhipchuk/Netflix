@@ -1,0 +1,11 @@
+D:\Netflix\Netflix.Domain\bin\Debug\net8.0\Netflix.Domain.deps.json
+D:\Netflix\Netflix.Domain\bin\Debug\net8.0\Netflix.Domain.dll
+D:\Netflix\Netflix.Domain\bin\Debug\net8.0\Netflix.Domain.pdb
+D:\Netflix\Netflix.Domain\obj\Debug\net8.0\Netflix.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Netflix\Netflix.Domain\obj\Debug\net8.0\Netflix.Domain.AssemblyInfoInputs.cache
+D:\Netflix\Netflix.Domain\obj\Debug\net8.0\Netflix.Domain.AssemblyInfo.cs
+D:\Netflix\Netflix.Domain\obj\Debug\net8.0\Netflix.Domain.csproj.CoreCompileInputs.cache
+D:\Netflix\Netflix.Domain\obj\Debug\net8.0\Netflix.Domain.dll
+D:\Netflix\Netflix.Domain\obj\Debug\net8.0\refint\Netflix.Domain.dll
+D:\Netflix\Netflix.Domain\obj\Debug\net8.0\Netflix.Domain.pdb
+D:\Netflix\Netflix.Domain\obj\Debug\net8.0\ref\Netflix.Domain.dll

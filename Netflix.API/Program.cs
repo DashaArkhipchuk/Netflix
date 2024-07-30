@@ -10,9 +10,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IWeatherForecastService, WeatherForecastService>();
+builder.Services.AddApplicationDI().AddInfrastructureDI(builder.Configuration);
 
-builder.Services.AddApplicationDI().AddInfrastructureDI();
 
 var app = builder.Build();
 

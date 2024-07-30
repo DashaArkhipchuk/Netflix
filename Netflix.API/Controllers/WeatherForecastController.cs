@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Netflix.Domain;
+using Netflix.Application.IServices;
 
 namespace Netflix.API.Controllers;
 

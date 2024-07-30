@@ -1,11 +1,8 @@
 ﻿using Netflix.Domain;
+using Netflix.Application.IServices;
 
 namespace Netflix.API.Controllers
 {
-    public interface IWeatherForecastService
-    {
-        IEnumerable<WeatherForecast> Get();
-    }
     public class WeatherForecastService : IWeatherForecastService
     {
         private static readonly string[] Summaries = new[]

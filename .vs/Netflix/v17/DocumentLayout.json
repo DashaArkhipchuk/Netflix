@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "D:\\Netflix\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\controllers\\filmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\controllers\\filmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\netflix.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
-      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\netflix.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\services\\filmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\services\\filmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\iservices\\ifilmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\iservices\\ifilmservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\irepository\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\irepository\\igenericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\irepository\\ifilmrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\irepository\\ifilmrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|d:\\netflix\\netflix.infrastructure\\repositories\\filmrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|solutionrelative:netflix.infrastructure\\repositories\\filmrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|d:\\netflix\\netflix.infrastructure\\persistence\\netflixprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|solutionrelative:netflix.infrastructure\\persistence\\netflixprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|d:\\netflix\\netflix.infrastructure\\extensions\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|solutionrelative:netflix.infrastructure\\extensions\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\netflix.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\netflix.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\extensions\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\extensions\\servicecollectionextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\services\\weatherforecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,6 +49,42 @@
     {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\iservices\\iweatherforecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\iservices\\iweatherforecastservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\actormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\actormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\series.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\series.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\genremodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\genremodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\film.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\film.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\filmactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\filmactor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\netflix.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -45,6 +97,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|d:\\netflix\\netflix.infrastructure\\netflix.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|solutionrelative:netflix.infrastructure\\netflix.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\netflix.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\netflix.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +114,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,85 +134,112 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Netflix.API",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Netflix.API.csproj",
-              "RelativeDocumentMoniker": "Netflix.API\\Netflix.API.csproj",
-              "ToolTip": "D:\\Netflix\\Netflix.API\\Netflix.API.csproj",
-              "RelativeToolTip": "Netflix.API\\Netflix.API.csproj",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-09T16:36:20.573Z",
+              "DocumentIndex": 5,
+              "Title": "FilmRepository.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\FilmRepository.cs",
+              "RelativeDocumentMoniker": "Netflix.Infrastructure\\Repositories\\FilmRepository.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\FilmRepository.cs*",
+              "RelativeToolTip": "Netflix.Infrastructure\\Repositories\\FilmRepository.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T16:42:33.416Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\appsettings.json",
-              "RelativeDocumentMoniker": "Netflix.API\\appsettings.json",
-              "ToolTip": "D:\\Netflix\\Netflix.API\\appsettings.json",
-              "RelativeToolTip": "Netflix.API\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-09T16:33:46.293Z",
+              "DocumentIndex": 1,
+              "Title": "FilmService.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Services\\FilmService.cs",
+              "RelativeDocumentMoniker": "Netflix.Application\\Services\\FilmService.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Application\\Services\\FilmService.cs*",
+              "RelativeToolTip": "Netflix.Application\\Services\\FilmService.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T17:02:14.096Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Netflix.API\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.API\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Netflix.API\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAWwBgAAAAIAAAA",
+              "Title": "IFilmRepository.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\IRepository\\IFilmRepository.cs",
+              "RelativeDocumentMoniker": "Netflix.Domain\\IRepository\\IFilmRepository.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Domain\\IRepository\\IFilmRepository.cs",
+              "RelativeToolTip": "Netflix.Domain\\IRepository\\IFilmRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T16:31:57.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Netflix.Application",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Netflix.Application.csproj",
-              "RelativeDocumentMoniker": "Netflix.Application\\Netflix.Application.csproj",
-              "ToolTip": "D:\\Netflix\\Netflix.Application\\Netflix.Application.csproj",
-              "RelativeToolTip": "Netflix.Application\\Netflix.Application.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-09T16:22:33.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Netflix.API\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\Netflix\\Netflix.API\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Netflix.API\\Properties\\launchSettings.json",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAAA8AAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-09T16:31:52.482Z",
+              "WhenOpened": "2024-07-30T16:31:13.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Program.cs",
-              "RelativeDocumentMoniker": "Netflix.API\\Program.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.API\\Program.cs",
-              "RelativeToolTip": "Netflix.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Title": "IGenericRepository.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\IRepository\\IGenericRepository.cs",
+              "RelativeDocumentMoniker": "Netflix.Domain\\IRepository\\IGenericRepository.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Domain\\IRepository\\IGenericRepository.cs*",
+              "RelativeToolTip": "Netflix.Domain\\IRepository\\IGenericRepository.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T16:25:12.296Z",
+              "WhenOpened": "2024-07-30T16:34:44.814Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Netflix.API",
+              "Title": "IFilmService.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\IServices\\IFilmService.cs",
+              "RelativeDocumentMoniker": "Netflix.Application\\IServices\\IFilmService.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Application\\IServices\\IFilmService.cs*",
+              "RelativeToolTip": "Netflix.Application\\IServices\\IFilmService.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T17:14:44.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FilmController.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\FilmController.cs",
+              "RelativeDocumentMoniker": "Netflix.API\\Controllers\\FilmController.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.API\\Controllers\\FilmController.cs*",
+              "RelativeToolTip": "Netflix.API\\Controllers\\FilmController.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T17:11:37.634Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "NetflixProjectContext.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Persistence\\NetflixProjectContext.cs",
+              "RelativeDocumentMoniker": "Netflix.Infrastructure\\Persistence\\NetflixProjectContext.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Infrastructure\\Persistence\\NetflixProjectContext.cs",
+              "RelativeToolTip": "Netflix.Infrastructure\\Persistence\\NetflixProjectContext.cs",
+              "ViewState": "AQIAABkBAAAAAAAAAAAAAEUBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T14:53:57.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ServiceCollectionExtension.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
+              "RelativeDocumentMoniker": "Netflix.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
+              "RelativeToolTip": "Netflix.Infrastructure\\Extensions\\ServiceCollectionExtension.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T16:48:30.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Netflix.API.csproj",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Netflix.API.csproj",
               "RelativeDocumentMoniker": "Netflix.API\\Netflix.API.csproj",
               "ToolTip": "D:\\Netflix\\Netflix.API\\Netflix.API.csproj",
@@ -164,33 +251,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Netflix.Infrastructure",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Netflix.Infrastructure.csproj",
-              "RelativeDocumentMoniker": "Netflix.Infrastructure\\Netflix.Infrastructure.csproj",
-              "ToolTip": "D:\\Netflix\\Netflix.Infrastructure\\Netflix.Infrastructure.csproj",
-              "RelativeToolTip": "Netflix.Infrastructure\\Netflix.Infrastructure.csproj",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-07-09T16:22:35.711Z",
+              "DocumentIndex": 9,
+              "Title": "ServiceCollectionExtension.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Extensions\\ServiceCollectionExtension.cs",
+              "RelativeDocumentMoniker": "Netflix.Application\\Extensions\\ServiceCollectionExtension.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Application\\Extensions\\ServiceCollectionExtension.cs",
+              "RelativeToolTip": "Netflix.Application\\Extensions\\ServiceCollectionExtension.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAWwBMAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T15:15:15.625Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "WeatherForecastService.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Services\\WeatherForecastService.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Services\\WeatherForecastService.cs",
               "ToolTip": "D:\\Netflix\\Netflix.Application\\Services\\WeatherForecastService.cs",
               "RelativeToolTip": "Netflix.Application\\Services\\WeatherForecastService.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAtwA8AAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-09T16:33:04.922Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "IWeatherForecastService.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\IServices\\IWeatherForecastService.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\IServices\\IWeatherForecastService.cs",
@@ -203,8 +290,138 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Netflix.Domain",
+              "DocumentIndex": 12,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Netflix.API\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.API\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Netflix.API\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABoAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T16:31:57.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Series.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\Series.cs",
+              "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\Series.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Domain\\Entities\\Series.cs",
+              "RelativeToolTip": "Netflix.Domain\\Entities\\Series.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAAC0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T16:15:30.04Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GenreModel.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\GenreModel.cs",
+              "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\GenreModel.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Domain\\Entities\\GenreModel.cs",
+              "RelativeToolTip": "Netflix.Domain\\Entities\\GenreModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T16:12:38.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Film.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\Film.cs",
+              "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\Film.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Domain\\Entities\\Film.cs",
+              "RelativeToolTip": "Netflix.Domain\\Entities\\Film.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAACIAAABVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T15:54:29.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "FilmActor.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\FilmActor.cs",
+              "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\FilmActor.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Domain\\Entities\\FilmActor.cs",
+              "RelativeToolTip": "Netflix.Domain\\Entities\\FilmActor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T15:54:07.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ActorModel.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\ActorModel.cs",
+              "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\ActorModel.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Domain\\Entities\\ActorModel.cs",
+              "RelativeToolTip": "Netflix.Domain\\Entities\\ActorModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-30T15:52:06.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\appsettings.json",
+              "RelativeDocumentMoniker": "Netflix.API\\appsettings.json",
+              "ToolTip": "D:\\Netflix\\Netflix.API\\appsettings.json",
+              "RelativeToolTip": "Netflix.API\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAACmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-09T16:33:46.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "Netflix.API\\appsettings.Development.json",
+              "ToolTip": "D:\\Netflix\\Netflix.API\\appsettings.Development.json",
+              "RelativeToolTip": "Netflix.API\\appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-30T15:18:37.956Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Program.cs",
+              "RelativeDocumentMoniker": "Netflix.API\\Program.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.API\\Program.cs",
+              "RelativeToolTip": "Netflix.API\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T16:25:12.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Netflix.Application.csproj",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Netflix.Application.csproj",
+              "RelativeDocumentMoniker": "Netflix.Application\\Netflix.Application.csproj",
+              "ToolTip": "D:\\Netflix\\Netflix.Application\\Netflix.Application.csproj",
+              "RelativeToolTip": "Netflix.Application\\Netflix.Application.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-09T16:22:33.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Netflix.Domain.csproj",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Netflix.Domain.csproj",
               "RelativeDocumentMoniker": "Netflix.Domain\\Netflix.Domain.csproj",
               "ToolTip": "D:\\Netflix\\Netflix.Domain\\Netflix.Domain.csproj",
@@ -212,6 +429,44 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-07-09T16:22:30.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Netflix.API\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Netflix\\Netflix.API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Netflix.API\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAAA8AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-07-09T16:31:52.482Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Netflix.Infrastructure.csproj",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Netflix.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "Netflix.Infrastructure\\Netflix.Infrastructure.csproj",
+              "ToolTip": "D:\\Netflix\\Netflix.Infrastructure\\Netflix.Infrastructure.csproj",
+              "RelativeToolTip": "Netflix.Infrastructure\\Netflix.Infrastructure.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-09T16:22:35.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Netflix.API",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Netflix.API.csproj",
+              "RelativeDocumentMoniker": "Netflix.API\\Netflix.API.csproj",
+              "ToolTip": "D:\\Netflix\\Netflix.API\\Netflix.API.csproj",
+              "RelativeToolTip": "Netflix.API\\Netflix.API.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-07-09T16:36:20.573Z",
               "EditorCaption": ""
             }
           ]

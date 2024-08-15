@@ -1,4 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Netflix.API.Controllers;
+using Netflix.Application.IServices;
+using Netflix.Application.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +16,8 @@ namespace Netflix.Application.Extensions
         {
             //inject dependencies from application project
 
+            services.AddScoped<IWeatherForecastService, WeatherForecastService>();
+            services.AddScoped<IFilmService, FilmService>();
 
             return services;
         }

@@ -17,7 +17,6 @@ builder.Services.AddScoped<IWeatherForecastService, WeatherForecastService>();
 builder.Services.AddPresentation().AddApplicationDI().AddInfrastructureDI(builder.Configuration);
 >>>>>>> Stashed changes
 
-builder.Services.AddApplicationDI().AddInfrastructureDI();
 
 var app = builder.Build();
 

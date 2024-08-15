@@ -1,4 +1,7 @@
-﻿namespace Netflix.Domain;
+﻿using System;
+using System.Collections.Generic;
+
+namespace Netflix.Domain;
 
 public partial class OperationType
 {

@@ -13,3 +13,4 @@ D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.dll
 D:\Netflix\Netflix.Application\obj\Debug\net8.0\refint\Netflix.Application.dll
 D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.pdb
 D:\Netflix\Netflix.Application\obj\Debug\net8.0\ref\Netflix.Application.dll
+D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.sourcelink.json

@@ -4,7 +4,7 @@ using Netflix.Domain.IRepository;
 
 namespace Netflix.Application.Films.Queries.GetAllFilms
 {
-    internal class GetAllFilmsQueryHandler : IRequestHandler<GetAllFilmsQuery, IReadOnlyList<Film>>
+    internal class GetAllFilmsQueryHandler : IRequestHandler<GetAllFilmsQuery, List<Film>>
     {
         private readonly IFilmRepository _filmRepository;
 
@@ -12,7 +12,7 @@ namespace Netflix.Application.Films.Queries.GetAllFilms
         {
             _filmRepository = filmRepository;
         }
-        public Task<IReadOnlyList<Film>> Handle(GetAllFilmsQuery request, CancellationToken cancellationToken)
+        public Task<List<Film>> Handle(GetAllFilmsQuery request, CancellationToken cancellationToken)
         {
             return _filmRepository.GetAllAsync(request.Skip, request.Take);
         }

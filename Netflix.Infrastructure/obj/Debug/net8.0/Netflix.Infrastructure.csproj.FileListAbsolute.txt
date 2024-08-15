@@ -11,10 +11,10 @@ D:\Netflix\Netflix.Infrastructure\obj\Debug\net8.0\Netflix.Infrastructure.Genera
 D:\Netflix\Netflix.Infrastructure\obj\Debug\net8.0\Netflix.Infrastructure.AssemblyInfoInputs.cache
 D:\Netflix\Netflix.Infrastructure\obj\Debug\net8.0\Netflix.Infrastructure.AssemblyInfo.cs
 D:\Netflix\Netflix.Infrastructure\obj\Debug\net8.0\Netflix.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Netflix\Netflix.Infrastructure\obj\Debug\net8.0\Netflix.Infrastructure.sourcelink.json
 D:\Netflix\Netflix.Infrastructure\obj\Debug\net8.0\Netflix..F8326434.Up2Date
 D:\Netflix\Netflix.Infrastructure\obj\Debug\net8.0\Netflix.Infrastructure.dll
 D:\Netflix\Netflix.Infrastructure\obj\Debug\net8.0\refint\Netflix.Infrastructure.dll
 D:\Netflix\Netflix.Infrastructure\obj\Debug\net8.0\Netflix.Infrastructure.pdb
 D:\Netflix\Netflix.Infrastructure\obj\Debug\net8.0\Netflix.Infrastructure.genruntimeconfig.cache
 D:\Netflix\Netflix.Infrastructure\obj\Debug\net8.0\ref\Netflix.Infrastructure.dll
-D:\Netflix\Netflix.Infrastructure\obj\Debug\net8.0\Netflix.Infrastructure.sourcelink.json

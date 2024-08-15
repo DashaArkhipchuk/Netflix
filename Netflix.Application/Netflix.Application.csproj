@@ -7,6 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Films\Commands\**" />
+    <Compile Remove="Interfaces\**" />
+    <EmbeddedResource Remove="Films\Commands\**" />
+    <EmbeddedResource Remove="Interfaces\**" />
+    <None Remove="Films\Commands\**" />
+    <None Remove="Interfaces\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Netflix.Domain\Netflix.Domain.csproj" />
   </ItemGroup>
 
@@ -16,12 +25,6 @@
     <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
     <PackageReference Include="MediatR" Version="12.4.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Films\Commands\" />
-    <Folder Include="Interfaces\" />
-    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>

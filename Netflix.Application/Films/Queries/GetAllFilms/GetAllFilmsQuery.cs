@@ -8,5 +8,5 @@ namespace Netflix.Application.Films.Queries.GetAllFilms
 
         int Skip = 0,
         int Take = 10
-    ) : IRequest<IReadOnlyList<Film>>;
+    ) : IRequest<List<Film>>;
 }

@@ -8,9 +8,9 @@ D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.GeneratedMSB
 D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.AssemblyInfoInputs.cache
 D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.AssemblyInfo.cs
 D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.csproj.CoreCompileInputs.cache
+D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.sourcelink.json
 D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix..3ACC5625.Up2Date
 D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.dll
 D:\Netflix\Netflix.Application\obj\Debug\net8.0\refint\Netflix.Application.dll
 D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.pdb
 D:\Netflix\Netflix.Application\obj\Debug\net8.0\ref\Netflix.Application.dll
-D:\Netflix\Netflix.Application\obj\Debug\net8.0\Netflix.Application.sourcelink.json

@@ -6,16 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-<<<<<<< Updated upstream
-builder.Services.AddControllers();
-
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
-builder.Services.AddScoped<IWeatherForecastService, WeatherForecastService>();
-=======
 builder.Services.AddPresentation().AddApplicationDI().AddInfrastructureDI(builder.Configuration);
->>>>>>> Stashed changes
 
 
 var app = builder.Build();

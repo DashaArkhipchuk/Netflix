@@ -198,8 +198,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-<<<<<<< Updated upstream
-=======
             "Bogus": {
               "target": "Package",
               "version": "[35.6.0, )"
@@ -212,7 +210,6 @@
               "target": "Package",
               "version": "[4.10.0, )"
             },
->>>>>>> Stashed changes
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.7, )"

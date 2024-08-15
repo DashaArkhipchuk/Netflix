@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("ae5bfaf5-d5ac-4550-a9f1-32c0357ff453")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("Netflix.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ace6ed704d20b92076e74229e71136612bffa6d8")]
 [assembly: System.Reflection.AssemblyProductAttribute("Netflix.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Netflix.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,6 @@
 @Netflix.API_HostAddress = http://localhost:5267
 
-GET {{Netflix.API_HostAddress}}/weatherforecast/
-Accept: application/json
-
 ###
+
+GET http://localhost:5267/api/film/getall
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIwMDAwMDAwMC0wMDAwLTAwMDAtMDAwMC0wMDAwMDAwMDAwMDAiLCJnaXZlbl9uYW1lIjoic3RyaW5nIiwiZmFtaWx5X25hbWUiOiJzdHJpbmciLCJqdGkiOiIyMTllODVmYi01MDczLTQ3MTAtOWM1NS00MzEyMzUzNDcyYjQiLCJleHAiOjE3MjM3NDA0ODksImlzcyI6IkxvY2FsaG9zdE5ldGZsaXgiLCJhdWQiOiJMb2NhbGhvc3ROZXRmbGl4In0.OSLFc-0-yLFmEGyWih4JnipM9W153hVFTq47gjjB6Es

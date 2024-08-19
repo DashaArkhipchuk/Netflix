@@ -27,6 +27,9 @@ namespace Netflix.Application.Extensions
             services.AddDbContext<NetflixProjectContext>(options=> options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
             services.AddScoped<IFilmRepository, FilmRepository>();
+            services.AddScoped<ISeriesRepository, SeriesRepository>();
+            services.AddScoped<IGenreRepository, GenreRepository>();
+
             services.AddScoped<IClientRepository, ClientRepository>();
 
             services.AddSingleton<IDateTimeProvider, DateTimeProvider>();

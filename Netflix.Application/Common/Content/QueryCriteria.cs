@@ -1,0 +1,17 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Netflix.Application.Common.Content
+{
+    public class QueryCriteria
+    {
+        public List<string> Genre { get; set; } = [];
+        public decimal? MinimumRating { get; set; }
+        public bool SortByLatest { get; set; }
+        public int? Year { get; set; }
+        public int? Episodes { get; set; }
+    }
+}

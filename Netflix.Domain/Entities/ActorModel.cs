@@ -16,4 +16,9 @@ public partial class ActorModel
 
     public virtual ICollection<Series> Series { get; set; } = new List<Series>();
     public virtual ICollection<SeriesActor> SeriesActors { get; set; } = new List<SeriesActor>();
+
+    public override string? ToString()
+    {
+        return $"{Name} {Surname}";
+    }
 }

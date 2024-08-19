@@ -14,4 +14,9 @@ public partial class GenreModel
 
     public virtual ICollection<Series> Series { get; set; } = new List<Series>();
     public virtual ICollection<SeriesGenre> SeriesGenres { get; set; } = new List<SeriesGenre>();
+
+    public override string? ToString()
+    {
+        return GenreName;
+    }
 }

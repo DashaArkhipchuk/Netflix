@@ -29,6 +29,8 @@ public partial class Film
 
     public string PictureUrl { get; set; } = null!;
 
+    public string? VideoUrl { get; set; }
+
     public virtual ICollection<ActorModel> Actors { get; set; } = new List<ActorModel>();
     public virtual ICollection<FilmActor> FilmActors { get; set; } = new List<FilmActor>();
 

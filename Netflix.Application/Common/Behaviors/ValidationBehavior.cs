@@ -3,7 +3,7 @@ using MediatR;
 using Netflix.Application.Common.Errors;
 using ValidationException = Netflix.Application.Common.Errors.ValidationException;
 
-namespace Netflix.Application.Authentication.Common.Behaviors
+namespace Netflix.Application.Common.Behaviors
 {
     public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
         where TRequest : IRequest<TResponse>
@@ -12,24 +12,24 @@ namespace Netflix.Application.Authentication.Common.Behaviors
 
         public ValidationBehavior(IEnumerable<IValidator<TRequest>> validators)
         {
-            this._validators = validators;
+            _validators = validators;
         }
 
 
         public async Task<TResponse> Handle(
-            TRequest request, 
-            RequestHandlerDelegate<TResponse> next, 
+            TRequest request,
+            RequestHandlerDelegate<TResponse> next,
             CancellationToken cancellationToken)
         {
-            if (!this._validators.Any())
+            if (!_validators.Any())
             {
                 return await next();
             }
 
             var context = new ValidationContext<TRequest>(request);
 
-            var validationErrors = this
-                ._validators.Select(validator => validator.Validate(context))
+            var validationErrors = 
+                _validators.Select(validator => validator.Validate(context))
                 .Where(validationResult => validationResult.Errors.Any())
                 .SelectMany(validationResult => validationResult.Errors)
                 .Select(validationFailure => new ValidationError(

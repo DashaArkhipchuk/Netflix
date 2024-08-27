@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 using Netflix.Application.Common.Content;
 using Netflix.Application.Films.Queries.GetAllFilms;
 using Netflix.Application.Films.Queries.GetFilmByIdQuery;
+using Netflix.Application.Series.Commands.PopulateSeriesEpisodes;
 using Netflix.Application.Series.Queries.GetAllSeries;
 using Netflix.Contracts.Common;
 using Netflix.Contracts.Films.GetFilmById;
@@ -49,6 +50,16 @@ namespace Netflix.API.Controllers
                 return NotFound();
 
             return Ok(_mapper.Map<SeriesExtendedDto>(series));
+            return Ok();
+        }
+
+        [HttpPost("PoulateEpisodes")]
+        public async Task<IActionResult> Populate(int id = 0)
+        {
+            var command = new PopulateSeriesEpisodesCommand(id);
+
+            var series = await _mediator.Send(command);
+
             return Ok();
         }
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Netflix.Domain.Entities;
+using System;
 using System.Collections.Generic;
 
 namespace Netflix.Domain;
@@ -42,4 +43,5 @@ public partial class Series
 
     public virtual ICollection<GenreModel> Genres { get; set; } = new List<GenreModel>();
     public virtual ICollection<SeriesGenre> SeriesGenres { get; set; } = new List<SeriesGenre>();
+    public virtual ICollection<SeriesEpisode> SeriesEpisodes { get; set; } = new List<SeriesEpisode>();
 }

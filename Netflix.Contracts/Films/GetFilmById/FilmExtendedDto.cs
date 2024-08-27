@@ -30,6 +30,8 @@ namespace Netflix.Contracts.Films.GetFilmById
 
         public string PictureUrl { get; set; } = null!;
 
+        public string? VideoUrl { get; set; }
+
         public virtual ICollection<string> Actors { get; set; } = new List<string>();
 
         public virtual ICollection<string> Genres { get; set; } = new List<string>();

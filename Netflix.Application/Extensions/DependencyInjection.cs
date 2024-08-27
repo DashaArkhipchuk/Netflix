@@ -1,7 +1,10 @@
 ﻿using FluentValidation;
 using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using Netflix.Application.Authentication.Common.Behaviors;
+using Netflix.Application.Cartoons.Common;
+using Netflix.Application.Cartoons.Queries.GetAllCartoons;
+using Netflix.Application.Common.Behaviors;
+using Netflix.Application.Common.Content;
 using System.Reflection;
 
 namespace Netflix.Application.Extensions

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata;
 using Microsoft.EntityFrameworkCore;
 using Netflix.Domain;
+using Netflix.Domain.Entities;
 
 namespace Netflix.Infrastructure;
 
@@ -38,6 +40,7 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
     public virtual DbSet<SeriesActor> SeriesActors { get; set; }
 
     public virtual DbSet<SeriesGenre> SeriesGenres { get; set; }
+    public virtual DbSet<SeriesEpisode> SeriesEpisode { get; set; }
 
     public virtual DbSet<Showing> Showings { get; set; }
 
@@ -119,6 +122,9 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
             entity.Property(e => e.PictureUrl)
                 .HasMaxLength(200)
                 .HasColumnName("PictureURL");
+            entity.Property(e => e.VideoUrl)
+                .HasMaxLength(200)
+                .HasColumnName("VideoURL");
             entity.Property(e => e.ProductionCompanies)
                 .HasMaxLength(150)
                 .HasColumnName("Production_Companies");
@@ -318,6 +324,32 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
             entity.HasMany<ActorModel>(f => f.Actors).WithMany(a => a.Series).UsingEntity<SeriesActor>();
 
             entity.HasMany<GenreModel>(f => f.Genres).WithMany(a => a.Series).UsingEntity<SeriesGenre>();
+
+        });
+
+        modelBuilder.Entity<SeriesEpisode>(entity =>
+        {
+            entity.HasKey(e => e.EpisodeId).HasName("PK__SeriesEp__AC6609F56A616652");
+
+
+            entity.Property(e => e.EpisodeId)
+                .HasDefaultValueSql("(newid())")
+                .HasColumnName("EpisodeId");
+
+            entity.Property(e => e.EpisodeName).HasColumnName("EpisodeName");
+            entity.Property(e => e.EpisodeNumber).HasColumnName("EpisodeNumber");
+            entity.Property(e => e.EpisodeNumberInSeason).HasColumnName("EpisodeNumberInSeason");
+            entity.Property(e => e.SeasonNumber).HasColumnName("SeasonNumber");
+            entity.Property(e => e.VideoURL).HasColumnName("VideoURL");
+            entity.Property(e => e.PictureURL).HasColumnName("PictureURL");
+
+            entity.HasOne(d => d.Series).WithMany(p => p.SeriesEpisodes)
+                .HasForeignKey(d => d.SeriesId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK__SeriesEpi__Serie__05D8E0BE");
+            //entity.HasOne(d => d.Series).WithMany(s => s.SeriesEpisodes)
+            //    .HasForeignKey(d => d.SeriesId)
+            //    .OnDelete(DeleteBehavior.Cascade);
         });
 
         modelBuilder.Entity<SeriesActor>(entity =>
@@ -359,6 +391,8 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
                 .HasForeignKey(d => d.IdSeries)
                 .HasConstraintName("FK__SeriesGen__idSer__5629CD9C");
         });
+
+
 
         modelBuilder.Entity<Showing>(entity =>
         {

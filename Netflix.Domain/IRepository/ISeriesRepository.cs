@@ -8,5 +8,6 @@ namespace Netflix.Domain.IRepository
 {
     public interface ISeriesRepository: IGenericRepository<Series>
     {
+        Task<string> PopulateSeriesEpisodes();
     }
 }

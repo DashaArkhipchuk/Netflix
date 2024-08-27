@@ -43,6 +43,8 @@ namespace Netflix.Contracts.Series.GetSeriesById
         
 
         public virtual ICollection<string> Genres { get; set; } = new List<string>();
-        
+
+        public virtual ICollection<SeriesEpisodesDto> SeriesEpisodes { get; set; } = new List<SeriesEpisodesDto>();
+
     }
 }

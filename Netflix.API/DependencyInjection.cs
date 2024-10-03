@@ -1,6 +1,7 @@
 ﻿using Microsoft.OpenApi.Models;
 using Netflix.API.Common.Mapping;
 using System.Reflection;
+using System.Text.Json.Serialization;
 
 namespace Netflix.API
 {

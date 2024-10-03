@@ -15,6 +15,7 @@ namespace Netflix.Application.Authentication.Commands.Register
 
         string Password,
 
-        bool? IsActor
+        bool? IsActor,
+        bool? IsCastingDirector
     ) : IRequest<AuthenticationResult>;
 }

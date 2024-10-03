@@ -198,9 +198,17 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.21.2, )"
+            },
             "Bogus": {
               "target": "Package",
               "version": "[35.6.0, )"
+            },
+            "LinqKit": {
+              "target": "Package",
+              "version": "[1.3.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",

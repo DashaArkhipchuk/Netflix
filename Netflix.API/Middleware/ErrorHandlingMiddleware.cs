@@ -2,6 +2,7 @@
 using System.Net;
 using System.Text.Json;
 using Netflix.Application.Common.Errors;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Model;
 
 namespace Netflix.API.Middleware
 {
@@ -54,10 +55,18 @@ namespace Netflix.API.Middleware
             {
                 DuplicateEmailException exception => new ProblemDetails
                 {
-                    Type = "Duplicate Email Error",
-                    Title = "Duplicate Email",
+                    Type = "Duplicate Value Error",
+                    Title = "Duplicate Value",
                     Status = (int)HttpStatusCode.Conflict,
                     Detail = exception.Message
+                },
+
+                AlreadyExistsException alreadyExists => new ProblemDetails
+                {
+                    Type = "Value already exists",
+                    Title = "Already exists",
+                    Status = (int)HttpStatusCode.Conflict,
+                    Detail = alreadyExists.Message
                 },
 
                 NotFoundException => new ProblemDetails
@@ -74,6 +83,14 @@ namespace Netflix.API.Middleware
                     Title = "Validation Error",
                     Status = (int)HttpStatusCode.BadRequest,
                     Detail = string.Join("; ", validationEx.Errors.Select(e => $"{e.PropertyName}: {e.ErrorMessage}"))
+                },
+
+                ParsingValidationException parsingEx => new ProblemDetails
+                {
+                    Type = "https://example.com/probs/parsing",
+                    Title = "Parsing Error",
+                    Status = parsingEx.code,
+                    Detail = ex.Message
                 },
 
                 _ => new ProblemDetails

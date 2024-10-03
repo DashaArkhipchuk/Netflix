@@ -14,6 +14,8 @@
 
         bool? IsActor,
 
+        bool? IsCastingDirector,
+
         string Token
     );
 }

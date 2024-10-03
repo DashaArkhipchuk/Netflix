@@ -22,9 +22,9 @@ namespace Netflix.Application.Authentication.Commands.Register
         {
             await Task.CompletedTask;
             //Validate the user doesn`t exist
-            if (_clientRepository.GetClientByEmail(command.Email) is not null)
+            if ( await _clientRepository.GetClientByEmailAsync(command.Email) is not null)
             {
-                throw new DuplicateEmailException();
+                throw new DuplicateEmailException("Client with given email already exists");
             }
 
 
@@ -40,7 +40,8 @@ namespace Netflix.Application.Authentication.Commands.Register
                 Email = command.Email,
                 BirthDate = command.BirthDate,
                 Password = hashedPass,
-                IsActor = command.IsActor
+                IsActor = command.IsActor,
+                IsCastingDirector = command.IsCastingDirector
             };
 
             _clientRepository.Add(client);

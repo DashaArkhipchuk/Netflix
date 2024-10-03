@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Reflection.Metadata;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.EntityFrameworkCore;
 using Netflix.Domain;
 using Netflix.Domain.Entities;
@@ -9,11 +10,25 @@ namespace Netflix.Infrastructure;
 
 public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContext> options) : DbContext(options)
 {
+    public virtual DbSet<Actor> Actors { get; set; }
     public virtual DbSet<ActorModel> ActorModels { get; set; }
 
     public virtual DbSet<Cinema> Cinemas { get; set; }
 
     public virtual DbSet<Client> Clients { get; set; }
+
+    public virtual DbSet<CastingDirector> CastingDirectors { get; set; }
+    public virtual DbSet<CastingDirectorType> CastingDirectorTypes { get; set; }
+    public virtual DbSet<CastingCall> CastingCalls { get; set; }
+    public virtual DbSet<Gender> Genders { get; set; }
+    public virtual DbSet<Location> Locations { get; set; }
+    public virtual DbSet<ProjectType> ProjectTypes { get; set; }
+    public virtual DbSet<RoleType> RoleTypes { get; set; }
+    public virtual DbSet<EthnicAppearance> EthnicAppearances { get; set; }
+    public virtual DbSet<Audition> Auditions { get; set; }
+
+    public virtual DbSet<Submission> Submissions { get; set; }
+    public virtual DbSet<SubmissionMedia> SubmissionMedias { get; set; }
 
     public virtual DbSet<DateTimeSession> DateTimeSessions { get; set; }
 
@@ -87,8 +102,237 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
             entity.Property(e => e.Email).HasMaxLength(100);
             entity.Property(e => e.FirstName).HasMaxLength(50);
             entity.Property(e => e.IsActor).HasColumnName("isActor");
+            entity.Property(e => e.IsCastingDirector).HasColumnName("isCastingDirector");
             entity.Property(e => e.LastName).HasMaxLength(50);
             entity.Property(e => e.Password).HasMaxLength(30);
+        });
+
+        modelBuilder.Entity<Actor>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Actor__3213E83F800F5602");
+
+            entity.ToTable("Actor");
+
+            entity.Property(e => e.Id)
+                .HasDefaultValueSql("(newid())")
+                .HasColumnName("id");
+            entity.Property(e => e.StageName).HasMaxLength(70);
+            entity.Property(e => e.WorkingLocation).HasMaxLength(50).HasColumnName("Working_Location");
+            entity.Property(e => e.RangeFrom).HasColumnName("RangeFrom");
+            entity.Property(e => e.RangeTo).HasColumnName("RangeTo");
+            entity.Property(e => e.EthnicAppearance).HasMaxLength(70);
+            entity.Property(e => e.Sex).HasColumnName("Sex");
+
+            entity.HasOne(d => d.Client).WithOne(p => p.Actor)
+                .HasForeignKey<Actor>(d => d.ClientId)
+                .OnDelete(DeleteBehavior.Cascade)
+                .HasConstraintName("FK__Actor__ClientId__160F4887");
+        });
+
+        modelBuilder.Entity<CastingDirectorType>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+            entity.Property(e => e.Name).IsRequired().HasMaxLength(100);
+        });
+
+        modelBuilder.Entity<CastingDirector>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+
+            entity.Property(e => e.FullName).IsRequired().HasMaxLength(255);
+            entity.Property(e => e.CompanyName).IsRequired().HasMaxLength(255);
+            entity.Property(e => e.Website).HasMaxLength(255);
+            entity.Property(e => e.Address).IsRequired().HasMaxLength(500);
+            entity.Property(e => e.RegionName).IsRequired().HasMaxLength(255);
+            entity.Property(e => e.PhoneNumberWithCountryCode).IsRequired().HasMaxLength(20);
+            entity.Property(e => e.Email).IsRequired().HasMaxLength(255);
+
+            entity.HasOne(cd => cd.CastingDirectorType)
+                  .WithMany(cdt => cdt.CastingDirectors)
+                  .HasForeignKey(cd => cd.TypeId)
+                  .OnDelete(DeleteBehavior.Cascade);
+
+            entity.HasOne(d => d.Client).WithOne(p => p.CastingDirector)
+                .HasForeignKey<CastingDirector>(d => d.ClientId)
+                .OnDelete(DeleteBehavior.Cascade);
+        });
+
+        modelBuilder.Entity<CastingCall>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__CastingC__3214EC07F2204885");
+
+            entity.ToTable("CastingCalls");
+
+            entity.Property(e => e.Id)
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("Id");
+            entity.Property(e => e.Title).HasMaxLength(255);
+            entity.Property(e => e.PlayableAgeFrom).HasColumnName("PlayableAgeFrom");
+            entity.Property(e => e.PlayableAgeTo).HasColumnName("PlayableAgeTo");
+            entity.Property(e => e.Payment).HasMaxLength(100);
+            entity.Property(e => e.UnionDetails).HasMaxLength(255);
+            entity.Property(e => e.IsAnyEthnicAppearanceAccepted).HasColumnName("IsAnyEthnicAppearanceAccepted");
+            entity.Property(e => e.IsAnyGenderAccepted).HasColumnName("IsAnyGenderAccepted");
+
+
+            entity.HasOne(cc => cc.ProjectType)
+            .WithMany(pt => pt.CastingCalls)
+            .HasForeignKey(cc => cc.ProjectTypeId);
+
+            entity.HasOne(cc => cc.RoleType)
+            .WithMany(rt => rt.CastingCalls)
+            .HasForeignKey(cc => cc.RoleTypeId);
+
+            entity.HasMany(cc => cc.Locations)
+            .WithMany(l => l.CastingCalls)
+            .UsingEntity<Dictionary<string, object>>(
+                "CastingCallsLocations",
+                cc => cc.HasOne<Location>().WithMany().HasForeignKey("IdLocation"),
+                l => l.HasOne<CastingCall>().WithMany().HasForeignKey("IdCastingCall")
+            );
+
+            entity.HasMany(cc => cc.Genders)
+            .WithMany(g => g.CastingCalls)
+            .UsingEntity<Dictionary<string, object>>(
+                "CastingCallsGenders",
+                cc => cc.HasOne<Gender>().WithMany().HasForeignKey("IdGender"),
+                g => g.HasOne<CastingCall>().WithMany().HasForeignKey("IdCastingCall")
+            );
+
+            entity.HasMany(cc => cc.EthnicAppearances)
+            .WithMany(ea => ea.CastingCalls)
+            .UsingEntity<Dictionary<string, object>>(
+                "CastingCallsEthnicAppearances",
+                cc => cc.HasOne<EthnicAppearance>().WithMany().HasForeignKey("IdAppearance"),
+                ea => ea.HasOne<CastingCall>().WithMany().HasForeignKey("IdCastingCall")
+            );
+
+            entity.HasOne(cc => cc.CreatedByDirector)
+                  .WithMany(cd => cd.CastingCallsCreated)
+                  .HasForeignKey(cc => cc.CreatedByDirectorId)
+                  .OnDelete(DeleteBehavior.SetNull);
+
+        });
+
+        modelBuilder.Entity<Gender>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Genders__3214EC07A43C0DFC");
+            entity.ToTable("Genders");
+
+            entity.Property(e => e.Id)
+               .HasDefaultValueSql("(newid())")
+               .HasColumnName("Id");
+            entity.Property(e => e.GenderName).HasMaxLength(50);
+        });
+
+        modelBuilder.Entity<Location>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Location__3214EC0753CD3C6F");
+            entity.ToTable("Locations");
+
+            entity.Property(e => e.Id)
+               .HasDefaultValueSql("(newid())")
+               .HasColumnName("Id");
+            entity.Property(e => e.LocationName).HasMaxLength(100);
+            entity.Property(e => e.RegionName).HasMaxLength(100);
+        });
+
+        modelBuilder.Entity<ProjectType>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__ProjectT__3214EC07A6BDC9AB");
+
+            entity.ToTable("ProjectTypes");
+
+            entity.Property(e => e.Id)
+                .HasDefaultValueSql("(newid())")
+                .HasColumnName("Id");
+
+            entity.Property(e => e.ProjectTypeName).HasMaxLength(100);
+
+            
+        });
+
+        modelBuilder.Entity<RoleType>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__RoleType__3214EC0777BEDD64");
+
+            entity.ToTable("RoleTypes");
+
+            entity.Property(e => e.Id)
+                .HasDefaultValueSql("(newid())")
+                .HasColumnName("Id");
+
+            entity.Property(e => e.RoleTypeName).HasMaxLength(100);
+
+           
+
+
+        });
+
+        modelBuilder.Entity<EthnicAppearance>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__EthnicAp__3214EC0723128B43");
+            entity.ToTable("EthnicAppearances");
+
+            entity.Property(e => e.Id)
+               .HasDefaultValueSql("(newid())")
+               .HasColumnName("Id");
+            entity.Property(e => e.EthnicAppearanceName).HasMaxLength(70);
+        });
+
+        modelBuilder.Entity<Audition>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Audition__3214EC076F01C8CC");
+            entity.ToTable("Auditions");
+
+            entity.Property(e => e.Id)
+               .HasDefaultValueSql("(newid())")
+               .HasColumnName("Id");
+
+            entity.HasOne(a => a.CastingCall)
+            .WithMany(cc => cc.Auditions)
+            .HasForeignKey(a => a.IdCastingCall);
+
+            entity.HasOne(a => a.Location)
+            .WithMany(l => l.Auditions)
+            .HasForeignKey(a => a.LocationId);
+        });
+
+        modelBuilder.Entity<Submission>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Submissi__3213E83FEF52E195");
+            entity.ToTable("Submissions");
+            entity.Property(e => e.Id)
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
+
+            entity.Property(e => e.SubmissionNote)
+            .HasMaxLength(300);
+
+            entity.HasOne(a => a.CastingCall)
+            .WithMany(cc => cc.Submissions)
+            .HasForeignKey(a => a.CastingId);
+
+            entity.HasOne(a => a.Actor)
+            .WithMany(ac => ac.Submissions)
+            .HasForeignKey(a => a.ActorId);
+        });
+
+        modelBuilder.Entity<SubmissionMedia>(entity =>
+        {
+            entity.HasKey(e => e.Id).HasName("PK__Submissi__3213E83FCD777B05");
+            entity.ToTable("SubmissionMedia");
+            entity.Property(e => e.Id)
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
+
+            entity.Property(e => e.MediaUrl)
+            .IsRequired()
+            .HasMaxLength(300);
+
+            entity.HasOne(a => a.Submission)
+            .WithMany(s => s.SubmissionMedias)
+            .HasForeignKey(a => a.SubmissionId);
         });
 
         modelBuilder.Entity<DateTimeSession>(entity =>

@@ -2,7 +2,9 @@
 {
     public interface IClientRepository
     {
-        Client? GetClientByEmail(string email);
+        Task<Client?> GetClientByEmailAsync(string email);
+
+        Task<Client?> GetClientByIdAsync(Guid id);
         void Add(Client client);
 
     }

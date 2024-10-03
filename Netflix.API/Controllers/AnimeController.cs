@@ -1,5 +1,6 @@
 ﻿using MapsterMapper;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Netflix.Application.Animes.Common;
@@ -13,6 +14,7 @@ namespace Netflix.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
     public class AnimeController : ControllerBase
     {
         private readonly IMediator _mediator;

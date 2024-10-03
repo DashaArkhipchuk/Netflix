@@ -3,6 +3,7 @@ using Netflix.Application.Interfaces.Authentication;
 using Netflix.Domain.IRepository;
 using Netflix.Domain;
 using Netflix.Application.Authentication.Common;
+using Netflix.Application.Common.Errors;
 
 namespace Netflix.Application.Authentication.Queries.Login
 {
@@ -21,9 +22,9 @@ namespace Netflix.Application.Authentication.Queries.Login
         {
             await Task.CompletedTask;
             //Validate the user exists
-            if (_clientRepository.GetClientByEmail(query.Email) is not Client client)
+            if (await _clientRepository.GetClientByEmailAsync(query.Email) is not Client client)
             {
-                throw new Exception("Client with given email does not exist");
+                throw new NotFoundException("Client", "Email", query.Email);
             }
 
             //Validate the password is correct

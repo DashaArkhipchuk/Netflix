@@ -31,6 +31,8 @@ namespace Netflix.Infrastructure.Authentication
                 new Claim(JwtRegisteredClaimNames.GivenName, client.FirstName),
                 new Claim(JwtRegisteredClaimNames.FamilyName, client.LastName),
                 new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim("isActor", (client.IsActor?.ToString() ?? Boolean.FalseString).ToLower()),
+                new Claim("isDirector", (client.IsCastingDirector?.ToString() ?? Boolean.FalseString).ToLower()),
             };
 
             var securityToken = new JwtSecurityToken(

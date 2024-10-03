@@ -9,6 +9,7 @@ using Netflix.Contracts.Series.GetSeriesById;
 using Netflix.Domain;
 using Netflix.Contracts.Content;
 using Netflix.Application.Cartoons.Common;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Netflix.API.Controllers
 {

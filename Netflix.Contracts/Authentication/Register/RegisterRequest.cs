@@ -12,6 +12,7 @@
 
         string Password,
 
-        bool? IsActor
+        bool? IsActor,
+        bool? IsCastingDirector
     );
 }

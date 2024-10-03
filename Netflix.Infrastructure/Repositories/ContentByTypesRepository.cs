@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static Netflix.Infrastructure.Seeders.FilmSeeder;
+
 
 namespace Netflix.Infrastructure.Repositories
 {
@@ -15,13 +15,13 @@ namespace Netflix.Infrastructure.Repositories
     {
         private readonly NetflixProjectContext _dbContext;
 
-        public string? Type { get; set; }
+        public string? Type { get; set; } 
 
         public ContentByTypesRepository(NetflixProjectContext dbContext) => _dbContext = dbContext;
         public async Task<List<ContentWithType>> GetAllAsync(int skip, int take, List<string> genres, bool sortByLatest = false, decimal? minimumRating = null, int? year = null, int? episodes = null)
         {
-            var queryFilm = await _dbContext.Films.Where(x=>x.Genres.Select(g=>g.GenreName.ToLower()).Contains(Type.ToLower())).Select(x => new ContentWithType { Id = x.Id, Name = x.Name, Genres = x.Genres, PictureUrl = x.PictureUrl, Rating = x.Rating, ReleaseDate = x.ReleaseDate, Type = "film", Film = x, EpisodeCount = null }).ToListAsync();
-            var querySeries = await _dbContext.Series.Where(x=>x.Genres.Select(g=>g.GenreName.ToLower()).Contains(Type.ToLower())).Select(x => new ContentWithType { Id = x.Id, Name = x.Name, Genres = x.Genres, PictureUrl = x.PictureUrl, Rating = x.Rating, ReleaseDate = x.ReleaseDate, Type = "series", Series = x, EpisodeCount = x.EpisodeCount }).ToListAsync();
+            var queryFilm = await _dbContext.Films.Where(x=>x.Genres.Select(g=>g.GenreName?? "".ToLower()).Contains(Type ?? "".ToLower())).Select(x => new ContentWithType { Id = x.Id, Name = x.Name, Genres = x.Genres, PictureUrl = x.PictureUrl, Rating = x.Rating, ReleaseDate = x.ReleaseDate, Type = "film", Film = x, EpisodeCount = null }).ToListAsync();
+            var querySeries = await _dbContext.Series.Where(x=>x.Genres.Select(g=>g.GenreName?? "".ToLower()).Contains(Type ?? "".ToLower())).Select(x => new ContentWithType { Id = x.Id, Name = x.Name, Genres = x.Genres, PictureUrl = x.PictureUrl, Rating = x.Rating, ReleaseDate = x.ReleaseDate, Type = "series", Series = x, EpisodeCount = x.EpisodeCount }).ToListAsync();
 
             var query = queryFilm.Concat(querySeries).AsQueryable();
 
@@ -69,8 +69,8 @@ namespace Netflix.Infrastructure.Repositories
 
         public async Task<ContentWithType?> GetByIdAsync(Guid? id)
         {
-            var queryFilm = await _dbContext.Films.Include(x => x.Genres).Include(x => x.Actors).Where(x => x.Genres.Select(g => g.GenreName.ToLower()).Contains(Type.ToLower())).Select(x => new ContentWithType { Type = "film", Id = x.Id, Film = x }).ToListAsync();
-            var querySeries = await _dbContext.Series.Include(x => x.Genres).Include(x => x.Actors).Include(x=>x.SeriesEpisodes).Where(x => x.Genres.Select(g => g.GenreName.ToLower()).Contains(Type.ToLower())).Select(x => new ContentWithType { Type = "series", Id = x.Id, Series = x }).ToListAsync();
+            var queryFilm = await _dbContext.Films.Include(x => x.Genres).Include(x => x.Actors).Where(x => x.Genres.Select(g => g.GenreName??"".ToLower()).Contains(Type ?? "".ToLower())).Select(x => new ContentWithType { Type = "film", Id = x.Id, Film = x }).ToListAsync();
+            var querySeries = await _dbContext.Series.Include(x => x.Genres).Include(x => x.Actors).Include(x=>x.SeriesEpisodes).Where(x => x.Genres.Select(g => g.GenreName ?? "".ToLower()).Contains(Type ?? "".ToLower())).Select(x => new ContentWithType { Type = "series", Id = x.Id, Series = x }).ToListAsync();
 
             var query = queryFilm.Concat(querySeries).AsQueryable();
 

@@ -1,4 +1,5 @@
-﻿using Netflix.Domain;
+﻿using Microsoft.EntityFrameworkCore;
+using Netflix.Domain;
 using Netflix.Domain.IRepository;
 
 namespace Netflix.Infrastructure.Repositories
@@ -15,9 +16,14 @@ namespace Netflix.Infrastructure.Repositories
             _dbContext.SaveChanges();
         }
 
-        public Client? GetClientByEmail(string email)
+        public async Task<Client?> GetClientByEmailAsync(string email)
         {
-            return _dbContext.Clients.SingleOrDefault(client => client.Email == email);
+            return await _dbContext.Clients.SingleOrDefaultAsync(client => client.Email == email);
+        }
+
+        public async Task<Client?> GetClientByIdAsync(Guid id)
+        {
+            return await _dbContext.Clients.Include(c=>c.Actor).Include(c=>c.CastingDirector).ThenInclude(d=>d.CastingDirectorType).SingleOrDefaultAsync(client => client.Id == id);
         }
     }
 }

@@ -10,6 +10,7 @@ using Netflix.Contracts.Common;
 using Netflix.Contracts.Content;
 using Netflix.Contracts.Series.GetSeriesById;
 using Netflix.Domain;
+using Netflix.Domain.Entities;
 
 namespace Netflix.API.Common.Mapping
 {
@@ -44,6 +45,21 @@ namespace Netflix.API.Common.Mapping
               .Map(dest => dest.Take, src => src.Item1.Take);
 
             config.NewConfig<Guid, GetContentByIdQuery<Film>>()
+                .Map(dest => dest.Id, src => src);
+
+            config.NewConfig<Guid, GetContentByIdQuery<ProjectType>>()
+                .Map(dest => dest.Id, src => src);
+
+            config.NewConfig<Guid, GetContentByIdQuery<RoleType>>()
+                .Map(dest => dest.Id, src => src);
+
+            config.NewConfig<Guid, GetContentByIdQuery<Gender>>()
+                .Map(dest => dest.Id, src => src);
+
+            config.NewConfig<Guid, GetContentByIdQuery<Location>>()
+                .Map(dest => dest.Id, src => src);
+
+            config.NewConfig<Guid, GetContentByIdQuery<EthnicAppearance>>()
                 .Map(dest => dest.Id, src => src);
 
             config.NewConfig<Guid, GetContentByIdQuery<Series>>()

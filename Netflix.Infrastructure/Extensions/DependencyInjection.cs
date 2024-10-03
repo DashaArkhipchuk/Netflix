@@ -1,4 +1,5 @@
 ﻿
+using Azure.Storage.Blobs;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -24,16 +25,32 @@ namespace Netflix.Application.Extensions
 
             services.AddAuth(configuration);
 
-            services.AddDbContext<NetflixProjectContext>(options=> options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<NetflixProjectContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
             services.AddScoped<IFilmRepository, FilmRepository>();
             services.AddScoped<ISeriesRepository, SeriesRepository>();
             services.AddScoped<IGenreRepository, GenreRepository>();
             services.AddScoped<IContentByTypesRepository, ContentByTypesRepository>();
 
+            services.AddScoped<ILocationRepository, LocationRepository>();
+            services.AddScoped<IProjectTypeRepository, ProjectTypeRepository>();
+            services.AddScoped<IRoleTypeRepository, RoleTypeRepository>();
+            services.AddScoped<IGenderRepository, GenderRepository>();
+            services.AddScoped<IEthnicAppearanceRepository, EthnicAppearanceRepository>();
+
+            services.AddScoped<ICastingDirectorTypeRepository, CastingDirectorTypeRepository>();
+            services.AddScoped<ICastingCallRepository, CastingCallRepository>();
+            services.AddScoped<ISubmissionRepository, SubmissionRepository>();
+            services.AddScoped<IAuditionRepository, AuditionRepository>();
+
             services.AddScoped<IClientRepository, ClientRepository>();
+            services.AddScoped<IActorRepository, ActorRepository>();
+            services.AddScoped<ICastingDirectorRepository, CastingDirectorRepository>();
 
             services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
+            var str = configuration["AzureStorageConnectionString"];
+            services.AddSingleton(x => new BlobServiceClient(configuration["AzureStorageConnectionString"]));
+            services.AddSingleton<ICloudStorageService, CloudStorageService>();
 
             return services;
         }
@@ -58,6 +75,18 @@ namespace Netflix.Application.Extensions
                     IssuerSigningKey = new SymmetricSecurityKey(
                         Encoding.UTF8.GetBytes(jwtSettings.Secret))
                 });
+
+            services.AddAuthorization(options =>
+            {
+                options.AddPolicy("Actor", p =>
+                p.RequireClaim("isActor", "true"));
+
+                options.AddPolicy("Director", p =>
+                p.RequireClaim("isDirector", "true"));
+
+            }
+            );
+
 
             return services;
         }

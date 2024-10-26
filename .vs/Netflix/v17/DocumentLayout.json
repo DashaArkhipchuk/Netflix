@@ -3,6 +3,126 @@
   "WorkspaceRootPath": "D:\\Netflix\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\common\\mapping\\newsmappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\common\\mapping\\newsmappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|d:\\netflix\\netflix.infrastructure\\extensions\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|solutionrelative:netflix.infrastructure\\extensions\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|d:\\netflix\\netflix.infrastructure\\persistence\\netflixprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|solutionrelative:netflix.infrastructure\\persistence\\netflixprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\news.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\common\\mapping\\castingcallsmappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\common\\mapping\\castingcallsmappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\controllers\\filmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\controllers\\filmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\controllers\\cartooncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\controllers\\cartooncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\common\\mapping\\locationmappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\common\\mapping\\locationmappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\news\\queries\\getallnews\\getallnewsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\news\\queries\\getallnews\\getallnewsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|d:\\netflix\\netflix.infrastructure\\repositories\\newsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|solutionrelative:netflix.infrastructure\\repositories\\newsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\irepository\\inewsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\irepository\\inewsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\news\\common\\querycriterianews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\news\\common\\querycriterianews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F8DCF6B-84C0-498E-8C13-3A23C0BB8856}|Netflix.Contracts\\Netflix.Contracts.csproj|d:\\netflix\\netflix.contracts\\news\\criterianews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F8DCF6B-84C0-498E-8C13-3A23C0BB8856}|Netflix.Contracts\\Netflix.Contracts.csproj|solutionrelative:netflix.contracts\\news\\criterianews.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|d:\\netflix\\netflix.infrastructure\\repositories\\filmrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|solutionrelative:netflix.infrastructure\\repositories\\filmrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\controllers\\newscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\news\\queries\\getallnews\\getallnewsqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\news\\queries\\getallnews\\getallnewsqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\common\\content\\getallcontentquerygenericvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\common\\content\\getallcontentquerygenericvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F8DCF6B-84C0-498E-8C13-3A23C0BB8856}|Netflix.Contracts\\Netflix.Contracts.csproj|d:\\netflix\\netflix.contracts\\news\\shortnewsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F8DCF6B-84C0-498E-8C13-3A23C0BB8856}|Netflix.Contracts\\Netflix.Contracts.csproj|solutionrelative:netflix.contracts\\news\\shortnewsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F8DCF6B-84C0-498E-8C13-3A23C0BB8856}|Netflix.Contracts\\Netflix.Contracts.csproj|d:\\netflix\\netflix.contracts\\news\\newsextendeddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F8DCF6B-84C0-498E-8C13-3A23C0BB8856}|Netflix.Contracts\\Netflix.Contracts.csproj|solutionrelative:netflix.contracts\\news\\newsextendeddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F8DCF6B-84C0-498E-8C13-3A23C0BB8856}|Netflix.Contracts\\Netflix.Contracts.csproj|d:\\netflix\\netflix.contracts\\news\\newsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F8DCF6B-84C0-498E-8C13-3A23C0BB8856}|Netflix.Contracts\\Netflix.Contracts.csproj|solutionrelative:netflix.contracts\\news\\newsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\news\\queries\\getallnews\\getallnewsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\news\\queries\\getallnews\\getallnewsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\news\\queries\\getnewsbyid\\getnewsbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\news\\queries\\getnewsbyid\\getnewsbyidqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|d:\\netflix\\netflix.infrastructure\\repositories\\castingcallrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|solutionrelative:netflix.infrastructure\\repositories\\castingcallrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\newstype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\newstype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\common\\mapping\\actormappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\common\\mapping\\actormappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\films\\queries\\getallfilms\\getallfilmsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\films\\queries\\getallfilms\\getallfilmsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\actormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\actormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\auditions\\commands\\removeauditionforcastingcall\\removeauditionforcastingcallcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\auditions\\commands\\removeauditionforcastingcall\\removeauditionforcastingcallcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\common\\mapping\\auditionsmappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\common\\mapping\\auditionsmappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -41,10 +161,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\castingcalls\\commands\\removecastingcall\\removecastingcallcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\castingcalls\\commands\\removecastingcall\\removecastingcallcommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\auditions\\commands\\removeauditionforcastingcall\\removeauditionforcastingcallcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\auditions\\commands\\removeauditionforcastingcall\\removeauditionforcastingcallcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\castingcalls\\commands\\removecastingcall\\removecastingcallcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -147,20 +263,12 @@
       "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\auditions\\commands\\addauditionforcastingcall\\addauditionforcastingcallcommandvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\common\\mapping\\castingcallsmappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\common\\mapping\\castingcallsmappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\castingcall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\castingcall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\auditions\\commands\\addauditionforcastingcall\\addauditionforcastingcallcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\auditions\\commands\\addauditionforcastingcall\\addauditionforcastingcallcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|d:\\netflix\\netflix.infrastructure\\extensions\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|solutionrelative:netflix.infrastructure\\extensions\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\castingcalls\\commands\\updatecastingcall\\updatecastingcallcommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -209,10 +317,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\submissions\\queries\\getsubmissionsbyactorid\\getsubmissionsbyactoridqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\submissions\\queries\\getsubmissionsbyactorid\\getsubmissionsbyactoridqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\controllers\\filmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\controllers\\filmcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\submissions\\queries\\getsubmissionsbyactorid\\getsubmissionsbyactoridquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -291,10 +395,6 @@
       "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\controllers\\ethnicappearancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\controllers\\locationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\controllers\\locationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\controllers\\roletypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\controllers\\roletypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -343,10 +443,6 @@
       "RelativeMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|solutionrelative:netflix.infrastructure\\repositories\\projecttyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\irepository\\ilocationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\irepository\\ilocationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|d:\\netflix\\netflix.infrastructure\\repositories\\genderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|solutionrelative:netflix.infrastructure\\repositories\\genderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -357,14 +453,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\roletypes\\queries\\getallroletypes\\getallroletypesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\roletypes\\queries\\getallroletypes\\getallroletypesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\projecttypes\\queries\\getallprojecttypes\\getallprojecttypesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\projecttypes\\queries\\getallprojecttypes\\getallprojecttypesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\projecttypes\\queries\\getallprojecttypes\\getallprojecttypesqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\projecttypes\\queries\\getallprojecttypes\\getallprojecttypesqueryvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\common\\content\\getcontentbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -411,16 +499,8 @@
       "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\regions\\commands\\createlocation\\createlocationqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F8DCF6B-84C0-498E-8C13-3A23C0BB8856}|Netflix.Contracts\\Netflix.Contracts.csproj|d:\\netflix\\netflix.contracts\\content\\getallcontentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F8DCF6B-84C0-498E-8C13-3A23C0BB8856}|Netflix.Contracts\\Netflix.Contracts.csproj|solutionrelative:netflix.contracts\\content\\getallcontentrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\cartoons\\queries\\getallcartoons\\getallcartoonsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\cartoons\\queries\\getallcartoons\\getallcartoonsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\common\\content\\getallcontentquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\common\\content\\getallcontentquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\common\\getallcontentquerywithoutfiltering\\getallcontentwithoutfilteringquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -459,10 +539,6 @@
       "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\castingcalls\\queries\\getallcastingcalls\\castingquerycriteria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|d:\\netflix\\netflix.infrastructure\\persistence\\netflixprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|solutionrelative:netflix.infrastructure\\persistence\\netflixprojectcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\castingdirector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\castingdirector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -473,10 +549,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|d:\\netflix\\netflix.infrastructure\\repositories\\actorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|solutionrelative:netflix.infrastructure\\repositories\\actorrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\common\\mapping\\actormappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\common\\mapping\\actormappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\castingdirector\\queries\\existscastingdirectorprofile\\existscastingdirectorprofilequeryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -541,10 +613,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\actor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\actor\\commands\\createactorprofile\\createactorprofilecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -615,10 +683,6 @@
       "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\controllers\\genrecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|d:\\netflix\\netflix.infrastructure\\repositories\\filmrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|solutionrelative:netflix.infrastructure\\repositories\\filmrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\files\\commands\\uploadfile\\uploadfilecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\files\\commands\\uploadfile\\uploadfilecommandhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -629,9 +693,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\irepository\\igenrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\irepository\\igenrerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\darin\\AppData\\Roaming\\Microsoft\\UserSecrets\\ae5bfaf5-d5ac-4550-a9f1-32c0357ff453\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -654,10 +715,6 @@
       "RelativeMoniker": "D:0:0:{4F8DCF6B-84C0-498E-8C13-3A23C0BB8856}|Netflix.Contracts\\Netflix.Contracts.csproj|solutionrelative:netflix.contracts\\castingcalls\\castingcallextendeddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\controllers\\cartooncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\controllers\\cartooncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\audition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\audition.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -670,20 +727,12 @@
       "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\common\\basehandler\\getallcontentqueryhandlerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\common\\mapping\\locationmappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\common\\mapping\\locationmappingconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|d:\\netflix\\netflix.api\\common\\mapping\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CB84FF7-B869-4544-B636-0CF3C29762D2}|Netflix.API\\Netflix.API.csproj|solutionrelative:netflix.api\\common\\mapping\\dependencyinjection.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4F8DCF6B-84C0-498E-8C13-3A23C0BB8856}|Netflix.Contracts\\Netflix.Contracts.csproj|d:\\netflix\\netflix.contracts\\castingcalls\\castingcriteria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F8DCF6B-84C0-498E-8C13-3A23C0BB8856}|Netflix.Contracts\\Netflix.Contracts.csproj|solutionrelative:netflix.contracts\\castingcalls\\castingcriteria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\common\\content\\querycriteria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\common\\content\\querycriteria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\common\\basehandler\\getcontentbyidqueryhandlerbase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -702,24 +751,12 @@
       "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\roletype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\actormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\actormodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|d:\\netflix\\netflix.infrastructure\\repositories\\seriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8AFD6144-933C-4BF2-86B0-CFBC94724012}|Netflix.Infrastructure\\Netflix.Infrastructure.csproj|solutionrelative:netflix.infrastructure\\repositories\\seriesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\regions\\queries\\getregionnames\\getregionnamesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\regions\\queries\\getregionnames\\getregionnamesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\films\\queries\\getallfilms\\getallfilmsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\films\\queries\\getallfilms\\getallfilmsqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\films\\queries\\getallfilms\\getallcontentqueryfilmvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\films\\queries\\getallfilms\\getallcontentqueryfilmvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\irepository\\ifilmrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -730,20 +767,12 @@
       "RelativeMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|solutionrelative:netflix.application\\animes\\queries\\getallanimes\\getallanimesqueryhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F8DCF6B-84C0-498E-8C13-3A23C0BB8856}|Netflix.Contracts\\Netflix.Contracts.csproj|d:\\netflix\\netflix.contracts\\content\\criteria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F8DCF6B-84C0-498E-8C13-3A23C0BB8856}|Netflix.Contracts\\Netflix.Contracts.csproj|solutionrelative:netflix.contracts\\content\\criteria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\ethnicappearance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\ethnicappearance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|d:\\netflix\\netflix.domain\\entities\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3B113B91-8616-456C-B4BA-4306FB195039}|Netflix.Domain\\Netflix.Domain.csproj|solutionrelative:netflix.domain\\entities\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{23508322-53ED-4DC2-A24A-E73ACD8F3067}|Netflix.Application\\Netflix.Application.csproj|d:\\netflix\\netflix.application\\common\\authentication\\ijwttokengenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -925,46 +954,371 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RemoveAuditionForCastingCallCommand.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Auditions\\Commands\\RemoveAuditionForCastingCall\\RemoveAuditionForCastingCallCommand.cs",
-              "RelativeDocumentMoniker": "Netflix.Application\\Auditions\\Commands\\RemoveAuditionForCastingCall\\RemoveAuditionForCastingCallCommand.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Application\\Auditions\\Commands\\RemoveAuditionForCastingCall\\RemoveAuditionForCastingCallCommand.cs",
-              "RelativeToolTip": "Netflix.Application\\Auditions\\Commands\\RemoveAuditionForCastingCall\\RemoveAuditionForCastingCallCommand.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAWAAAA",
+              "DocumentIndex": 1,
+              "Title": "DependencyInjection.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Extensions\\DependencyInjection.cs",
+              "RelativeDocumentMoniker": "Netflix.Infrastructure\\Extensions\\DependencyInjection.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Infrastructure\\Extensions\\DependencyInjection.cs",
+              "RelativeToolTip": "Netflix.Infrastructure\\Extensions\\DependencyInjection.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAAC0AAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T15:46:22.758Z",
+              "WhenOpened": "2024-10-25T22:32:53.808Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "RemoveCastingCallCommandHandler.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Commands\\RemoveCastingCall\\RemoveCastingCallCommandHandler.cs",
-              "RelativeDocumentMoniker": "Netflix.Application\\CastingCalls\\Commands\\RemoveCastingCall\\RemoveCastingCallCommandHandler.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Commands\\RemoveCastingCall\\RemoveCastingCallCommandHandler.cs",
-              "RelativeToolTip": "Netflix.Application\\CastingCalls\\Commands\\RemoveCastingCall\\RemoveCastingCallCommandHandler.cs",
-              "ViewState": "AQIAACIAAAAAAAAAAAAAADcAAAAAAAAA",
+              "DocumentIndex": 6,
+              "Title": "CartoonController.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\CartoonController.cs",
+              "RelativeDocumentMoniker": "Netflix.API\\Controllers\\CartoonController.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.API\\Controllers\\CartoonController.cs",
+              "RelativeToolTip": "Netflix.API\\Controllers\\CartoonController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAACEAAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T19:10:04.382Z",
+              "WhenOpened": "2024-08-24T14:59:46Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FilmController.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\FilmController.cs",
+              "RelativeDocumentMoniker": "Netflix.API\\Controllers\\FilmController.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.API\\Controllers\\FilmController.cs",
+              "RelativeToolTip": "Netflix.API\\Controllers\\FilmController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAACAAAAClAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T14:09:35.589Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CastingCallsMappingConfig.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\CastingCallsMappingConfig.cs",
+              "RelativeDocumentMoniker": "Netflix.API\\Common\\Mapping\\CastingCallsMappingConfig.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\CastingCallsMappingConfig.cs",
+              "RelativeToolTip": "Netflix.API\\Common\\Mapping\\CastingCallsMappingConfig.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAAC0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-17T17:39:07.961Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NewsMappingConfig.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\NewsMappingConfig.cs",
+              "RelativeDocumentMoniker": "Netflix.API\\Common\\Mapping\\NewsMappingConfig.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\NewsMappingConfig.cs",
+              "RelativeToolTip": "Netflix.API\\Common\\Mapping\\NewsMappingConfig.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T15:28:33.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LocationMappingConfig.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\LocationMappingConfig.cs",
+              "RelativeDocumentMoniker": "Netflix.API\\Common\\Mapping\\LocationMappingConfig.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\LocationMappingConfig.cs",
+              "RelativeToolTip": "Netflix.API\\Common\\Mapping\\LocationMappingConfig.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T14:36:57.844Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GenderController.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\GenderController.cs",
-              "RelativeDocumentMoniker": "Netflix.API\\Controllers\\GenderController.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.API\\Controllers\\GenderController.cs",
-              "RelativeToolTip": "Netflix.API\\Controllers\\GenderController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAqwC4AAAAtAAAA",
+              "Title": "NetflixProjectContext.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Persistence\\NetflixProjectContext.cs",
+              "RelativeDocumentMoniker": "Netflix.Infrastructure\\Persistence\\NetflixProjectContext.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Infrastructure\\Persistence\\NetflixProjectContext.cs",
+              "RelativeToolTip": "Netflix.Infrastructure\\Persistence\\NetflixProjectContext.cs",
+              "ViewState": "AQIAAKkAAAAAAAAAAAAAAMcAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T19:45:20.644Z",
+              "WhenOpened": "2024-08-20T14:39:29.623Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "News.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\News.cs",
+              "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\News.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Domain\\Entities\\News.cs",
+              "RelativeToolTip": "Netflix.Domain\\Entities\\News.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAABQAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T14:49:35.124Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GetAllNewsQueryHandler.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\News\\Queries\\GetAllNews\\GetAllNewsQueryHandler.cs",
+              "RelativeDocumentMoniker": "Netflix.Application\\News\\Queries\\GetAllNews\\GetAllNewsQueryHandler.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Application\\News\\Queries\\GetAllNews\\GetAllNewsQueryHandler.cs",
+              "RelativeToolTip": "Netflix.Application\\News\\Queries\\GetAllNews\\GetAllNewsQueryHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAByAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T15:12:21.66Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FilmRepository.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\FilmRepository.cs",
+              "RelativeDocumentMoniker": "Netflix.Infrastructure\\Repositories\\FilmRepository.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\FilmRepository.cs",
+              "RelativeToolTip": "Netflix.Infrastructure\\Repositories\\FilmRepository.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAAACsAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T12:32:43.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "NewsRepository.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\NewsRepository.cs",
+              "RelativeDocumentMoniker": "Netflix.Infrastructure\\Repositories\\NewsRepository.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\NewsRepository.cs",
+              "RelativeToolTip": "Netflix.Infrastructure\\Repositories\\NewsRepository.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAABcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T15:13:38.135Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "INewsRepository.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\IRepository\\INewsRepository.cs",
+              "RelativeDocumentMoniker": "Netflix.Domain\\IRepository\\INewsRepository.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Domain\\IRepository\\INewsRepository.cs",
+              "RelativeToolTip": "Netflix.Domain\\IRepository\\INewsRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T15:14:17.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "QueryCriteriaNews.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\News\\Common\\QueryCriteriaNews.cs",
+              "RelativeDocumentMoniker": "Netflix.Application\\News\\Common\\QueryCriteriaNews.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Application\\News\\Common\\QueryCriteriaNews.cs",
+              "RelativeToolTip": "Netflix.Application\\News\\Common\\QueryCriteriaNews.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T15:06:52.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CriteriaNews.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\News\\CriteriaNews.cs",
+              "RelativeDocumentMoniker": "Netflix.Contracts\\News\\CriteriaNews.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Contracts\\News\\CriteriaNews.cs",
+              "RelativeToolTip": "Netflix.Contracts\\News\\CriteriaNews.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T15:26:27.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "NewsController.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\NewsController.cs",
+              "RelativeDocumentMoniker": "Netflix.API\\Controllers\\NewsController.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.API\\Controllers\\NewsController.cs",
+              "RelativeToolTip": "Netflix.API\\Controllers\\NewsController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAB8AAABuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T15:23:55.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GetAllNewsQueryValidator.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\News\\Queries\\GetAllNews\\GetAllNewsQueryValidator.cs",
+              "RelativeDocumentMoniker": "Netflix.Application\\News\\Queries\\GetAllNews\\GetAllNewsQueryValidator.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Application\\News\\Queries\\GetAllNews\\GetAllNewsQueryValidator.cs",
+              "RelativeToolTip": "Netflix.Application\\News\\Queries\\GetAllNews\\GetAllNewsQueryValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA/AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T17:44:12.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ShortNewsDto.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\News\\ShortNewsDto.cs",
+              "RelativeDocumentMoniker": "Netflix.Contracts\\News\\ShortNewsDto.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Contracts\\News\\ShortNewsDto.cs",
+              "RelativeToolTip": "Netflix.Contracts\\News\\ShortNewsDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T17:29:36.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetAllContentQueryGenericValidator.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\Content\\GetAllContentQueryGenericValidator.cs",
+              "RelativeDocumentMoniker": "Netflix.Application\\Common\\Content\\GetAllContentQueryGenericValidator.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Application\\Common\\Content\\GetAllContentQueryGenericValidator.cs",
+              "RelativeToolTip": "Netflix.Application\\Common\\Content\\GetAllContentQueryGenericValidator.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T17:46:30.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GetAllNewsQuery.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\News\\Queries\\GetAllNews\\GetAllNewsQuery.cs",
+              "RelativeDocumentMoniker": "Netflix.Application\\News\\Queries\\GetAllNews\\GetAllNewsQuery.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Application\\News\\Queries\\GetAllNews\\GetAllNewsQuery.cs",
+              "RelativeToolTip": "Netflix.Application\\News\\Queries\\GetAllNews\\GetAllNewsQuery.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T15:02:53.8Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "NewsDto.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\News\\NewsDto.cs",
+              "RelativeDocumentMoniker": "Netflix.Contracts\\News\\NewsDto.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Contracts\\News\\NewsDto.cs",
+              "RelativeToolTip": "Netflix.Contracts\\News\\NewsDto.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAAABEAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T16:51:12.532Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "NewsExtendedDto.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\News\\NewsExtendedDto.cs",
+              "RelativeDocumentMoniker": "Netflix.Contracts\\News\\NewsExtendedDto.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Contracts\\News\\NewsExtendedDto.cs",
+              "RelativeToolTip": "Netflix.Contracts\\News\\NewsExtendedDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T17:14:44.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GetNewsByIdQueryHandler.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\News\\Queries\\GetNewsById\\GetNewsByIdQueryHandler.cs",
+              "RelativeDocumentMoniker": "Netflix.Application\\News\\Queries\\GetNewsById\\GetNewsByIdQueryHandler.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Application\\News\\Queries\\GetNewsById\\GetNewsByIdQueryHandler.cs",
+              "RelativeToolTip": "Netflix.Application\\News\\Queries\\GetNewsById\\GetNewsByIdQueryHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T17:07:10.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CastingCallRepository.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\CastingCallRepository.cs",
+              "RelativeDocumentMoniker": "Netflix.Infrastructure\\Repositories\\CastingCallRepository.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\CastingCallRepository.cs",
+              "RelativeToolTip": "Netflix.Infrastructure\\Repositories\\CastingCallRepository.cs",
+              "ViewState": "AQIAAIkAAAAAAAAAAAAAAJEAAABrAQAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T17:11:34.919Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ActorMappingConfig.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\ActorMappingConfig.cs",
+              "RelativeDocumentMoniker": "Netflix.API\\Common\\Mapping\\ActorMappingConfig.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\ActorMappingConfig.cs",
+              "RelativeToolTip": "Netflix.API\\Common\\Mapping\\ActorMappingConfig.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAAwBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-30T15:35:15.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "NewsType.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\NewsType.cs",
+              "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\NewsType.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Domain\\Entities\\NewsType.cs",
+              "RelativeToolTip": "Netflix.Domain\\Entities\\NewsType.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T15:37:24.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GetAllFilmsQueryHandler.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Films\\Queries\\GetAllFilms\\GetAllFilmsQueryHandler.cs",
+              "RelativeDocumentMoniker": "Netflix.Application\\Films\\Queries\\GetAllFilms\\GetAllFilmsQueryHandler.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Application\\Films\\Queries\\GetAllFilms\\GetAllFilmsQueryHandler.cs",
+              "RelativeToolTip": "Netflix.Application\\Films\\Queries\\GetAllFilms\\GetAllFilmsQueryHandler.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-24T14:37:02.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ActorModel.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\ActorModel.cs",
+              "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\ActorModel.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Domain\\Entities\\ActorModel.cs",
+              "RelativeToolTip": "Netflix.Domain\\Entities\\ActorModel.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T15:10:57.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Gender.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\Gender.cs",
+              "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\Gender.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Domain\\Entities\\Gender.cs",
+              "RelativeToolTip": "Netflix.Domain\\Entities\\Gender.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T15:33:20.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "CastingCallsController.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\CastingCallsController.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Controllers\\CastingCallsController.cs",
@@ -972,12 +1326,60 @@
               "RelativeToolTip": "Netflix.API\\Controllers\\CastingCallsController.cs",
               "ViewState": "AQIAAHkAAAAAAAAAAAAAAIkAAABXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T14:58:14.788Z",
+              "WhenOpened": "2024-09-28T14:58:14.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "GenderController.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\GenderController.cs",
+              "RelativeDocumentMoniker": "Netflix.API\\Controllers\\GenderController.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.API\\Controllers\\GenderController.cs",
+              "RelativeToolTip": "Netflix.API\\Controllers\\GenderController.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAqwC4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-24T19:45:20.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "RemoveCastingCallCommandHandler.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Commands\\RemoveCastingCall\\RemoveCastingCallCommandHandler.cs",
+              "RelativeDocumentMoniker": "Netflix.Application\\CastingCalls\\Commands\\RemoveCastingCall\\RemoveCastingCallCommandHandler.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Commands\\RemoveCastingCall\\RemoveCastingCallCommandHandler.cs",
+              "RelativeToolTip": "Netflix.Application\\CastingCalls\\Commands\\RemoveCastingCall\\RemoveCastingCallCommandHandler.cs",
+              "ViewState": "AQIAACIAAAAAAAAAAAAAADcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T19:10:04.382Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Actor.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\Actor.cs",
+              "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\Actor.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Domain\\Entities\\Actor.cs",
+              "RelativeToolTip": "Netflix.Domain\\Entities\\Actor.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAswBMAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-29T15:10:49.387Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 29,
+              "Title": "RemoveAuditionForCastingCallCommand.cs",
+              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Auditions\\Commands\\RemoveAuditionForCastingCall\\RemoveAuditionForCastingCallCommand.cs",
+              "RelativeDocumentMoniker": "Netflix.Application\\Auditions\\Commands\\RemoveAuditionForCastingCall\\RemoveAuditionForCastingCallCommand.cs",
+              "ToolTip": "D:\\Netflix\\Netflix.Application\\Auditions\\Commands\\RemoveAuditionForCastingCall\\RemoveAuditionForCastingCallCommand.cs",
+              "RelativeToolTip": "Netflix.Application\\Auditions\\Commands\\RemoveAuditionForCastingCall\\RemoveAuditionForCastingCallCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-03T15:46:22.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
               "Title": "AuditionsMappingConfig.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\AuditionsMappingConfig.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Common\\Mapping\\AuditionsMappingConfig.cs",
@@ -985,12 +1387,11 @@
               "RelativeToolTip": "Netflix.API\\Common\\Mapping\\AuditionsMappingConfig.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T14:00:05.394Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T14:00:05.394Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 33,
               "Title": "RemoveAuditionForCastingCallCommandHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Auditions\\Commands\\RemoveAuditionForCastingCall\\RemoveAuditionForCastingCallCommandHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Auditions\\Commands\\RemoveAuditionForCastingCall\\RemoveAuditionForCastingCallCommandHandler.cs",
@@ -998,12 +1399,11 @@
               "RelativeToolTip": "Netflix.Application\\Auditions\\Commands\\RemoveAuditionForCastingCall\\RemoveAuditionForCastingCallCommandHandler.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAAADIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T15:48:12.28Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T15:48:12.28Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 34,
               "Title": "AuditionRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\AuditionRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Infrastructure\\Repositories\\AuditionRepository.cs",
@@ -1011,12 +1411,11 @@
               "RelativeToolTip": "Netflix.Infrastructure\\Repositories\\AuditionRepository.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAAABgAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T16:01:38.247Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T16:01:38.247Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 35,
               "Title": "IAuditionRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\IRepository\\IAuditionRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\IRepository\\IAuditionRepository.cs",
@@ -1024,12 +1423,11 @@
               "RelativeToolTip": "Netflix.Domain\\IRepository\\IAuditionRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-03T16:03:07.075Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-03T16:03:07.075Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 37,
               "Title": "AuditionExtendedDto.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\Auditions\\AuditionExtendedDto.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\Auditions\\AuditionExtendedDto.cs",
@@ -1037,12 +1435,11 @@
               "RelativeToolTip": "Netflix.Contracts\\Auditions\\AuditionExtendedDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T13:57:58.115Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T13:57:58.115Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 36,
               "Title": "AuditionDto.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\CastingCalls\\AuditionDto.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\CastingCalls\\AuditionDto.cs",
@@ -1050,12 +1447,11 @@
               "RelativeToolTip": "Netflix.Contracts\\CastingCalls\\AuditionDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T13:49:14.797Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T13:49:14.797Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 38,
               "Title": "AddAuditionsForCastingCallRequest.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\Auditions\\AddAuditionsForCastingCallRequest.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\Auditions\\AddAuditionsForCastingCallRequest.cs",
@@ -1063,12 +1459,11 @@
               "RelativeToolTip": "Netflix.Contracts\\Auditions\\AddAuditionsForCastingCallRequest.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-01T13:53:08.989Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-01T13:53:08.989Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 42,
               "Title": "AlreadyExistsException.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\Errors\\AlreadyExistsException.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\Errors\\AlreadyExistsException.cs",
@@ -1080,7 +1475,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 43,
               "Title": "RegisterCommandHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Authentication\\Commands\\Register\\RegisterCommandHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Authentication\\Commands\\Register\\RegisterCommandHandler.cs",
@@ -1092,7 +1487,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 46,
               "Title": "CloudStorageService.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Services\\CloudStorageService.cs",
               "RelativeDocumentMoniker": "Netflix.Infrastructure\\Services\\CloudStorageService.cs",
@@ -1104,7 +1499,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 40,
               "Title": "RemoveCastingCallCommand.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Commands\\RemoveCastingCall\\RemoveCastingCallCommand.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingCalls\\Commands\\RemoveCastingCall\\RemoveCastingCallCommand.cs",
@@ -1112,12 +1507,11 @@
               "RelativeToolTip": "Netflix.Application\\CastingCalls\\Commands\\RemoveCastingCall\\RemoveCastingCallCommand.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T17:35:54.011Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-28T17:35:54.011Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 44,
               "Title": "DuplicateEmailException.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\Errors\\DuplicateEmailException.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\Errors\\DuplicateEmailException.cs",
@@ -1129,7 +1523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 41,
               "Title": "NotFoundException.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\Errors\\NotFoundException.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\Errors\\NotFoundException.cs",
@@ -1137,12 +1531,11 @@
               "RelativeToolTip": "Netflix.Application\\Common\\Errors\\NotFoundException.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAABPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T15:00:35.309Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-30T15:00:35.309Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 47,
               "Title": "ValidationError.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\Errors\\ValidationError.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\Errors\\ValidationError.cs",
@@ -1154,7 +1547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 45,
               "Title": "ErrorHandlingMiddleware.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Middleware\\ErrorHandlingMiddleware.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Middleware\\ErrorHandlingMiddleware.cs",
@@ -1166,7 +1559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 48,
               "Title": "RestrictedAccessException.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\Errors\\RestrictedAccessException.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\Errors\\RestrictedAccessException.cs",
@@ -1178,7 +1571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 49,
               "Title": "ParsingValidationException.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\Errors\\ParsingValidationException.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\Errors\\ParsingValidationException.cs",
@@ -1190,7 +1583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 50,
               "Title": "SubmissionController.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\SubmissionController.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Controllers\\SubmissionController.cs",
@@ -1202,7 +1595,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 51,
               "Title": "FileController.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\FileController.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Controllers\\FileController.cs",
@@ -1214,7 +1607,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 52,
               "Title": "FileException.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\Errors\\FileException.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\Errors\\FileException.cs",
@@ -1226,7 +1619,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 55,
               "Title": "ActorProfileController.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\ActorProfileController.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Controllers\\ActorProfileController.cs",
@@ -1238,7 +1631,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 54,
               "Title": "CreateCastingCallCommandHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Commands\\CreateCastingCall\\CreateCastingCallCommandHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingCalls\\Commands\\CreateCastingCall\\CreateCastingCallCommandHandler.cs",
@@ -1250,7 +1643,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 53,
               "Title": "LoginQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Authentication\\Queries\\Login\\LoginQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Authentication\\Queries\\Login\\LoginQueryHandler.cs",
@@ -1262,7 +1655,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 58,
               "Title": "SubmitToRoleCommandHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Submissions\\Commands\\SubmitToRole\\SubmitToRoleCommandHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Submissions\\Commands\\SubmitToRole\\SubmitToRoleCommandHandler.cs",
@@ -1274,7 +1667,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 59,
               "Title": "GetAllSubmissionsByCastingCallQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Submissions\\Queries\\GetAllSubmissionsByCastingCall\\GetAllSubmissionsByCastingCallQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Submissions\\Queries\\GetAllSubmissionsByCastingCall\\GetAllSubmissionsByCastingCallQueryHandler.cs",
@@ -1286,7 +1679,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 57,
               "Title": "CreateCastingDirectorProfileCommandHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingDirector\\Commands\\CreateCastingDirectorProfile\\CreateCastingDirectorProfileCommandHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingDirector\\Commands\\CreateCastingDirectorProfile\\CreateCastingDirectorProfileCommandHandler.cs",
@@ -1298,7 +1691,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 56,
               "Title": "ClientContextHelper.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Common\\Helpers\\ClientContextHelper.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Common\\Helpers\\ClientContextHelper.cs",
@@ -1310,7 +1703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 60,
               "Title": "UpdateCastingCallCommandHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Commands\\UpdateCastingCall\\UpdateCastingCallCommandHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingCalls\\Commands\\UpdateCastingCall\\UpdateCastingCallCommandHandler.cs",
@@ -1322,7 +1715,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 61,
               "Title": "AddAuditionForCastingCallCommandHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Auditions\\Commands\\AddAuditionForCastingCall\\AddAuditionForCastingCallCommandHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Auditions\\Commands\\AddAuditionForCastingCall\\AddAuditionForCastingCallCommandHandler.cs",
@@ -1334,7 +1727,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 62,
               "Title": "RemoveSubmissionCommandHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Submissions\\Commands\\RemoveSubmission\\RemoveSubmissionCommandHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Submissions\\Commands\\RemoveSubmission\\RemoveSubmissionCommandHandler.cs",
@@ -1346,7 +1739,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 63,
               "Title": "CreateCastingCallCommandValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Commands\\CreateCastingCall\\CreateCastingCallCommandValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingCalls\\Commands\\CreateCastingCall\\CreateCastingCallCommandValidator.cs",
@@ -1358,7 +1751,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 65,
               "Title": "CastingCall.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\CastingCall.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\CastingCall.cs",
@@ -1370,7 +1763,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 64,
               "Title": "AddAuditionForCastingCallCommandValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Auditions\\Commands\\AddAuditionForCastingCall\\AddAuditionForCastingCallCommandValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Auditions\\Commands\\AddAuditionForCastingCall\\AddAuditionForCastingCallCommandValidator.cs",
@@ -1382,31 +1775,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "CastingCallsMappingConfig.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\CastingCallsMappingConfig.cs",
-              "RelativeDocumentMoniker": "Netflix.API\\Common\\Mapping\\CastingCallsMappingConfig.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\CastingCallsMappingConfig.cs",
-              "RelativeToolTip": "Netflix.API\\Common\\Mapping\\CastingCallsMappingConfig.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAAADcAAABtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-17T17:39:07.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "DependencyInjection.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Extensions\\DependencyInjection.cs",
-              "RelativeDocumentMoniker": "Netflix.Infrastructure\\Extensions\\DependencyInjection.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Infrastructure\\Extensions\\DependencyInjection.cs",
-              "RelativeToolTip": "Netflix.Infrastructure\\Extensions\\DependencyInjection.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAAAAACsAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T16:41:13.22Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 66,
               "Title": "AddAuditionForCastingCallCommand.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Auditions\\Commands\\AddAuditionForCastingCall\\AddAuditionForCastingCallCommand.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Auditions\\Commands\\AddAuditionForCastingCall\\AddAuditionForCastingCallCommand.cs",
@@ -1418,7 +1787,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 67,
               "Title": "UpdateCastingCallCommand.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Commands\\UpdateCastingCall\\UpdateCastingCallCommand.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingCalls\\Commands\\UpdateCastingCall\\UpdateCastingCallCommand.cs",
@@ -1430,7 +1799,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 68,
               "Title": "CreateCastingCallCommand.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Commands\\CreateCastingCall\\CreateCastingCallCommand.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingCalls\\Commands\\CreateCastingCall\\CreateCastingCallCommand.cs",
@@ -1442,7 +1811,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 69,
               "Title": "GetAllSubmissionsByCastingCallQueryValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Submissions\\Queries\\GetAllSubmissionsByCastingCall\\GetAllSubmissionsByCastingCallQueryValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Submissions\\Queries\\GetAllSubmissionsByCastingCall\\GetAllSubmissionsByCastingCallQueryValidator.cs",
@@ -1454,7 +1823,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 72,
               "Title": "ContentMappingConfig.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\ContentMappingConfig.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Common\\Mapping\\ContentMappingConfig.cs",
@@ -1466,7 +1835,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 70,
               "Title": "GetSubmissionsByActorIdQueryValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Submissions\\Queries\\GetSubmissionsByActorId\\GetSubmissionsByActorIdQueryValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Submissions\\Queries\\GetSubmissionsByActorId\\GetSubmissionsByActorIdQueryValidator.cs",
@@ -1478,7 +1847,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 73,
               "Title": "GetAllSubmissionsByCastingCallQuery.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Submissions\\Queries\\GetAllSubmissionsByCastingCall\\GetAllSubmissionsByCastingCallQuery.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Submissions\\Queries\\GetAllSubmissionsByCastingCall\\GetAllSubmissionsByCastingCallQuery.cs",
@@ -1490,7 +1859,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 71,
               "Title": "SubmissionMappingConfig.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\SubmissionMappingConfig.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Common\\Mapping\\SubmissionMappingConfig.cs",
@@ -1502,7 +1871,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 74,
               "Title": "SubmissionRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\SubmissionRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Infrastructure\\Repositories\\SubmissionRepository.cs",
@@ -1514,7 +1883,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 75,
               "Title": "ISubmissionRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\IRepository\\ISubmissionRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\IRepository\\ISubmissionRepository.cs",
@@ -1526,7 +1895,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 76,
               "Title": "GetAllContentWithoutFilteringQueryGenericValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\GetAllContentQueryWithoutFiltering\\GetAllContentWithoutFilteringQueryGenericValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\GetAllContentQueryWithoutFiltering\\GetAllContentWithoutFilteringQueryGenericValidator.cs",
@@ -1538,7 +1907,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 77,
               "Title": "GetAllRoleTypesQueryValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\RoleTypes\\Queries\\GetAllRoleTypes\\GetAllRoleTypesQueryValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\RoleTypes\\Queries\\GetAllRoleTypes\\GetAllRoleTypesQueryValidator.cs",
@@ -1550,19 +1919,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "FilmController.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\FilmController.cs",
-              "RelativeDocumentMoniker": "Netflix.API\\Controllers\\FilmController.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.API\\Controllers\\FilmController.cs",
-              "RelativeToolTip": "Netflix.API\\Controllers\\FilmController.cs",
-              "ViewState": "AQIAABYAAAAAAAAAAIBJwDAAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T14:09:35.589Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 78,
               "Title": "GetSubmissionsByActorIdQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Submissions\\Queries\\GetSubmissionsByActorId\\GetSubmissionsByActorIdQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Submissions\\Queries\\GetSubmissionsByActorId\\GetSubmissionsByActorIdQueryHandler.cs",
@@ -1574,7 +1931,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 79,
               "Title": "GetSubmissionsByActorIdQuery.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Submissions\\Queries\\GetSubmissionsByActorId\\GetSubmissionsByActorIdQuery.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Submissions\\Queries\\GetSubmissionsByActorId\\GetSubmissionsByActorIdQuery.cs",
@@ -1586,7 +1943,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 80,
               "Title": "SubmitToRoleCommand.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Submissions\\Commands\\SubmitToRole\\SubmitToRoleCommand.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Submissions\\Commands\\SubmitToRole\\SubmitToRoleCommand.cs",
@@ -1598,7 +1955,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 81,
               "Title": "GetActorProfileQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Actor\\Queries\\GetActorProfile\\GetActorProfileQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Actor\\Queries\\GetActorProfile\\GetActorProfileQueryHandler.cs",
@@ -1610,7 +1967,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 82,
               "Title": "ExistsActorProfileQueyHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Actor\\Queries\\ExistsActorProfile\\ExistsActorProfileQueyHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Actor\\Queries\\ExistsActorProfile\\ExistsActorProfileQueyHandler.cs",
@@ -1622,7 +1979,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 83,
               "Title": "ExistsActorProfileQuery.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Actor\\Queries\\ExistsActorProfile\\ExistsActorProfileQuery.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Actor\\Queries\\ExistsActorProfile\\ExistsActorProfileQuery.cs",
@@ -1634,7 +1991,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 84,
               "Title": "GetAllCastingCallsQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Queries\\GetAllCastingCalls\\GetAllCastingCallsQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingCalls\\Queries\\GetAllCastingCalls\\GetAllCastingCallsQueryHandler.cs",
@@ -1646,7 +2003,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 85,
               "Title": "GetAllCastingCallsQuery.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Queries\\GetAllCastingCalls\\GetAllCastingCallsQuery.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingCalls\\Queries\\GetAllCastingCalls\\GetAllCastingCallsQuery.cs",
@@ -1658,7 +2015,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 86,
               "Title": "CastingDirectorProfileController.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\CastingDirectorProfileController.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Controllers\\CastingDirectorProfileController.cs",
@@ -1670,7 +2027,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 87,
               "Title": "CastingDirectorMappingConfig.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\CastingDirectorMappingConfig.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Common\\Mapping\\CastingDirectorMappingConfig.cs",
@@ -1682,7 +2039,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 88,
               "Title": "GetAllCastingCallsByDirectorQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Queries\\GetAllCastingCallsByDirector\\GetAllCastingCallsByDirectorQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingCalls\\Queries\\GetAllCastingCallsByDirector\\GetAllCastingCallsByDirectorQueryHandler.cs",
@@ -1694,7 +2051,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 89,
               "Title": "ICloudStorageService.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\Services\\ICloudStorageService.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\Services\\ICloudStorageService.cs",
@@ -1706,7 +2063,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 92,
               "Title": "SubmitToRoleRequest.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\Submissions\\SubmitToRoleRequest.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\Submissions\\SubmitToRoleRequest.cs",
@@ -1718,7 +2075,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 91,
               "Title": "SubmissionExtendedDto.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\Submissions\\SubmissionExtendedDto.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\Submissions\\SubmissionExtendedDto.cs",
@@ -1730,7 +2087,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 90,
               "Title": "SubmissionDto.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\Submissions\\SubmissionDto.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\Submissions\\SubmissionDto.cs",
@@ -1742,7 +2099,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 93,
               "Title": "GetCastingCallByIdHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Queries\\GetCastingCallById\\GetCastingCallByIdHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingCalls\\Queries\\GetCastingCallById\\GetCastingCallByIdHandler.cs",
@@ -1754,7 +2111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 94,
               "Title": "GetAllCastingCallsQueryValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Queries\\GetAllCastingCalls\\GetAllCastingCallsQueryValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingCalls\\Queries\\GetAllCastingCalls\\GetAllCastingCallsQueryValidator.cs",
@@ -1766,7 +2123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 95,
               "Title": "GetAllCastingCallsByDirectorQuery.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Queries\\GetAllCastingCallsByDirector\\GetAllCastingCallsByDirectorQuery.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingCalls\\Queries\\GetAllCastingCallsByDirector\\GetAllCastingCallsByDirectorQuery.cs",
@@ -1778,7 +2135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 96,
               "Title": "CreateCastingCallRequest.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\CastingCalls\\CreateCastingCall\\CreateCastingCallRequest.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\CastingCalls\\CreateCastingCall\\CreateCastingCallRequest.cs",
@@ -1790,7 +2147,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 97,
               "Title": "EthnicAppearanceController.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\EthnicAppearanceController.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Controllers\\EthnicAppearanceController.cs",
@@ -1802,7 +2159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 99,
               "Title": "ProjectTypeController.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\ProjectTypeController.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Controllers\\ProjectTypeController.cs",
@@ -1814,19 +2171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
-              "Title": "LocationController.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\LocationController.cs",
-              "RelativeDocumentMoniker": "Netflix.API\\Controllers\\LocationController.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.API\\Controllers\\LocationController.cs",
-              "RelativeToolTip": "Netflix.API\\Controllers\\LocationController.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAIBJwEQAAAAYAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T18:03:15.826Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 100,
               "Title": "GetEthnicAppearanceByIdQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\EthnicAppearances\\Queries\\GetEthnicAppearanceById\\GetEthnicAppearanceByIdQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\EthnicAppearances\\Queries\\GetEthnicAppearanceById\\GetEthnicAppearanceByIdQueryHandler.cs",
@@ -1838,7 +2183,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 98,
               "Title": "RoleTypeController.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\RoleTypeController.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Controllers\\RoleTypeController.cs",
@@ -1850,7 +2195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 101,
               "Title": "GetGenderByIdQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Genders\\Queries\\GetGenderById\\GetGenderByIdQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Genders\\Queries\\GetGenderById\\GetGenderByIdQueryHandler.cs",
@@ -1862,7 +2207,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 102,
               "Title": "GetAllEthnicAppearancesQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\EthnicAppearances\\Queries\\GetAllEthnicAppearances\\GetAllEthnicAppearancesQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\EthnicAppearances\\Queries\\GetAllEthnicAppearances\\GetAllEthnicAppearancesQueryHandler.cs",
@@ -1874,7 +2219,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 103,
               "Title": "GetLocationByIdQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Regions\\Queries\\GetLocationById\\GetLocationByIdQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Regions\\Queries\\GetLocationById\\GetLocationByIdQueryHandler.cs",
@@ -1886,7 +2231,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 105,
               "Title": "GetLocationsByRegionNameQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Regions\\Queries\\GetLocationsByRegionName\\GetLocationsByRegionNameQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Regions\\Queries\\GetLocationsByRegionName\\GetLocationsByRegionNameQueryHandler.cs",
@@ -1898,7 +2243,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 104,
               "Title": "GetProjectTypeByIdQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\ProjectTypes\\Queries\\GetProjectTypeById\\GetProjectTypeByIdQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\ProjectTypes\\Queries\\GetProjectTypeById\\GetProjectTypeByIdQueryHandler.cs",
@@ -1910,7 +2255,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 106,
               "Title": "GetLocationsByRegionNameQuery.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Regions\\Queries\\GetLocationsByRegionName\\GetLocationsByRegionNameQuery.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Regions\\Queries\\GetLocationsByRegionName\\GetLocationsByRegionNameQuery.cs",
@@ -1922,7 +2267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 107,
               "Title": "GetRoleTypeByIdQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\RoleTypes\\Queries\\GetRoleTypeById\\GetRoleTypeByIdQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\RoleTypes\\Queries\\GetRoleTypeById\\GetRoleTypeByIdQueryHandler.cs",
@@ -1934,7 +2279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 108,
               "Title": "EthnicAppearanceRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\EthnicAppearanceRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Infrastructure\\Repositories\\EthnicAppearanceRepository.cs",
@@ -1946,7 +2291,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 109,
               "Title": "ProjectTypeRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\ProjectTypeRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Infrastructure\\Repositories\\ProjectTypeRepository.cs",
@@ -1958,19 +2303,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
-              "Title": "ILocationRepository.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\IRepository\\ILocationRepository.cs",
-              "RelativeDocumentMoniker": "Netflix.Domain\\IRepository\\ILocationRepository.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Domain\\IRepository\\ILocationRepository.cs",
-              "RelativeToolTip": "Netflix.Domain\\IRepository\\ILocationRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T13:55:25.828Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 110,
               "Title": "GenderRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\GenderRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Infrastructure\\Repositories\\GenderRepository.cs",
@@ -1982,7 +2315,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 111,
               "Title": "RoleTypeRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\RoleTypeRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Infrastructure\\Repositories\\RoleTypeRepository.cs",
@@ -1994,7 +2327,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 112,
               "Title": "GetAllRoleTypesQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\RoleTypes\\Queries\\GetAllRoleTypes\\GetAllRoleTypesQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\RoleTypes\\Queries\\GetAllRoleTypes\\GetAllRoleTypesQueryHandler.cs",
@@ -2006,31 +2339,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
-              "Title": "GetAllProjectTypesQueryHandler.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\ProjectTypes\\Queries\\GetAllProjectTypes\\GetAllProjectTypesQueryHandler.cs",
-              "RelativeDocumentMoniker": "Netflix.Application\\ProjectTypes\\Queries\\GetAllProjectTypes\\GetAllProjectTypesQueryHandler.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Application\\ProjectTypes\\Queries\\GetAllProjectTypes\\GetAllProjectTypesQueryHandler.cs",
-              "RelativeToolTip": "Netflix.Application\\ProjectTypes\\Queries\\GetAllProjectTypes\\GetAllProjectTypesQueryHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAABSAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-24T19:10:05.494Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 90,
-              "Title": "GetAllProjectTypesQueryValidator.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\ProjectTypes\\Queries\\GetAllProjectTypes\\GetAllProjectTypesQueryValidator.cs",
-              "RelativeDocumentMoniker": "Netflix.Application\\ProjectTypes\\Queries\\GetAllProjectTypes\\GetAllProjectTypesQueryValidator.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Application\\ProjectTypes\\Queries\\GetAllProjectTypes\\GetAllProjectTypesQueryValidator.cs",
-              "RelativeToolTip": "Netflix.Application\\ProjectTypes\\Queries\\GetAllProjectTypes\\GetAllProjectTypesQueryValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA0AAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-20T16:01:57.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 114,
               "Title": "GetContentByIdQueryGenericValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\Content\\GetContentByIdQueryGenericValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\Content\\GetContentByIdQueryGenericValidator.cs",
@@ -2042,7 +2351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 113,
               "Title": "GetContentByIdQuery.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\Content\\GetContentByIdQuery.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\Content\\GetContentByIdQuery.cs",
@@ -2054,7 +2363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 115,
               "Title": "CreateLocationQueryValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Regions\\Commands\\CreateLocation\\CreateLocationQueryValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Regions\\Commands\\CreateLocation\\CreateLocationQueryValidator.cs",
@@ -2066,7 +2375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 116,
               "Title": "GetAllEthnicAppearancesQueryValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\EthnicAppearances\\Queries\\GetAllEthnicAppearances\\GetAllEthnicAppearancesQueryValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\EthnicAppearances\\Queries\\GetAllEthnicAppearances\\GetAllEthnicAppearancesQueryValidator.cs",
@@ -2078,7 +2387,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 117,
               "Title": "GetAllGendersQueryValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Genders\\Queries\\GetAllGenders\\GetAllGendersQueryValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Genders\\Queries\\GetAllGenders\\GetAllGendersQueryValidator.cs",
@@ -2090,7 +2399,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 118,
               "Title": "CreateLocationQuery.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Regions\\Commands\\CreateLocation\\CreateLocationQuery.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Regions\\Commands\\CreateLocation\\CreateLocationQuery.cs",
@@ -2102,7 +2411,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 119,
               "Title": "GetRegionNamesQuery.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Regions\\Queries\\GetRegionNames\\GetRegionNamesQuery.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Regions\\Queries\\GetRegionNames\\GetRegionNamesQuery.cs",
@@ -2114,7 +2423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 120,
               "Title": "GetContentByIdQueryCartoonValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Cartoons\\Queries\\GetCartoonById\\GetContentByIdQueryCartoonValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Cartoons\\Queries\\GetCartoonById\\GetContentByIdQueryCartoonValidator.cs",
@@ -2126,7 +2435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 123,
               "Title": "CreateLocationQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Regions\\Commands\\CreateLocation\\CreateLocationQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Regions\\Commands\\CreateLocation\\CreateLocationQueryHandler.cs",
@@ -2138,7 +2447,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 121,
               "Title": "ProjectType.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\ProjectType.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\ProjectType.cs",
@@ -2150,7 +2459,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 122,
               "Title": "CreateLocationRequest.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\Locations\\CreateLocationRequest.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\Locations\\CreateLocationRequest.cs",
@@ -2162,19 +2471,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
-              "Title": "GetAllContentRequest.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\Content\\GetAllContentRequest.cs",
-              "RelativeDocumentMoniker": "Netflix.Contracts\\Content\\GetAllContentRequest.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Contracts\\Content\\GetAllContentRequest.cs",
-              "RelativeToolTip": "Netflix.Contracts\\Content\\GetAllContentRequest.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T16:01:50.833Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 124,
               "Title": "GetAllCartoonsQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Cartoons\\Queries\\GetAllCartoons\\GetAllCartoonsQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Cartoons\\Queries\\GetAllCartoons\\GetAllCartoonsQueryHandler.cs",
@@ -2186,19 +2483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
-              "Title": "GetAllContentQuery.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\Content\\GetAllContentQuery.cs",
-              "RelativeDocumentMoniker": "Netflix.Application\\Common\\Content\\GetAllContentQuery.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Application\\Common\\Content\\GetAllContentQuery.cs",
-              "RelativeToolTip": "Netflix.Application\\Common\\Content\\GetAllContentQuery.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAABQwAkAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T10:13:26.697Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 125,
               "Title": "GetAllContentWithoutFilteringQuery.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\GetAllContentQueryWithoutFiltering\\GetAllContentWithoutFilteringQuery.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\GetAllContentQueryWithoutFiltering\\GetAllContentWithoutFilteringQuery.cs",
@@ -2210,7 +2495,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 126,
               "Title": "ContentByTypesRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\ContentByTypesRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Infrastructure\\Repositories\\ContentByTypesRepository.cs",
@@ -2222,7 +2507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 127,
               "Title": "ProjectTypeWithoutCastingCallsReference.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\TypesDtos\\ProjectTypeWithoutCastingCallsReference.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\TypesDtos\\ProjectTypeWithoutCastingCallsReference.cs",
@@ -2234,7 +2519,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 129,
               "Title": "GetAllCastingDirectorProfileTypesQueryValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingDirectorProfileTypes\\Queries\\GetAllCastingDirectorProfileTypes\\GetAllCastingDirectorProfileTypesQueryValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingDirectorProfileTypes\\Queries\\GetAllCastingDirectorProfileTypes\\GetAllCastingDirectorProfileTypesQueryValidator.cs",
@@ -2246,7 +2531,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 130,
               "Title": "GetAllCastingDirectorProfileTypesQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingDirectorProfileTypes\\Queries\\GetAllCastingDirectorProfileTypes\\GetAllCastingDirectorProfileTypesQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingDirectorProfileTypes\\Queries\\GetAllCastingDirectorProfileTypes\\GetAllCastingDirectorProfileTypesQueryHandler.cs",
@@ -2258,7 +2543,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 128,
               "Title": "CastingDirectorProfileTypeController.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\CastingDirectorProfileTypeController.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Controllers\\CastingDirectorProfileTypeController.cs",
@@ -2270,7 +2555,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 131,
               "Title": "GetCastingDirectorProfileQuery.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingDirector\\Queries\\GetCastingDirectorProfile\\GetCastingDirectorProfileQuery.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingDirector\\Queries\\GetCastingDirectorProfile\\GetCastingDirectorProfileQuery.cs",
@@ -2282,7 +2567,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 132,
               "Title": "GetCastingDirectorProfileQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingDirector\\Queries\\GetCastingDirectorProfile\\GetCastingDirectorProfileQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingDirector\\Queries\\GetCastingDirectorProfile\\GetCastingDirectorProfileQueryHandler.cs",
@@ -2294,19 +2579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
-              "Title": "NetflixProjectContext.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Persistence\\NetflixProjectContext.cs",
-              "RelativeDocumentMoniker": "Netflix.Infrastructure\\Persistence\\NetflixProjectContext.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Infrastructure\\Persistence\\NetflixProjectContext.cs",
-              "RelativeToolTip": "Netflix.Infrastructure\\Persistence\\NetflixProjectContext.cs",
-              "ViewState": "AQIAAL0AAAAAAAAAAIBJwNQAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-20T14:39:29.623Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 134,
               "Title": "CastingDirector.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\CastingDirector.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\CastingDirector.cs",
@@ -2318,7 +2591,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 133,
               "Title": "CastingQueryCriteria.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Queries\\GetAllCastingCalls\\CastingQueryCriteria.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingCalls\\Queries\\GetAllCastingCalls\\CastingQueryCriteria.cs",
@@ -2330,7 +2603,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 135,
               "Title": "CreateCastingDirectorProfileCommandValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingDirector\\Commands\\CreateCastingDirectorProfile\\CreateCastingDirectorProfileCommandValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingDirector\\Commands\\CreateCastingDirectorProfile\\CreateCastingDirectorProfileCommandValidator.cs",
@@ -2342,7 +2615,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 136,
               "Title": "ActorRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\ActorRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Infrastructure\\Repositories\\ActorRepository.cs",
@@ -2354,19 +2627,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
-              "Title": "ActorMappingConfig.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\ActorMappingConfig.cs",
-              "RelativeDocumentMoniker": "Netflix.API\\Common\\Mapping\\ActorMappingConfig.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\ActorMappingConfig.cs",
-              "RelativeToolTip": "Netflix.API\\Common\\Mapping\\ActorMappingConfig.cs",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAAwBkAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-30T15:35:15.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 137,
               "Title": "ExistsCastingDirectorProfileQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingDirector\\Queries\\ExistsCastingDirectorProfile\\ExistsCastingDirectorProfileQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingDirector\\Queries\\ExistsCastingDirectorProfile\\ExistsCastingDirectorProfileQueryHandler.cs",
@@ -2378,7 +2639,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 138,
               "Title": "ExistsCastingDirectorProfileQuery.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingDirector\\Queries\\ExistsCastingDirectorProfile\\ExistsCastingDirectorProfileQuery.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingDirector\\Queries\\ExistsCastingDirectorProfile\\ExistsCastingDirectorProfileQuery.cs",
@@ -2390,7 +2651,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 121,
+              "DocumentIndex": 139,
               "Title": "CastingDirectorProfileResult.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingDirector\\Common\\CastingDirectorProfileResult.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingDirector\\Common\\CastingDirectorProfileResult.cs",
@@ -2402,7 +2663,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 122,
+              "DocumentIndex": 140,
               "Title": "QueryCriteriaValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\Content\\QueryCriteriaValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\Content\\QueryCriteriaValidator.cs",
@@ -2414,7 +2675,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 123,
+              "DocumentIndex": 141,
               "Title": "CastingQueryCriteriaValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\CastingCalls\\Queries\\GetAllCastingCalls\\CastingQueryCriteriaValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\CastingCalls\\Queries\\GetAllCastingCalls\\CastingQueryCriteriaValidator.cs",
@@ -2426,7 +2687,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 124,
+              "DocumentIndex": 142,
               "Title": "CreateActorProfileCommandValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Actor\\Commands\\CreateActorProfile\\CreateActorProfileCommandValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Actor\\Commands\\CreateActorProfile\\CreateActorProfileCommandValidator.cs",
@@ -2438,7 +2699,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 125,
+              "DocumentIndex": 143,
               "Title": "CreateActorProfileCommandHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Actor\\Commands\\CreateActorProfile\\CreateActorProfileCommandHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Actor\\Commands\\CreateActorProfile\\CreateActorProfileCommandHandler.cs",
@@ -2450,7 +2711,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 126,
+              "DocumentIndex": 144,
               "Title": "IProfileRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\IRepository\\IProfileRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\IRepository\\IProfileRepository.cs",
@@ -2462,7 +2723,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 127,
+              "DocumentIndex": 145,
               "Title": "CastingDirectorTypeRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\CastingDirectorTypeRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Infrastructure\\Repositories\\CastingDirectorTypeRepository.cs",
@@ -2474,7 +2735,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 128,
+              "DocumentIndex": 146,
               "Title": "CastingDirectorRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\CastingDirectorRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Infrastructure\\Repositories\\CastingDirectorRepository.cs",
@@ -2486,7 +2747,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 129,
+              "DocumentIndex": 147,
               "Title": "CastingDirectorType.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\CastingDirectorType.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\CastingDirectorType.cs",
@@ -2498,7 +2759,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 131,
+              "DocumentIndex": 149,
               "Title": "ValidationException.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\Errors\\ValidationException.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\Errors\\ValidationException.cs",
@@ -2510,7 +2771,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 130,
+              "DocumentIndex": 148,
               "Title": "Netflix.Application.csproj",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Netflix.Application.csproj",
               "RelativeDocumentMoniker": "Netflix.Application\\Netflix.Application.csproj",
@@ -2522,7 +2783,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 132,
+              "DocumentIndex": 150,
               "Title": "IActorRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\IRepository\\IActorRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\IRepository\\IActorRepository.cs",
@@ -2534,7 +2795,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 133,
+              "DocumentIndex": 151,
               "Title": "IGenericRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\IRepository\\IGenericRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\IRepository\\IGenericRepository.cs",
@@ -2546,7 +2807,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 134,
+              "DocumentIndex": 152,
               "Title": "Client.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\Client.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\Client.cs",
@@ -2558,19 +2819,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 135,
-              "Title": "Actor.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\Actor.cs",
-              "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\Actor.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Domain\\Entities\\Actor.cs",
-              "RelativeToolTip": "Netflix.Domain\\Entities\\Actor.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAywBMAAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T15:10:49.387Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 136,
+              "DocumentIndex": 153,
               "Title": "CreateActorProfileCommand.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Actor\\Commands\\CreateActorProfile\\CreateActorProfileCommand.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Actor\\Commands\\CreateActorProfile\\CreateActorProfileCommand.cs",
@@ -2582,7 +2831,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 138,
+              "DocumentIndex": 155,
               "Title": "CreateCastingDirectorProfileRequest.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\CastingDirectorProfile\\CreateCastingDirectorProfile\\CreateCastingDirectorProfileRequest.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\CastingDirectorProfile\\CreateCastingDirectorProfile\\CreateCastingDirectorProfileRequest.cs",
@@ -2594,7 +2843,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 137,
+              "DocumentIndex": 154,
               "Title": "ActorProfileResult.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Actor\\Common\\ActorProfileResult.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Actor\\Common\\ActorProfileResult.cs",
@@ -2606,7 +2855,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 139,
+              "DocumentIndex": 156,
               "Title": "CastingDirectorProfileResponse.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\CastingDirectorProfile\\Common\\CastingDirectorProfileResponse.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\CastingDirectorProfile\\Common\\CastingDirectorProfileResponse.cs",
@@ -2618,7 +2867,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 140,
+              "DocumentIndex": 157,
               "Title": "ActorProfileResponse.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\ActorProfile\\Common\\ActorProfileResponse.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\ActorProfile\\Common\\ActorProfileResponse.cs",
@@ -2630,7 +2879,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 141,
+              "DocumentIndex": 158,
               "Title": "CreateActorProfileRequest.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\ActorProfile\\CreateActorProfile\\CreateActorProfileRequest.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\ActorProfile\\CreateActorProfile\\CreateActorProfileRequest.cs",
@@ -2642,7 +2891,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 142,
+              "DocumentIndex": 159,
               "Title": "JwtTokenGenerator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Authentication\\JwtTokenGenerator.cs",
               "RelativeDocumentMoniker": "Netflix.Infrastructure\\Authentication\\JwtTokenGenerator.cs",
@@ -2654,7 +2903,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 145,
+              "DocumentIndex": 162,
               "Title": "AuthenticationResponse.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\Authentication\\Common\\AuthenticationResponse.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\Authentication\\Common\\AuthenticationResponse.cs",
@@ -2666,7 +2915,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 143,
+              "DocumentIndex": 160,
               "Title": "RegisterCommandValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Authentication\\Commands\\Register\\RegisterCommandValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Authentication\\Commands\\Register\\RegisterCommandValidator.cs",
@@ -2678,7 +2927,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 147,
+              "DocumentIndex": 164,
               "Title": "LoginQueryValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Authentication\\Queries\\Login\\LoginQueryValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Authentication\\Queries\\Login\\LoginQueryValidator.cs",
@@ -2690,7 +2939,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 144,
+              "DocumentIndex": 161,
               "Title": "RegisterCommand.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Authentication\\Commands\\Register\\RegisterCommand.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Authentication\\Commands\\Register\\RegisterCommand.cs",
@@ -2702,7 +2951,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 148,
+              "DocumentIndex": 165,
               "Title": "LoginQuery.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Authentication\\Queries\\Login\\LoginQuery.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Authentication\\Queries\\Login\\LoginQuery.cs",
@@ -2714,7 +2963,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 146,
+              "DocumentIndex": 163,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\Authentication\\Register\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\Authentication\\Register\\RegisterRequest.cs",
@@ -2726,7 +2975,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 149,
+              "DocumentIndex": 166,
               "Title": "GetContentByIdQueryFilmValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Films\\Queries\\GetFilmById\\GetContentByIdQueryFilmValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Films\\Queries\\GetFilmById\\GetContentByIdQueryFilmValidator.cs",
@@ -2738,7 +2987,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 150,
+              "DocumentIndex": 167,
               "Title": "CastingCallDto.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\CastingCalls\\CastingCallDto.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\CastingCalls\\CastingCallDto.cs",
@@ -2750,7 +2999,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 151,
+              "DocumentIndex": 168,
               "Title": "Submission.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\Submission.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\Submission.cs",
@@ -2762,7 +3011,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 152,
+              "DocumentIndex": 169,
               "Title": "GenreController.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\GenreController.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Controllers\\GenreController.cs",
@@ -2774,19 +3023,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 153,
-              "Title": "FilmRepository.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\FilmRepository.cs",
-              "RelativeDocumentMoniker": "Netflix.Infrastructure\\Repositories\\FilmRepository.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\FilmRepository.cs",
-              "RelativeToolTip": "Netflix.Infrastructure\\Repositories\\FilmRepository.cs",
-              "ViewState": "AQIAACMAAAAAAAAAACBjwAsAAABCAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T12:32:43.922Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 154,
+              "DocumentIndex": 170,
               "Title": "UploadFileCommandHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Files\\Commands\\UploadFile\\UploadFileCommandHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Files\\Commands\\UploadFile\\UploadFileCommandHandler.cs",
@@ -2798,7 +3035,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 156,
+              "DocumentIndex": 172,
               "Title": "IGenreRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\IRepository\\IGenreRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\IRepository\\IGenreRepository.cs",
@@ -2810,7 +3047,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 155,
+              "DocumentIndex": 171,
               "Title": "IClientRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\IRepository\\IClientRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\IRepository\\IClientRepository.cs",
@@ -2822,17 +3059,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 157,
-              "Title": "secrets.json",
-              "DocumentMoniker": "C:\\Users\\darin\\AppData\\Roaming\\Microsoft\\UserSecrets\\ae5bfaf5-d5ac-4550-a9f1-32c0357ff453\\secrets.json",
-              "ToolTip": "C:\\Users\\darin\\AppData\\Roaming\\Microsoft\\UserSecrets\\ae5bfaf5-d5ac-4550-a9f1-32c0357ff453\\secrets.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAADlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-09-18T15:48:10.002Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 158,
+              "DocumentIndex": 173,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Netflix.API\\DependencyInjection.cs",
@@ -2844,7 +3071,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 159,
+              "DocumentIndex": 174,
               "Title": "GetFilmByIdQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Films\\Queries\\GetFilmById\\GetFilmByIdQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Films\\Queries\\GetFilmById\\GetFilmByIdQueryHandler.cs",
@@ -2856,7 +3083,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 160,
+              "DocumentIndex": 175,
               "Title": "UploadFileCommand.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Files\\Commands\\UploadFile\\UploadFileCommand.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Files\\Commands\\UploadFile\\UploadFileCommand.cs",
@@ -2868,7 +3095,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 161,
+              "DocumentIndex": 176,
               "Title": "SubmissionMedia.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\SubmissionMedia.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\SubmissionMedia.cs",
@@ -2880,19 +3107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 163,
-              "Title": "CartoonController.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Controllers\\CartoonController.cs",
-              "RelativeDocumentMoniker": "Netflix.API\\Controllers\\CartoonController.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.API\\Controllers\\CartoonController.cs",
-              "RelativeToolTip": "Netflix.API\\Controllers\\CartoonController.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAqwBAAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T14:59:46Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 162,
+              "DocumentIndex": 177,
               "Title": "CastingCallExtendedDto.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\CastingCalls\\CastingCallExtendedDto.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\CastingCalls\\CastingCallExtendedDto.cs",
@@ -2904,7 +3119,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 164,
+              "DocumentIndex": 178,
               "Title": "Audition.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\Audition.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\Audition.cs",
@@ -2916,7 +3131,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 165,
+              "DocumentIndex": 179,
               "Title": "GetDoramaByIdQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Doramas\\Queries\\GetDoramaById\\GetDoramaByIdQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Doramas\\Queries\\GetDoramaById\\GetDoramaByIdQueryHandler.cs",
@@ -2928,7 +3143,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 166,
+              "DocumentIndex": 180,
               "Title": "GetAllContentQueryHandlerBase.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\BaseHandler\\GetAllContentQueryHandlerBase.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\BaseHandler\\GetAllContentQueryHandlerBase.cs",
@@ -2940,7 +3155,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 168,
+              "DocumentIndex": 181,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Netflix.API\\Common\\Mapping\\DependencyInjection.cs",
@@ -2952,7 +3167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 169,
+              "DocumentIndex": 182,
               "Title": "CastingCriteria.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\CastingCalls\\CastingCriteria.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\CastingCalls\\CastingCriteria.cs",
@@ -2964,31 +3179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 170,
-              "Title": "QueryCriteria.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\Content\\QueryCriteria.cs",
-              "RelativeDocumentMoniker": "Netflix.Application\\Common\\Content\\QueryCriteria.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Application\\Common\\Content\\QueryCriteria.cs",
-              "RelativeToolTip": "Netflix.Application\\Common\\Content\\QueryCriteria.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T13:12:52.96Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 167,
-              "Title": "LocationMappingConfig.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\LocationMappingConfig.cs",
-              "RelativeDocumentMoniker": "Netflix.API\\Common\\Mapping\\LocationMappingConfig.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.API\\Common\\Mapping\\LocationMappingConfig.cs",
-              "RelativeToolTip": "Netflix.API\\Common\\Mapping\\LocationMappingConfig.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-09T14:36:57.844Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 171,
+              "DocumentIndex": 183,
               "Title": "GetContentByIdQueryHandlerBase.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\BaseHandler\\GetContentByIdQueryHandlerBase.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\BaseHandler\\GetContentByIdQueryHandlerBase.cs",
@@ -3000,7 +3191,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 172,
+              "DocumentIndex": 184,
               "Title": "ContentDto.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\Content\\ContentDto.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\Content\\ContentDto.cs",
@@ -3012,7 +3203,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 173,
+              "DocumentIndex": 185,
               "Title": "RoleTypeWithoutCastingCallsReference.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\TypesDtos\\RoleTypeWithoutCastingCallsReference.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\TypesDtos\\RoleTypeWithoutCastingCallsReference.cs",
@@ -3024,7 +3215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 174,
+              "DocumentIndex": 186,
               "Title": "RoleType.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\RoleType.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\RoleType.cs",
@@ -3036,19 +3227,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 175,
-              "Title": "ActorModel.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\ActorModel.cs",
-              "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\ActorModel.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Domain\\Entities\\ActorModel.cs",
-              "RelativeToolTip": "Netflix.Domain\\Entities\\ActorModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-29T15:10:57.511Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 176,
+              "DocumentIndex": 187,
               "Title": "SeriesRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Repositories\\SeriesRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Infrastructure\\Repositories\\SeriesRepository.cs",
@@ -3060,7 +3239,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 177,
+              "DocumentIndex": 188,
               "Title": "GetRegionNamesQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Regions\\Queries\\GetRegionNames\\GetRegionNamesQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Regions\\Queries\\GetRegionNames\\GetRegionNamesQueryHandler.cs",
@@ -3072,31 +3251,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 178,
-              "Title": "GetAllFilmsQueryHandler.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Films\\Queries\\GetAllFilms\\GetAllFilmsQueryHandler.cs",
-              "RelativeDocumentMoniker": "Netflix.Application\\Films\\Queries\\GetAllFilms\\GetAllFilmsQueryHandler.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Application\\Films\\Queries\\GetAllFilms\\GetAllFilmsQueryHandler.cs",
-              "RelativeToolTip": "Netflix.Application\\Films\\Queries\\GetAllFilms\\GetAllFilmsQueryHandler.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-24T14:37:02.812Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 179,
-              "Title": "GetAllContentQueryFilmValidator.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Films\\Queries\\GetAllFilms\\GetAllContentQueryFilmValidator.cs",
-              "RelativeDocumentMoniker": "Netflix.Application\\Films\\Queries\\GetAllFilms\\GetAllContentQueryFilmValidator.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Application\\Films\\Queries\\GetAllFilms\\GetAllContentQueryFilmValidator.cs",
-              "RelativeToolTip": "Netflix.Application\\Films\\Queries\\GetAllFilms\\GetAllContentQueryFilmValidator.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T13:56:13.847Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 180,
+              "DocumentIndex": 189,
               "Title": "IFilmRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\IRepository\\IFilmRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\IRepository\\IFilmRepository.cs",
@@ -3108,7 +3263,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 181,
+              "DocumentIndex": 190,
               "Title": "GetAllAnimesQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Animes\\Queries\\GetAllAnimes\\GetAllAnimesQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Animes\\Queries\\GetAllAnimes\\GetAllAnimesQueryHandler.cs",
@@ -3120,19 +3275,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 182,
-              "Title": "Criteria.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\Content\\Criteria.cs",
-              "RelativeDocumentMoniker": "Netflix.Contracts\\Content\\Criteria.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Contracts\\Content\\Criteria.cs",
-              "RelativeToolTip": "Netflix.Contracts\\Content\\Criteria.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA1AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-16T16:05:44.372Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 183,
+              "DocumentIndex": 191,
               "Title": "Location.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\Location.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\Location.cs",
@@ -3144,19 +3287,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 185,
-              "Title": "Gender.cs",
-              "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\Gender.cs",
-              "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\Gender.cs",
-              "ToolTip": "D:\\Netflix\\Netflix.Domain\\Entities\\Gender.cs",
-              "RelativeToolTip": "Netflix.Domain\\Entities\\Gender.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-04T15:33:20.248Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 184,
+              "DocumentIndex": 192,
               "Title": "EthnicAppearance.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\EthnicAppearance.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\EthnicAppearance.cs",
@@ -3168,7 +3299,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 186,
+              "DocumentIndex": 193,
               "Title": "IJwtTokenGenerator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Common\\Authentication\\IJwtTokenGenerator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Common\\Authentication\\IJwtTokenGenerator.cs",
@@ -3180,7 +3311,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 188,
+              "DocumentIndex": 195,
               "Title": "SeriesEpisode.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\SeriesEpisode.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\SeriesEpisode.cs",
@@ -3192,7 +3323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 190,
+              "DocumentIndex": 197,
               "Title": "GetContentByIdQueryAnimeValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Animes\\Queries\\GetAnimeById\\GetContentByIdQueryAnimeValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Animes\\Queries\\GetAnimeById\\GetContentByIdQueryAnimeValidator.cs",
@@ -3204,7 +3335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 187,
+              "DocumentIndex": 194,
               "Title": "FilmGenre.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\FilmGenre.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\FilmGenre.cs",
@@ -3216,7 +3347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 189,
+              "DocumentIndex": 196,
               "Title": "Series.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\Series.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\Series.cs",
@@ -3228,7 +3359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 191,
+              "DocumentIndex": 198,
               "Title": "GetAnimeByIdQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Animes\\Queries\\GetAnimeById\\GetAnimeByIdQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Animes\\Queries\\GetAnimeById\\GetAnimeByIdQueryHandler.cs",
@@ -3240,7 +3371,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 192,
+              "DocumentIndex": 199,
               "Title": "GetContentByIdQueryDoramaValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Doramas\\Queries\\GetDoramaById\\GetContentByIdQueryDoramaValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Doramas\\Queries\\GetDoramaById\\GetContentByIdQueryDoramaValidator.cs",
@@ -3252,7 +3383,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 193,
+              "DocumentIndex": 200,
               "Title": "GetContentByIdQuerySeriesValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Series\\Queries\\GetSeriesById\\GetContentByIdQuerySeriesValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Series\\Queries\\GetSeriesById\\GetContentByIdQuerySeriesValidator.cs",
@@ -3264,7 +3395,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 194,
+              "DocumentIndex": 201,
               "Title": "GetAllContentQuerySeriesValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Series\\Queries\\GetAllSeries\\GetAllContentQuerySeriesValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Series\\Queries\\GetAllSeries\\GetAllContentQuerySeriesValidator.cs",
@@ -3276,7 +3407,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 195,
+              "DocumentIndex": 202,
               "Title": "GetSeriesByIdQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Series\\Queries\\GetSeriesById\\GetSeriesByIdQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Series\\Queries\\GetSeriesById\\GetSeriesByIdQueryHandler.cs",
@@ -3288,7 +3419,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 200,
+              "DocumentIndex": 207,
               "Title": "GetAllContentQueryAnimeValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Animes\\Queries\\GetAllAnimes\\GetAllContentQueryAnimeValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Animes\\Queries\\GetAllAnimes\\GetAllContentQueryAnimeValidator.cs",
@@ -3300,7 +3431,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 196,
+              "DocumentIndex": 203,
               "Title": "GetAllContentQueryDoramaValidation.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Doramas\\Queries\\GetAllDoramas\\GetAllContentQueryDoramaValidation.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Doramas\\Queries\\GetAllDoramas\\GetAllContentQueryDoramaValidation.cs",
@@ -3312,7 +3443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 198,
+              "DocumentIndex": 205,
               "Title": "GetAllContentQueryGenreValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Genres\\Queries\\GetAllGenres\\GetAllContentQueryGenreValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Genres\\Queries\\GetAllGenres\\GetAllContentQueryGenreValidator.cs",
@@ -3324,7 +3455,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 197,
+              "DocumentIndex": 204,
               "Title": "GetAllSeriesQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Series\\Queries\\GetAllSeries\\GetAllSeriesQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Series\\Queries\\GetAllSeries\\GetAllSeriesQueryHandler.cs",
@@ -3336,7 +3467,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 201,
+              "DocumentIndex": 208,
               "Title": "GetAllContentQueryCartoonValidator.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Cartoons\\Queries\\GetAllCartoons\\GetAllContentQueryCartoonValidator.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Cartoons\\Queries\\GetAllCartoons\\GetAllContentQueryCartoonValidator.cs",
@@ -3348,7 +3479,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 199,
+              "DocumentIndex": 206,
               "Title": "GetAllGenresQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Genres\\Queries\\GetAllGenres\\GetAllGenresQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Genres\\Queries\\GetAllGenres\\GetAllGenresQueryHandler.cs",
@@ -3360,7 +3491,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 202,
+              "DocumentIndex": 209,
               "Title": "GetAllDoramasQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Doramas\\Queries\\GetAllDoramas\\GetAllDoramasQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Doramas\\Queries\\GetAllDoramas\\GetAllDoramasQueryHandler.cs",
@@ -3372,7 +3503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 203,
+              "DocumentIndex": 210,
               "Title": "DependencyInjection.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Extensions\\DependencyInjection.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Extensions\\DependencyInjection.cs",
@@ -3384,7 +3515,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 204,
+              "DocumentIndex": 211,
               "Title": "ContentWithTypeResponse.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\Content\\ContentWithTypeResponse.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\Content\\ContentWithTypeResponse.cs",
@@ -3396,7 +3527,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 205,
+              "DocumentIndex": 212,
               "Title": "GetCartoonByIdQueryHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Cartoons\\Queries\\GetCartoonById\\GetCartoonByIdQueryHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Cartoons\\Queries\\GetCartoonById\\GetCartoonByIdQueryHandler.cs",
@@ -3408,7 +3539,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 208,
+              "DocumentIndex": 215,
               "Title": "ContentWithTypeCartoon.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Cartoons\\Common\\ContentWithTypeCartoon.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Cartoons\\Common\\ContentWithTypeCartoon.cs",
@@ -3420,7 +3551,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 206,
+              "DocumentIndex": 213,
               "Title": "ContentWithTypeAnime.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Animes\\Common\\ContentWithTypeAnime.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Animes\\Common\\ContentWithTypeAnime.cs",
@@ -3432,7 +3563,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 207,
+              "DocumentIndex": 214,
               "Title": "ContentDtoWithTypeAnime.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Animes\\Common\\ContentDtoWithTypeAnime.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Animes\\Common\\ContentDtoWithTypeAnime.cs",
@@ -3444,7 +3575,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 210,
+              "DocumentIndex": 217,
               "Title": "ContentWithTypeDorama.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Doramas\\Common\\ContentWithTypeDorama.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Doramas\\Common\\ContentWithTypeDorama.cs",
@@ -3456,7 +3587,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 209,
+              "DocumentIndex": 216,
               "Title": "ContentDtoWithTypeCartoon.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Cartoons\\Common\\ContentDtoWithTypeCartoon.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Cartoons\\Common\\ContentDtoWithTypeCartoon.cs",
@@ -3468,7 +3599,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 211,
+              "DocumentIndex": 218,
               "Title": "ContentDtoWithTypeDorama.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Doramas\\Common\\ContentDtoWithTypeDorama.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Doramas\\Common\\ContentDtoWithTypeDorama.cs",
@@ -3480,7 +3611,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 212,
+              "DocumentIndex": 219,
               "Title": "ContentWithType.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\ContentWithTypeType\\ContentWithType.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\ContentWithTypeType\\ContentWithType.cs",
@@ -3492,7 +3623,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 214,
+              "DocumentIndex": 221,
               "Title": "Film.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\Film.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\Film.cs",
@@ -3504,7 +3635,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 213,
+              "DocumentIndex": 220,
               "Title": "IContentByTypesRepository.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\IRepository\\IContentByTypesRepository.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\IRepository\\IContentByTypesRepository.cs",
@@ -3516,7 +3647,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 216,
+              "DocumentIndex": 223,
               "Title": "PopulateSeriesEpisodesCommand.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Series\\Commands\\PopulateSeriesEpisodes\\PopulateSeriesEpisodesCommand.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Series\\Commands\\PopulateSeriesEpisodes\\PopulateSeriesEpisodesCommand.cs",
@@ -3528,7 +3659,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 215,
+              "DocumentIndex": 222,
               "Title": "PopulateSeriesEpisodesCommandHandler.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Application\\Series\\Commands\\PopulateSeriesEpisodes\\PopulateSeriesEpisodesCommandHandler.cs",
               "RelativeDocumentMoniker": "Netflix.Application\\Series\\Commands\\PopulateSeriesEpisodes\\PopulateSeriesEpisodesCommandHandler.cs",
@@ -3540,7 +3671,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 217,
+              "DocumentIndex": 224,
               "Title": "SeriesEpisodesDto.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\Series\\GetSeriesById\\SeriesEpisodesDto.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\Series\\GetSeriesById\\SeriesEpisodesDto.cs",
@@ -3552,7 +3683,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 218,
+              "DocumentIndex": 225,
               "Title": "SeriesGenre.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\SeriesGenre.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\SeriesGenre.cs",
@@ -3564,7 +3695,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 219,
+              "DocumentIndex": 226,
               "Title": "ContentResponse.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\Content\\ContentResponse.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\Content\\ContentResponse.cs",
@@ -3576,7 +3707,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 221,
+              "DocumentIndex": 228,
               "Title": "GenreModel.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Domain\\Entities\\GenreModel.cs",
               "RelativeDocumentMoniker": "Netflix.Domain\\Entities\\GenreModel.cs",
@@ -3588,7 +3719,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 220,
+              "DocumentIndex": 227,
               "Title": "GenreDto.cs",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Contracts\\Genres\\GetAllGenres\\GenreDto.cs",
               "RelativeDocumentMoniker": "Netflix.Contracts\\Genres\\GetAllGenres\\GenreDto.cs",
@@ -3600,7 +3731,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 222,
+              "DocumentIndex": 229,
               "Title": "Netflix.Infrastructure.csproj",
               "DocumentMoniker": "D:\\Netflix\\Netflix.Infrastructure\\Netflix.Infrastructure.csproj",
               "RelativeDocumentMoniker": "Netflix.Infrastructure\\Netflix.Infrastructure.csproj",
@@ -3612,7 +3743,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 223,
+              "DocumentIndex": 230,
               "Title": "Netflix.API.http",
               "DocumentMoniker": "D:\\Netflix\\Netflix.API\\Netflix.API.http",
               "RelativeDocumentMoniker": "Netflix.API\\Netflix.API.http",

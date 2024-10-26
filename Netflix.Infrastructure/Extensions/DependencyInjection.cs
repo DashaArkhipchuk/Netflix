@@ -43,6 +43,8 @@ namespace Netflix.Application.Extensions
             services.AddScoped<ISubmissionRepository, SubmissionRepository>();
             services.AddScoped<IAuditionRepository, AuditionRepository>();
 
+            services.AddScoped<INewsRepository, NewsRepository>();
+
             services.AddScoped<IClientRepository, ClientRepository>();
             services.AddScoped<IActorRepository, ActorRepository>();
             services.AddScoped<ICastingDirectorRepository, CastingDirectorRepository>();

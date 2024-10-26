@@ -61,6 +61,10 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
 
     public virtual DbSet<Ticket> Tickets { get; set; }
 
+    public virtual DbSet<News> News { get; set; }
+    public virtual DbSet<NewsType> NewsTypes { get; set; }
+    public virtual DbSet<AuthorModel> Authors { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<ActorModel>(entity =>
@@ -155,6 +159,44 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
             entity.HasOne(d => d.Client).WithOne(p => p.CastingDirector)
                 .HasForeignKey<CastingDirector>(d => d.ClientId)
                 .OnDelete(DeleteBehavior.Cascade);
+        });
+
+        modelBuilder.Entity<News>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+
+            entity.ToTable("News");
+
+            entity.Property(e => e.Id)
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("Id");
+            entity.Property(e => e.Title).HasMaxLength(255);
+            entity.Property(e => e.ImageURL).HasColumnName("ImageURL").HasMaxLength(200);
+            entity.Property(e => e.Description).HasMaxLength(1000);
+
+
+            entity.HasOne(cc => cc.Author)
+            .WithMany(pt => pt.NewsCollection)
+            .HasForeignKey(cc => cc.AuthorId);
+
+            entity.HasOne(cc => cc.Type)
+            .WithMany(rt => rt.NewsCollection)
+            .HasForeignKey(cc => cc.TypeId);
+        });
+
+        modelBuilder.Entity<AuthorModel>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+            entity.ToTable("AuthorModel");
+            entity.Property(e => e.Name).HasMaxLength(50);
+            entity.Property(e=>e.Surname).HasMaxLength(50);
+        });
+
+        modelBuilder.Entity<NewsType>(entity =>
+        {
+            entity.HasKey(e => e.Id);
+            entity.ToTable("NewsType");
+            entity.Property(e => e.Name).HasMaxLength(100);
         });
 
         modelBuilder.Entity<CastingCall>(entity =>

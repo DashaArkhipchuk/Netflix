@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Netflix.Application.CastingCalls.Queries.GetAllCastingCalls;
+using Netflix.Domain.DTOs;
 using Netflix.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -15,5 +16,5 @@ namespace Netflix.Application.CastingCalls.Queries.GetAllCastingCallsByDirector
         int Skip = 0,
         int Take = 10,
         CastingQueryCriteria? Criteria = null
-    ) :IRequest<List<CastingCall>>;
+    ) :IRequest<PagedResult<CastingCall>>;
 }

@@ -8,6 +8,18 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddPresentation().AddApplicationDI().AddInfrastructureDI(builder.Configuration);
 
+builder.Services.AddCors(options =>
+                options.AddPolicy(
+                    "CorsPolicy",
+                    policy =>
+                        policy
+                            .WithOrigins("https://localhost:3000/", "http://localhost:3000")
+                            .AllowAnyHeader()
+                            .AllowAnyMethod()
+                            .AllowCredentials()
+                            )
+                );
+
 
 var app = builder.Build();
 
@@ -21,6 +33,8 @@ app.UseSwagger();
 app.UseSwaggerUI();
 
 app.UseErrorHandlingMiddleware();
+
+app.UseCors("CorsPolicy");
 
 app.UseHttpsRedirection();
 

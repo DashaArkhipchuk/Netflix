@@ -5948,19 +5948,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\darin\\.nuget\\packages\\": {}
+    "C:\\Users\\Pavlo\\.nuget\\packages\\": {},
+    "E:\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Netflix\\Netflix.API\\Netflix.API.csproj",
+      "projectUniqueName": "E:\\Netflix\\Netflix.API\\Netflix.API.csproj",
       "projectName": "Netflix.API",
-      "projectPath": "D:\\Netflix\\Netflix.API\\Netflix.API.csproj",
-      "packagesPath": "C:\\Users\\darin\\.nuget\\packages\\",
-      "outputPath": "D:\\Netflix\\Netflix.API\\obj\\",
+      "projectPath": "E:\\Netflix\\Netflix.API\\Netflix.API.csproj",
+      "packagesPath": "C:\\Users\\Pavlo\\.nuget\\packages\\",
+      "outputPath": "E:\\Netflix\\Netflix.API\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "E:\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\darin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Pavlo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5975,14 +5980,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Netflix\\Netflix.Application\\Netflix.Application.csproj": {
-              "projectPath": "D:\\Netflix\\Netflix.Application\\Netflix.Application.csproj"
+            "E:\\Netflix\\Netflix.Application\\Netflix.Application.csproj": {
+              "projectPath": "E:\\Netflix\\Netflix.Application\\Netflix.Application.csproj"
             },
-            "D:\\Netflix\\Netflix.Contracts\\Netflix.Contracts.csproj": {
-              "projectPath": "D:\\Netflix\\Netflix.Contracts\\Netflix.Contracts.csproj"
+            "E:\\Netflix\\Netflix.Contracts\\Netflix.Contracts.csproj": {
+              "projectPath": "E:\\Netflix\\Netflix.Contracts\\Netflix.Contracts.csproj"
             },
-            "D:\\Netflix\\Netflix.Infrastructure\\Netflix.Infrastructure.csproj": {
-              "projectPath": "D:\\Netflix\\Netflix.Infrastructure\\Netflix.Infrastructure.csproj"
+            "E:\\Netflix\\Netflix.Infrastructure\\Netflix.Infrastructure.csproj": {
+              "projectPath": "E:\\Netflix\\Netflix.Infrastructure\\Netflix.Infrastructure.csproj"
             }
           }
         }
@@ -5996,7 +6001,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -6042,7 +6048,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302/PortableRuntimeIdentifierGraph.json"
       }
     }
   },

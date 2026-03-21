@@ -8,6 +8,7 @@ namespace Netflix.Contracts.Common
 {
     public record ContentResponse<T> 
     (
+        int totalItemsCount,
         IReadOnlyList<T> content
     ) where T : class;
 }

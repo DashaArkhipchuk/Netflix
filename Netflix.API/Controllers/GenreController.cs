@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Netflix.Application.Common.Content;
 using Netflix.Contracts.Common;
+using Netflix.Contracts.Content;
 using Netflix.Contracts.Genres.GetAllGenres;
 using Netflix.Domain;
 
@@ -23,15 +24,15 @@ namespace Netflix.API.Controllers
         }
 
         [HttpPost("GetAll")]
-        public async Task<IActionResult> Get([FromQuery] GetAllContentRequest request)
+        public async Task<IActionResult> Get([FromQuery] GetAllContentWithOptionalPaginationRequest request)
         {
-            var command = _mapper.Map<GetAllContentQuery<GenreModel>>(request);
+            var command = _mapper.Map<GetAllContentWithOptionalPaginationQuery<GenreModel>>(request);
 
             var genres = await _mediator.Send(command);
-            var genreDtos = genres
+            var genreDtos = genres.Items
                 .Select(x => new GenreDto() { Id = x.Id, GenreName = x.GenreName }).ToList();
 
-            return Ok(new ContentResponse<GenreDto>(genreDtos));
+            return Ok(new ContentResponse<GenreDto>(genres.TotalCount, genreDtos));
         }
     }
 }

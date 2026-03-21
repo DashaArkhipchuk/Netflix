@@ -1,5 +1,6 @@
 ﻿using Netflix.Application.Animes.Common;
 using Netflix.Application.Common.BaseHandler;
+using Netflix.Domain.DTOs;
 using Netflix.Domain.IRepository;
 using System;
 using System.Collections.Generic;
@@ -15,7 +16,7 @@ namespace Netflix.Application.Animes.Queries.GetAllAnimes
 
         protected override string ContentType => "anime";
 
-        protected override ContentDtoWithTypeAnime MapToDto(Netflix.Domain.ContentWithTypeType.ContentWithType content)
+        protected override ContentDtoWithTypeAnime MapToDto(ContentWithType content)
         {
             return new ContentDtoWithTypeAnime
             {

@@ -1,7 +1,9 @@
 ﻿
+using Microsoft.AspNetCore.Http.Features;
 using Microsoft.EntityFrameworkCore;
 using Netflix.Application.Common.Errors;
 using Netflix.Domain;
+using Netflix.Domain.DTOs;
 using Netflix.Domain.Entities;
 using Netflix.Domain.IRepository;
 using System.Linq;
@@ -20,7 +22,7 @@ namespace Netflix.Infrastructure.Repositories
         }
 
 
-        public async Task<List<CastingCall>> GetAllAsync(int skip, int take, List<string> locations, List<string> playableAgeRanges, List<string> projectTypes, List<string> roleTypes, Guid? directorId = null)
+        public async Task<PagedResult<CastingCall>> GetAllAsync(int skip, int take, List<string> locations, List<string> playableAgeRanges, List<string> projectTypes, List<string> roleTypes, Guid? directorId = null)
         {
             // Start with the base query
             var query = dbContext.CastingCalls.Include(c => c.Genders).Include(c => c.Locations).Include(c => c.ProjectType).Include(c => c.RoleType).AsQueryable();
@@ -87,10 +89,15 @@ namespace Netflix.Infrastructure.Repositories
                 }
             }
 
+            var totalItems = query.Count();
+
             // Apply pagination
             query = query.Skip(skip).Take(take);
 
-            return await query.ToListAsync() ?? new List<CastingCall>();
+
+            var items = await query.ToListAsync() ?? new List<CastingCall>();
+
+            return new PagedResult<CastingCall> { TotalCount = totalItems, Items = items }; ;
         }
 
         public static List<PlayableRange> ParsePlayableAgeRanges(List<string> ageRangeStrings)

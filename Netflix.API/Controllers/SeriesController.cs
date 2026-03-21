@@ -11,6 +11,7 @@ using Netflix.Contracts.Common;
 using Netflix.Contracts.Films.GetFilmById;
 using Netflix.Contracts.Series.GetSeriesById;
 using Netflix.Domain;
+using Netflix.Domain.DTOs;
 
 namespace Netflix.API.Controllers
 {
@@ -33,10 +34,10 @@ namespace Netflix.API.Controllers
             var command = _mapper.Map<(GetAllContentRequest, Criteria), GetAllContentQuery<Domain.Series>>((request, criteria));
 
             var series = await _mediator.Send(command);
-            var seriesDtos = series
+            var seriesDtos = series.Items
                 .Select(x => new ContentDto() { Id = x.Id, Name = x.Name, PictureUrl = x.PictureUrl, Rating = x.Rating, ReleaseYear = x.ReleaseDate.Year }).ToList();
 
-            return Ok(new ContentResponse<ContentDto>(seriesDtos));
+            return Ok(new PagedResult<ContentDto> { TotalCount = series.TotalCount, Items = seriesDtos });
         }
 
         [HttpGet("{id}")]
@@ -50,7 +51,6 @@ namespace Netflix.API.Controllers
                 return NotFound();
 
             return Ok(_mapper.Map<SeriesExtendedDto>(series));
-            return Ok();
         }
 
         [HttpPost("PoulateEpisodes")]

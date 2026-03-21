@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Netflix.Domain;
-using Netflix.Domain.ContentWithTypeType;
+using Netflix.Domain.DTOs;
 using Netflix.Domain.IRepository;
 using System;
 using System.Collections.Generic;
@@ -18,7 +18,7 @@ namespace Netflix.Infrastructure.Repositories
         public string? Type { get; set; } 
 
         public ContentByTypesRepository(NetflixProjectContext dbContext) => _dbContext = dbContext;
-        public async Task<List<ContentWithType>> GetAllAsync(int skip, int take, List<string> genres, bool sortByLatest = false, decimal? minimumRating = null, int? year = null, int? episodes = null)
+        public async Task<PagedResult<ContentWithType>> GetAllAsync(int skip, int take, List<string> genres, bool sortByLatest = false, decimal? minimumRating = null, int? year = null, int? episodes = null)
         {
             var queryFilm = await _dbContext.Films.Where(x=>x.Genres.Select(g=>g.GenreName?? "".ToLower()).Contains(Type ?? "".ToLower())).Select(x => new ContentWithType { Id = x.Id, Name = x.Name, Genres = x.Genres, PictureUrl = x.PictureUrl, Rating = x.Rating, ReleaseDate = x.ReleaseDate, Type = "film", Film = x, EpisodeCount = null }).ToListAsync();
             var querySeries = await _dbContext.Series.Where(x=>x.Genres.Select(g=>g.GenreName?? "".ToLower()).Contains(Type ?? "".ToLower())).Select(x => new ContentWithType { Id = x.Id, Name = x.Name, Genres = x.Genres, PictureUrl = x.PictureUrl, Rating = x.Rating, ReleaseDate = x.ReleaseDate, Type = "series", Series = x, EpisodeCount = x.EpisodeCount }).ToListAsync();
@@ -59,12 +59,15 @@ namespace Netflix.Infrastructure.Repositories
                 query = query.OrderByDescending(film => film.ReleaseDate);
             }
 
+            int totalCount = query.Count();
+
             // Apply pagination
             query = query.Skip(skip).Take(take);
 
+            var items = query.ToList();
 
             // Execute the query and return results
-            return query.ToList() ?? new List<ContentWithType>();
+            return new PagedResult<ContentWithType> { TotalCount = totalCount, Items = items };
         }
 
         public async Task<ContentWithType?> GetByIdAsync(Guid? id)
@@ -75,6 +78,16 @@ namespace Netflix.Infrastructure.Repositories
             var query = queryFilm.Concat(querySeries).AsQueryable();
 
             return query.SingleOrDefault(c => c.Id == id);
+        }
+
+        public async Task<int> GetTotalItemsCount()
+        {
+            var queryFilm = await _dbContext.Films.Where(x => x.Genres.Select(g => g.GenreName ?? "".ToLower()).Contains(Type ?? "".ToLower())).Select(x => new ContentWithType { Id = x.Id, Name = x.Name, Genres = x.Genres, PictureUrl = x.PictureUrl, Rating = x.Rating, ReleaseDate = x.ReleaseDate, Type = "film", Film = x, EpisodeCount = null }).ToListAsync();
+            var querySeries = await _dbContext.Series.Where(x => x.Genres.Select(g => g.GenreName ?? "".ToLower()).Contains(Type ?? "".ToLower())).Select(x => new ContentWithType { Id = x.Id, Name = x.Name, Genres = x.Genres, PictureUrl = x.PictureUrl, Rating = x.Rating, ReleaseDate = x.ReleaseDate, Type = "series", Series = x, EpisodeCount = x.EpisodeCount }).ToListAsync();
+
+            var query = queryFilm.Concat(querySeries).AsQueryable();
+
+            return query.Count();
         }
     }
 }

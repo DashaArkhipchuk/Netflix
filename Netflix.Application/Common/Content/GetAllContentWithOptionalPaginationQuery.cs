@@ -1,15 +1,18 @@
 ﻿using MediatR;
-using Netflix.Domain;
 using Netflix.Domain.DTOs;
-using System.Reflection;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Netflix.Application.Common.Content
 {
-    public record GetAllContentQuery<T>
+    public record GetAllContentWithOptionalPaginationQuery<T>
     (
 
+        int? Take,
         int Skip = 0,
-        int Take = 10,
         QueryCriteria? Criteria = null
     ) : IRequest<PagedResult<T>> where T : class;
 }

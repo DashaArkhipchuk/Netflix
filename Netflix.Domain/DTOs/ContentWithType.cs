@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Netflix.Infrastructure.ContentWithTypeType
+namespace Netflix.Domain.DTOs
 {
     public class ContentWithType
     {

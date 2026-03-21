@@ -1,11 +1,1 @@
-{
-  "Version": 1,
-  "Hash": "AYZYMhZfU80a0ZfiHMnE28YGLKyU8N3CCtA73sBuaJU=",
-  "Source": "Netflix.API",
-  "BasePath": "_content/Netflix.API",
-  "Mode": "Default",
-  "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
-}
+{"Version":1,"Hash":"C4+hj0GtmQpJnMg6JnuLsWlIelGXy8SUT92Fp9MfkYk=","Source":"Netflix.API","BasePath":"_content/Netflix.API","Mode":"Default","ManifestType":"Build","ReferencedProjectsConfiguration":[],"DiscoveryPatterns":[],"Assets":[],"Endpoints":[]}

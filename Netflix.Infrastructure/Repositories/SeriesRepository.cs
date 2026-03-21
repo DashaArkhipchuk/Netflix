@@ -10,13 +10,14 @@ using Netflix.Domain.Entities;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.CodeAnalysis.VisualBasic.Syntax;
 using Microsoft.Extensions.Logging;
+using Netflix.Domain.DTOs;
 
 namespace Netflix.Infrastructure.Repositories
 {
     internal class SeriesRepository(NetflixProjectContext dbContext) : ISeriesRepository
     {
 
-        public async Task<List<Series>> GetAllAsync(int skip, int take, List<string> genres, bool sortByLatest = false, decimal? minimumRating = null, int? year = null, int? episodes = null)
+        public async Task<PagedResult<Series>> GetAllAsync(int skip, int take, List<string> genres, bool sortByLatest = false, decimal? minimumRating = null, int? year = null, int? episodes = null)
         {
             // Start with the base query
             var query = dbContext.Series.Include(s => s.Genres).AsQueryable();
@@ -53,11 +54,17 @@ namespace Netflix.Infrastructure.Repositories
                 query = query.OrderByDescending(series => series.ReleaseDate);
             }
 
+            // ----- Get total count before pagination -----
+            var totalCount = await query.CountAsync();
+
+
             // Apply pagination
             query = query.Skip(skip).Take(take);
 
             // Execute the query and return results
-            return await query.ToListAsync() ?? new List<Series>();
+            var items = await query.ToListAsync();
+
+            return new PagedResult<Series> { TotalCount = totalCount, Items = items };
         }
 
         public async Task<Series?> GetByIdAsync(Guid? id)
@@ -134,8 +141,8 @@ namespace Netflix.Infrastructure.Repositories
 
                         // Combine the first and second words
                         string combinedName = first + second;
-                        var videoUrl = $"https://netflixmediastorage.blob.core.windows.net/videos/{combinedName}.mp4";
-                        var pictureUrl = $"https://netflixmediastorage.blob.core.windows.net/images/{combinedName}.jpg";
+                        var videoUrl = $"https://res.cloudinary.com/duxabhynb/video/upload/v1758211175/{combinedName}.mp4";
+                        var pictureUrl = $"https://res.cloudinary.com/duxabhynb/image/upload/v1758124415/{combinedName}.jpg";
 
                         // Create the episode object
                         var episode = new SeriesEpisode
@@ -183,13 +190,14 @@ namespace Netflix.Infrastructure.Repositories
 
                     // Move to the next first word
                     firstWordIndex = (firstWordIndex + 1) % words.Count();
-
-                    // Optionally break the outer loop based on a condition
-                    // For example, you can break after generating a certain number of combinations
-                    // if (someCondition) break;
                 }
             }
 
+        }
+
+        public async Task<int> GetTotalItemsCount()
+        {
+            return await dbContext.Series.CountAsync();
         }
     }
 }

@@ -7,6 +7,7 @@ using Netflix.Application.Films.Queries.GetFilmByIdQuery;
 using Netflix.Contracts.Common;
 using Netflix.Contracts.Films.GetFilmById;
 using Netflix.Domain;
+using Netflix.Domain.DTOs;
 
 namespace Netflix.API.Controllers
 {
@@ -29,10 +30,10 @@ namespace Netflix.API.Controllers
             var command = _mapper.Map<(GetAllContentRequest, Criteria), GetAllContentQuery<Film>>((request, criteria));
 
             var films = await _mediator.Send(command);
-            var filmDtos = films
+            var filmDtos = films.Items
                 .Select(x => new ContentDto() { Id = x.Id, Name = x.Name, PictureUrl = x.PictureUrl, Rating = x.Rating, ReleaseYear = x.ReleaseDate.Year }).ToList();
 
-            return Ok(new ContentResponse<ContentDto>(filmDtos));
+            return Ok(new PagedResult<ContentDto> { TotalCount = films.TotalCount, Items = filmDtos });
         }
 
         [HttpGet("{id}")]

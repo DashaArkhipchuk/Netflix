@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Netflix.Domain;
+using Netflix.Domain.DTOs;
 using Netflix.Domain.IRepository;
 using System;
 using System.Collections.Generic;
@@ -11,9 +12,11 @@ namespace Netflix.Infrastructure.Repositories
 {
     internal class GenreRepository(NetflixProjectContext dbContext) : IGenreRepository
     {
-        public async Task<List<GenreModel>> GetAllAsync(int skip, int take)
+        public async Task<PagedResult<GenreModel>> GetAllAsync(int skip, int? take)
         {
-            return await dbContext.GenreModels.Skip(skip).Take(take).ToListAsync() ?? new List<GenreModel>();
+            var count = await dbContext.GenreModels.CountAsync();
+            var items = await dbContext.GenreModels.Skip(skip).Take(take ?? dbContext.GenreModels.Count()).ToListAsync() ?? new List<GenreModel>();
+            return new PagedResult<GenreModel> { Items = items, TotalCount = count };
         }
     }
 }

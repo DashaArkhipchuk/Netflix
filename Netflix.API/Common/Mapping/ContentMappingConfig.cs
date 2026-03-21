@@ -44,6 +44,11 @@ namespace Netflix.API.Common.Mapping
               .Map(dest => dest.Skip, src => src.Item1.Skip)
               .Map(dest => dest.Take, src => src.Item1.Take);
 
+            config.NewConfig<(GetAllContentRequest, Criteria), GetAllContentWithOptionalPaginationQuery<GenreModel>>()
+              .Map(dest => dest.Criteria, src => src.Item2)
+              .Map(dest => dest.Skip, src => src.Item1.Skip)
+              .Map(dest => dest.Take, src => src.Item1.Take);
+
             config.NewConfig<Guid, GetContentByIdQuery<Film>>()
                 .Map(dest => dest.Id, src => src);
 

@@ -82,7 +82,10 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions/8.0.0": {},
       "Netflix.Domain/1.0.0": {
         "runtime": {
-          "Netflix.Domain.dll": {}
+          "Netflix.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       }
     }

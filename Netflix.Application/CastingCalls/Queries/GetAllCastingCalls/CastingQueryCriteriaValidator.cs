@@ -48,8 +48,8 @@ namespace Netflix.Application.CastingCalls.Queries.GetAllCastingCalls
 
         private bool BeAValidRange(string range)
         {
-            // Regex for valid ranges: "18-25", "under 18", "18+"
-            string rangePattern = @"^(under \d+|\d+-\d+|\d+\+)$";
+            // Regex for valid ranges: "18-25", "under 18", "18+" case insensivive
+            string rangePattern = @"^(?i)(under \d+|\d+[\-]\d+|\d+\+)$";
             return Regex.IsMatch(range, rangePattern);
         }
     }

@@ -2,7 +2,7 @@
 using Netflix.Application.Cartoons.Common;
 using Netflix.Application.Common.BaseHandler;
 using Netflix.Application.Common.Content;
-using Netflix.Domain.ContentWithTypeType;
+using Netflix.Domain.DTOs;
 using Netflix.Domain.IRepository;
 using System;
 using System.Collections.Generic;

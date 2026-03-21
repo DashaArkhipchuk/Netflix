@@ -2,6 +2,7 @@
 using MediatR;
 using Netflix.Application.Cartoons.Common;
 using Netflix.Application.Common.BaseHandler;
+using Netflix.Domain.DTOs;
 using Netflix.Domain.IRepository;
 using System;
 using System.Collections.Generic;
@@ -17,7 +18,7 @@ namespace Netflix.Application.Cartoons.Queries.GetAllCartoons
 
         protected override string ContentType => "cartoon";
 
-        protected override ContentDtoWithTypeCartoon MapToDto(Netflix.Domain.ContentWithTypeType.ContentWithType content)
+        protected override ContentDtoWithTypeCartoon MapToDto(ContentWithType content)
         {
             return new ContentDtoWithTypeCartoon
             {

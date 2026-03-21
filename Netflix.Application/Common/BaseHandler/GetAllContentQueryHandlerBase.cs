@@ -5,13 +5,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Netflix.Domain.ContentWithTypeType;
 using Netflix.Application.Common.Content;
+using Netflix.Domain.DTOs;
 
 namespace Netflix.Application.Common.BaseHandler
 {
     public abstract class GetAllContentQueryHandlerBase<TContentDto>
-    : IRequestHandler<GetAllContentQuery<TContentDto>, List<TContentDto>> where TContentDto : class
+    : IRequestHandler<GetAllContentQuery<TContentDto>, PagedResult<TContentDto>> where TContentDto : class
     {
         protected readonly IContentByTypesRepository _contentRepository;
 
@@ -22,7 +22,7 @@ namespace Netflix.Application.Common.BaseHandler
 
         protected abstract string ContentType { get; }
 
-        public async Task<List<TContentDto>> Handle(GetAllContentQuery<TContentDto> request, CancellationToken cancellationToken)
+        public async Task<PagedResult<TContentDto>> Handle(GetAllContentQuery<TContentDto> request, CancellationToken cancellationToken)
         {
             _contentRepository.Type = ContentType;
 
@@ -38,9 +38,9 @@ namespace Netflix.Application.Common.BaseHandler
                 request.Criteria?.Episodes
             );
 
-            return content.Select(x => MapToDto(x)).ToList();
+            return new PagedResult<TContentDto> { Items = content.Items.Select(x => MapToDto(x)).ToList(), TotalCount = content.TotalCount };
         }
 
-        protected abstract TContentDto MapToDto(Netflix.Domain.ContentWithTypeType.ContentWithType content);
+        protected abstract TContentDto MapToDto(ContentWithType content);
     }
 }

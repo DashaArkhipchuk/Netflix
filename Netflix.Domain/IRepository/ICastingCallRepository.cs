@@ -1,4 +1,5 @@
-﻿using Netflix.Domain.Entities;
+﻿using Netflix.Domain.DTOs;
+using Netflix.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace Netflix.Domain.IRepository
     public interface ICastingCallRepository
     {
         bool ExistsCastingCallById(Guid castingId);
-        Task<List<CastingCall>> GetAllAsync(int skip, int take, List<string> locations, List<string> playableAgeRanges, List<string> projectTypes, List<string> roleTypes, Guid? directorId = null);
+        Task<PagedResult<CastingCall>> GetAllAsync(int skip, int take, List<string> locations, List<string> playableAgeRanges, List<string> projectTypes, List<string> roleTypes, Guid? directorId = null);
         Task<CastingCall?> GetByIdAsync(Guid? id);
 
         void Add(CastingCall castingCall);

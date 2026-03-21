@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Netflix.Domain.DTOs;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,7 +10,7 @@ namespace Netflix.Domain.IRepository
     public interface IGenericRepository<T> where T : class
     {
         Task<T?> GetByIdAsync(Guid? id);
-        Task<List<T>> GetAllAsync(int skip, int take, List<string> genre, bool sortByLatest = false, decimal? minimumRating = null, int? year = null, int? episodes = null);
+        Task<PagedResult<T>> GetAllAsync(int skip, int take, List<string> genre, bool sortByLatest = false, decimal? minimumRating = null, int? year = null, int? episodes = null);
 
         //Task<int> AddAsync(T entity);
         //Task<int> UpdateAsync(T entity);

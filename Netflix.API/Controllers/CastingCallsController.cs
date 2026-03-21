@@ -21,6 +21,7 @@ using Netflix.Contracts.CastingCalls.CreateCastingCall;
 using Netflix.Contracts.Common;
 using Netflix.Contracts.Films.GetFilmById;
 using Netflix.Domain;
+using Netflix.Domain.DTOs;
 using Netflix.Domain.Entities;
 
 namespace Netflix.API.Controllers
@@ -45,10 +46,10 @@ namespace Netflix.API.Controllers
 
             var calls = await _mediator.Send(command);
 
-            var callDtos = calls.Select(x =>
-            new CastingCallDto { Id = x.Id, Title = x.Title, SubmissionDue = x.SubmissionDue, ProjectType = x.ProjectType.ProjectTypeName, RoleType = x.RoleType.RoleTypeName, PlayableAgeFrom = x.PlayableAgeFrom, PlayableAgeTo = x.PlayableAgeTo, Payment = x.Payment, UnionDetails = x.UnionDetails, RoleDescription = x.RoleDescription, IsAnyGenderAccepted=x.IsAnyGenderAccepted, Locations = x.Locations.Select(l => $"{l.LocationName}, {l.RegionName}").ToList(), Genders = x.Genders.Select(g => g.GenderName).ToList() });
+            var callDtos = calls.Items.Select(x =>
+            new CastingCallDto { Id = x.Id, Title = x.Title, SubmissionDue = x.SubmissionDue, ProjectType = x.ProjectType.ProjectTypeName, RoleType = x.RoleType.RoleTypeName, PlayableAgeFrom = x.PlayableAgeFrom, PlayableAgeTo = x.PlayableAgeTo, Payment = x.Payment, UnionDetails = x.UnionDetails, RoleDescription = x.RoleDescription, IsAnyGenderAccepted=x.IsAnyGenderAccepted, Locations = x.Locations.Select(l => $"{l.LocationName}, {l.RegionName}").ToList(), Genders = x.Genders.Select(g => g.GenderName).ToList() }).ToList();
 
-            return Ok(callDtos);
+            return Ok(new PagedResult<CastingCallDto> { TotalCount = calls.TotalCount, Items = callDtos });
         }
 
         [HttpGet("{id}")]
@@ -86,10 +87,10 @@ namespace Netflix.API.Controllers
 
             var calls = await _mediator.Send(command);
 
-            var callDtos = calls.Select(x =>
-            new CastingCallDto { Id = x.Id, Title = x.Title, SubmissionDue = x.SubmissionDue, ProjectType = x.ProjectType.ProjectTypeName, RoleType = x.RoleType.RoleTypeName, PlayableAgeFrom = x.PlayableAgeFrom, PlayableAgeTo = x.PlayableAgeTo, Payment = x.Payment, UnionDetails = x.UnionDetails, RoleDescription = x.RoleDescription, IsAnyGenderAccepted = x.IsAnyGenderAccepted, Locations = x.Locations.Select(l => $"{l.LocationName}, {l.RegionName}").ToList(), Genders = x.Genders.Select(g => g.GenderName).ToList() });
+            var callDtos = calls.Items.Select(x =>
+            new CastingCallDto { Id = x.Id, Title = x.Title, SubmissionDue = x.SubmissionDue, ProjectType = x.ProjectType.ProjectTypeName, RoleType = x.RoleType.RoleTypeName, PlayableAgeFrom = x.PlayableAgeFrom, PlayableAgeTo = x.PlayableAgeTo, Payment = x.Payment, UnionDetails = x.UnionDetails, RoleDescription = x.RoleDescription, IsAnyGenderAccepted = x.IsAnyGenderAccepted, Locations = x.Locations.Select(l => $"{l.LocationName}, {l.RegionName}").ToList(), Genders = x.Genders.Select(g => g.GenderName).ToList() }).ToList();
 
-            return Ok(callDtos);
+            return Ok(new PagedResult<CastingCallDto> { TotalCount = calls.TotalCount, Items = callDtos });
         }
 
         [HttpDelete("Remove/{castingCallId}/")]

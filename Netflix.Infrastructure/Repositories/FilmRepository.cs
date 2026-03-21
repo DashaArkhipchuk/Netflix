@@ -5,13 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Netflix.Domain;
+using Netflix.Domain.DTOs;
 using Netflix.Domain.IRepository;
 
 namespace Netflix.Infrastructure.Repositories
 {
     internal class FilmRepository(NetflixProjectContext dbContext) : IFilmRepository
     {
-        public async Task<List<Film>> GetAllAsync(int skip, int take, List<string> genres, bool sortByLatest = false, decimal? minimumRating = null, int? year = null, int? episodes = null)
+        public async Task<PagedResult<Film>> GetAllAsync(int skip, int take, List<string> genres, bool sortByLatest = false, decimal? minimumRating = null, int? year = null, int? episodes = null)
         {
             // Start with the base query
             var query = dbContext.Films.Include(f => f.Genres).AsQueryable();
@@ -43,12 +44,15 @@ namespace Netflix.Infrastructure.Repositories
                 query = query.OrderByDescending(film => film.ReleaseDate);
             }
 
+            var totalItems = query.Count();
+
             // Apply pagination
             query = query.Skip(skip).Take(take);
 
+            var items = await query.ToListAsync() ?? new List<Film>();
 
             // Execute the query and return results
-            return await query.ToListAsync() ?? new List<Film>();
+            return new PagedResult<Film> { TotalCount = totalItems, Items = items };
         }
 
         public async Task<Film?> GetByIdAsync(Guid? id)

@@ -9,6 +9,7 @@ using Netflix.Application.Common.Content;
 using Netflix.Application.Doramas.Common;
 using Netflix.Contracts.Common;
 using Netflix.Contracts.Content;
+using Netflix.Domain;
 
 namespace Netflix.API.Controllers
 {

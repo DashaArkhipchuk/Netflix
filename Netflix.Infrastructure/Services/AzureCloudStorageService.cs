@@ -13,7 +13,7 @@ using static System.Reflection.Metadata.BlobBuilder;
 
 namespace Netflix.Infrastructure.Services
 {
-    public class CloudStorageService : ICloudStorageService
+    public class AzureCloudStorageService : ICloudStorageService
     {
         private const string ContainerName = "submissionmedia";
         private readonly BlobServiceClient _blobServiceClient;
@@ -28,7 +28,7 @@ namespace Netflix.Infrastructure.Services
             {".png", "image/png"},    
         };
 
-        public CloudStorageService(BlobServiceClient blobServiceClient)
+        public AzureCloudStorageService(BlobServiceClient blobServiceClient)
         {
             _blobServiceClient = blobServiceClient;
             _containerClient = _blobServiceClient.GetBlobContainerClient(ContainerName);

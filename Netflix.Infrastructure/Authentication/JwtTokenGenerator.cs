@@ -24,7 +24,7 @@ namespace Netflix.Infrastructure.Authentication
             var signingCredentials = new SigningCredentials(
                 new SymmetricSecurityKey(
                     Encoding.UTF8.GetBytes(_jwtSettings.Secret)),
-                SecurityAlgorithms.HmacSha256);
+                SecurityAlgorithms.HmacSha512);
             var claims = new[]
             {
                 new Claim(JwtRegisteredClaimNames.Sub, client.Id.ToString()),

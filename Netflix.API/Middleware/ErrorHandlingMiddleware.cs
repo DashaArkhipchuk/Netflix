@@ -93,6 +93,14 @@ namespace Netflix.API.Middleware
                     Detail = ex.Message
                 },
 
+                AuthenticationException tokenEx => new ProblemDetails
+                {
+                    Type = "https://example.com/probs/autentication",
+                    Title = "Token Parsing Error",
+                    Status = (int)HttpStatusCode.Unauthorized,
+                    Detail = tokenEx.Message
+                },
+
                 _ => new ProblemDetails
                 {
                     Type = "https://example.com/probs/generic",

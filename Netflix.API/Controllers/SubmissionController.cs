@@ -39,6 +39,7 @@ namespace Netflix.API.Controllers
 
         [HttpPost("SubmitToRole")]
         [Authorize(Policy = "Actor")]
+        [RequestSizeLimit(500_000_000)]
         public async Task<IActionResult> Submit([FromForm] SubmitToRoleRequest request)
         {
             Guid clientId = ClientContextHelper.GetClientId(HttpContext);

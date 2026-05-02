@@ -1,5 +1,6 @@
 ﻿
 using Azure.Storage.Blobs;
+using CloudinaryDotNet;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -11,6 +12,7 @@ using Netflix.Application.Interfaces.Authentication;
 using Netflix.Domain.IRepository;
 using Netflix.Infrastructure;
 using Netflix.Infrastructure.Authentication;
+using Netflix.Infrastructure.CloudStorage;
 using Netflix.Infrastructure.Repositories;
 using Netflix.Infrastructure.Services;
 using System.Text;
@@ -50,9 +52,8 @@ namespace Netflix.Application.Extensions
             services.AddScoped<ICastingDirectorRepository, CastingDirectorRepository>();
 
             services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
-            var str = configuration["AzureStorageConnectionString"];
-            services.AddSingleton(x => new BlobServiceClient(configuration["AzureStorageConnectionString"]));
-            services.AddSingleton<ICloudStorageService, CloudStorageService>();
+
+            services.AddCloudStorage(configuration);
 
             return services;
         }
@@ -75,7 +76,8 @@ namespace Netflix.Application.Extensions
                     ValidIssuer = jwtSettings.Issuer,
                     ValidAudience = jwtSettings.Audience,
                     IssuerSigningKey = new SymmetricSecurityKey(
-                        Encoding.UTF8.GetBytes(jwtSettings.Secret))
+                        Encoding.UTF8.GetBytes(jwtSettings.Secret)),
+                    ClockSkew = TimeSpan.Zero
                 });
 
             services.AddAuthorization(options =>
@@ -93,5 +95,18 @@ namespace Netflix.Application.Extensions
             return services;
         }
 
+        public static IServiceCollection AddCloudStorage(this IServiceCollection services, IConfiguration configuration)
+        {
+            var cloudinarySettings = new CloudinarySettings();
+            configuration.Bind(CloudinarySettings.SectionName, cloudinarySettings);
+
+            var cloudinary = new Cloudinary(new Account(cloudinarySettings.CloudName, cloudinarySettings.APIKey, cloudinarySettings.APISecret));
+            cloudinary.Api.Timeout = cloudinarySettings.Timeout;
+            cloudinary.Api.ChunkSize = cloudinarySettings.ChunkSize;
+
+            services.AddSingleton(cloudinary);
+            services.AddSingleton<ICloudStorageService, CloudinaryCloudStorageService>();
+            return services;
+        }
     }
 }

@@ -393,3 +393,5 @@ E:\Netflix\Netflix.API\obj\Debug\net8.0\refint\Netflix.API.dll
 E:\Netflix\Netflix.API\obj\Debug\net8.0\Netflix.API.pdb
 E:\Netflix\Netflix.API\obj\Debug\net8.0\Netflix.API.genruntimeconfig.cache
 E:\Netflix\Netflix.API\obj\Debug\net8.0\ref\Netflix.API.dll
+E:\Netflix\Netflix.API\bin\Debug\net8.0\CloudinaryDotNet.dll
+E:\Netflix\Netflix.API\bin\Debug\net8.0\Newtonsoft.Json.dll

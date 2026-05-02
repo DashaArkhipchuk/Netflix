@@ -59,13 +59,9 @@ namespace Netflix.Application.Submissions.Commands.SubmitToRole
             }
 
             // 1. Upload files to cloud and get URIs
-            var mediaUris = new List<string>();
 
-            foreach (var file in request.Files)
-            {
-                string uri = await _cloudStorageService.UploadBlobAsync(file);
-                mediaUris.Add(uri);
-            }
+            var uploadTasks = request.Files.Select(file => _cloudStorageService.UploadBlobAsync(file));
+            var mediaUris = await Task.WhenAll(uploadTasks);
 
 
             // 2. Create the submission entity

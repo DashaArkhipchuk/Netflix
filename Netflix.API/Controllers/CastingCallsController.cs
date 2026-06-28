@@ -11,6 +11,7 @@ using Netflix.Application.CastingCalls.Commands.CreateCastingCall;
 using Netflix.Application.CastingCalls.Commands.RemoveCastingCall;
 using Netflix.Application.CastingCalls.Commands.UpdateCastingCall;
 using Netflix.Application.CastingCalls.Queries.GetAllCastingCalls;
+using Netflix.Application.CastingCalls.Queries.GetAllCastingCallsByActor;
 using Netflix.Application.CastingCalls.Queries.GetAllCastingCallsByDirector;
 using Netflix.Application.Common.Content;
 using Netflix.Application.ProjectTypes.Queries.GetAllProjectTypes;
@@ -92,6 +93,22 @@ namespace Netflix.API.Controllers
 
             return Ok(new PagedResult<CastingCallDto> { TotalCount = calls.TotalCount, Items = callDtos });
         }
+
+        [HttpPost("GetCastingCallsWithSubmissionsByAuthenticatedActorId")]
+        public async Task<IActionResult> GetByActor([FromQuery] GetAllContentRequest request, [FromBody] CastingCriteria castingCriteria)
+        {
+            Guid clientId = ClientContextHelper.GetClientId(HttpContext);
+
+            var command = _mapper.Map<(Guid, GetAllContentRequest, CastingCriteria), GetAllCastingCallsByActorQuery>((clientId, request, castingCriteria));
+
+            var calls = await _mediator.Send(command);
+
+            var callDtos = calls.Items.Select(x =>
+            new CastingCallWithSubmissionDto { Id = x.Id, Title = x.Title, SubmissionDue = x.SubmissionDue, ProjectType = x.ProjectType.ProjectTypeName, RoleType = x.RoleType.RoleTypeName, PlayableAgeFrom = x.PlayableAgeFrom, PlayableAgeTo = x.PlayableAgeTo, Payment = x.Payment, UnionDetails = x.UnionDetails, RoleDescription = x.RoleDescription, IsAnyGenderAccepted = x.IsAnyGenderAccepted, Locations = x.Locations.Select(l => $"{l.LocationName}, {l.RegionName}").ToList(), Genders = x.Genders.Select(g => g.GenderName).ToList(), SubmissionId = x.Submissions.First().Id, SubmissionNote = x.Submissions.First().SubmissionNote, SubmissionMedias = x.Submissions.First().SubmissionMedias.Select(m=>m.MediaUrl) }).ToList();
+
+            return Ok(new PagedResult<CastingCallWithSubmissionDto> { TotalCount = calls.TotalCount, Items = callDtos });
+        }
+
 
         [HttpDelete("Remove/{castingCallId}/")]
         public async Task<IActionResult> RemoveCastingCall([FromRoute] Guid castingCallId)

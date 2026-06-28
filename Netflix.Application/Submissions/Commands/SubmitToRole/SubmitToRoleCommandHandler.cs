@@ -53,7 +53,7 @@ namespace Netflix.Application.Submissions.Commands.SubmitToRole
             var actorId= client.Actor.Id;
 
             var callSubmissions = await _submissionRepository.GetAllSubmissionsByCastingCallAsync(request.CastingId);
-            if (callSubmissions.Where(x=>x.ActorId == actorId).Count() > 0)
+            if (callSubmissions.Items.Any(x=>x.ActorId == actorId))
             {
                 throw new AlreadyExistsException("Submission", "Actor id");
             }

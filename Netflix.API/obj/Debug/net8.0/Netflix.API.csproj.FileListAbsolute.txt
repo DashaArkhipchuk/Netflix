@@ -208,6 +208,7 @@ E:\Netflix\Netflix.API\bin\Debug\net8.0\Azure.Storage.Blobs.dll
 E:\Netflix\Netflix.API\bin\Debug\net8.0\Azure.Storage.Common.dll
 E:\Netflix\Netflix.API\bin\Debug\net8.0\BCrypt.Net-Next.dll
 E:\Netflix\Netflix.API\bin\Debug\net8.0\Bogus.dll
+E:\Netflix\Netflix.API\bin\Debug\net8.0\CloudinaryDotNet.dll
 E:\Netflix\Netflix.API\bin\Debug\net8.0\EntityFramework.SqlServer.dll
 E:\Netflix\Netflix.API\bin\Debug\net8.0\EntityFramework.dll
 E:\Netflix\Netflix.API\bin\Debug\net8.0\FluentValidation.dll
@@ -245,6 +246,7 @@ E:\Netflix\Netflix.API\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 E:\Netflix\Netflix.API\bin\Debug\net8.0\Microsoft.OpenApi.dll
 E:\Netflix\Netflix.API\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 E:\Netflix\Netflix.API\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+E:\Netflix\Netflix.API\bin\Debug\net8.0\Newtonsoft.Json.dll
 E:\Netflix\Netflix.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 E:\Netflix\Netflix.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 E:\Netflix\Netflix.API\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -393,5 +395,3 @@ E:\Netflix\Netflix.API\obj\Debug\net8.0\refint\Netflix.API.dll
 E:\Netflix\Netflix.API\obj\Debug\net8.0\Netflix.API.pdb
 E:\Netflix\Netflix.API\obj\Debug\net8.0\Netflix.API.genruntimeconfig.cache
 E:\Netflix\Netflix.API\obj\Debug\net8.0\ref\Netflix.API.dll
-E:\Netflix\Netflix.API\bin\Debug\net8.0\CloudinaryDotNet.dll
-E:\Netflix\Netflix.API\bin\Debug\net8.0\Newtonsoft.Json.dll

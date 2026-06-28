@@ -12,6 +12,7 @@ namespace Netflix.Domain.IRepository
     {
         bool ExistsCastingCallById(Guid castingId);
         Task<PagedResult<CastingCall>> GetAllAsync(int skip, int take, List<string> locations, List<string> playableAgeRanges, List<string> projectTypes, List<string> roleTypes, Guid? directorId = null);
+        Task<PagedResult<CastingCall>> GetCastingCallsByActorIdAsync(Guid actorId, int skip, int take, List<string> locations, List<string> playableAgeRanges, List<string> projectTypes, List<string> roleTypes);
         Task<CastingCall?> GetByIdAsync(Guid? id);
 
         void Add(CastingCall castingCall);

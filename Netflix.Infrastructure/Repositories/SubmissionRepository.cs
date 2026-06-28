@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Netflix.Application.Submissions.Queries.GetAllSubmissionsByCastingCall;
 using Netflix.Domain;
+using Netflix.Domain.DTOs;
 using Netflix.Domain.Entities;
 using Netflix.Domain.IRepository;
 using System;
@@ -9,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace Netflix.Infrastructure.Repositories
 {
@@ -25,9 +27,30 @@ namespace Netflix.Infrastructure.Repositories
             return await dbContext.Submissions.Include(x => x.Actor).Include(x => x.CastingCall).ThenInclude(c=>c.Locations).Include(c=>c.CastingCall).ThenInclude(c=>c.Genders).Include(c => c.CastingCall).ThenInclude(c => c.ProjectType).Include(c => c.CastingCall).ThenInclude(c => c.RoleType).Include(x => x.SubmissionMedias).SingleOrDefaultAsync(x=>x.Id == id);
         }
 
-        public async Task<List<Submission>> GetAllSubmissionsByCastingCallAsync(Guid castingCallId, int skip = 0, int take = 10)
+        public async Task<PagedResult<Submission>> GetAllSubmissionsByCastingCallAsync(Guid castingCallId, int skip = 0, int take = 10)
         {
-            return await dbContext.Submissions.Include(x => x.Actor).Include(x => x.CastingCall).ThenInclude(c => c.Locations).Include(c => c.CastingCall).ThenInclude(c => c.Genders).Include(c => c.CastingCall).ThenInclude(c => c.ProjectType).Include(c => c.CastingCall).ThenInclude(c => c.RoleType).Include(x => x.SubmissionMedias).Where(x=>x.CastingId == castingCallId).Skip(skip).Take(take).ToListAsync();
+            var query = dbContext.Submissions
+                        .Include(x => x.Actor)
+                        .Include(x => x.CastingCall)
+                            .ThenInclude(c => c.Locations)
+                        .Include(c => c.CastingCall)
+                            .ThenInclude(c => c.Genders)
+                        .Include(c => c.CastingCall)
+                            .ThenInclude(c => c.ProjectType)
+                        .Include(c => c.CastingCall)
+                            .ThenInclude(c => c.RoleType)
+                        .Include(x => x.SubmissionMedias)
+                        .Where(x => x.CastingId == castingCallId)
+                        .AsQueryable();
+
+            var totalItems = query.Count();
+
+            // Apply pagination
+            query = query.Skip(skip).Take(take);
+
+            var items = await query.ToListAsync() ?? new List<Submission>();
+
+            return new PagedResult<Submission> { TotalCount = totalItems, Items = items }; ;
         }
 
         public async Task<bool> Remove(Guid submissionId)

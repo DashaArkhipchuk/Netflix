@@ -1,6 +1,7 @@
 ﻿using MediatR;
 using Netflix.Application.Common.Errors;
 using Netflix.Domain;
+using Netflix.Domain.DTOs;
 using Netflix.Domain.Entities;
 using Netflix.Domain.IRepository;
 using System;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace Netflix.Application.Submissions.Queries.GetAllSubmissionsByCastingCall
 {
-    internal class GetAllSubmissionsByCastingCallQueryHandler : IRequestHandler<GetAllSubmissionsByCastingCallQuery, List<Submission>>
+    internal class GetAllSubmissionsByCastingCallQueryHandler : IRequestHandler<GetAllSubmissionsByCastingCallQuery, PagedResult<Submission>>
     {
         IClientRepository _clientRepository;
         ICastingCallRepository _castingCallRepository;
@@ -24,7 +25,7 @@ namespace Netflix.Application.Submissions.Queries.GetAllSubmissionsByCastingCall
             _submissionRepository = submissionRepository;
         }
 
-        public async Task<List<Submission>> Handle(GetAllSubmissionsByCastingCallQuery request, CancellationToken cancellationToken)
+        public async Task<PagedResult<Submission>> Handle(GetAllSubmissionsByCastingCallQuery request, CancellationToken cancellationToken)
         {
             if (await _clientRepository.GetClientByIdAsync(request.ClientId) is not Client client)
             {

@@ -1,15 +1,18 @@
-﻿using Mapster;
+﻿using Azure.Core;
+using Mapster;
 using Microsoft.EntityFrameworkCore.Design;
 using Netflix.Application.CastingCalls.Commands.CreateCastingCall;
 using Netflix.Application.CastingCalls.Commands.RemoveCastingCall;
 using Netflix.Application.CastingCalls.Commands.UpdateCastingCall;
 using Netflix.Application.CastingCalls.Queries.GetAllCastingCalls;
+using Netflix.Application.CastingCalls.Queries.GetAllCastingCallsByActor;
 using Netflix.Application.CastingCalls.Queries.GetAllCastingCallsByDirector;
 using Netflix.Application.Common.Content;
 using Netflix.Application.Submissions.Commands.RemoveSubmission;
 using Netflix.Contracts.CastingCalls;
 using Netflix.Contracts.CastingCalls.CreateCastingCall;
 using Netflix.Contracts.Common;
+using Netflix.Domain;
 using Netflix.Domain.Entities;
 
 namespace Netflix.API.Common.Mapping
@@ -63,6 +66,12 @@ namespace Netflix.API.Common.Mapping
                 .Map(dest => dest, src => src.Item3)
                 .Map(dest => dest.ClientId, src => src.Item1)
                 .Map(dest => dest.CastingCallId, src => src.Item2);
+
+            config.NewConfig<(Guid, GetAllContentRequest, CastingCriteria), GetAllCastingCallsByActorQuery>()
+                .Map(dest => dest.Criteria, src => src.Item3)
+                .Map(dest => dest.Skip, src => src.Item2.Skip)
+                .Map(dest => dest.Take, src => src.Item2.Take)
+                .Map(dest => dest.ClientId, src => src.Item1);
 
         }
     }

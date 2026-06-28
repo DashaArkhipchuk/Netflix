@@ -33,6 +33,48 @@ namespace Netflix.Infrastructure.Repositories
                 query = query.Where(x => x.CreatedByDirectorId == directorId);
             }
 
+            query = ApplyFilters(query, locations, playableAgeRanges, projectTypes, roleTypes);
+
+            var totalItems = query.Count();
+
+            // Apply pagination
+            query = query.Skip(skip).Take(take);
+
+
+            var items = await query.ToListAsync() ?? new List<CastingCall>();
+
+            return new PagedResult<CastingCall> { TotalCount = totalItems, Items = items }; ;
+        }
+
+        public async Task<PagedResult<CastingCall>> GetCastingCallsByActorIdAsync(Guid actorId, int skip, int take, List<string> locations, List<string> playableAgeRanges, List<string> projectTypes, List<string> roleTypes)
+        {
+            // Start with the base query
+            var query = dbContext.CastingCalls
+                .Where(c => c.Submissions.Any(s => s.ActorId == actorId))
+                .Include(c => c.Genders)
+                .Include(c => c.Locations)
+                .Include(c => c.ProjectType)
+                .Include(c => c.RoleType)
+                .Include(c => c.Submissions.Where(s => s.ActorId == actorId))
+                    .ThenInclude(s => s.SubmissionMedias)
+                .AsQueryable();
+
+
+            query = ApplyFilters(query, locations, playableAgeRanges, projectTypes, roleTypes);
+
+            var totalItems = query.Count();
+
+            // Apply pagination
+            query = query.Skip(skip).Take(take);
+
+
+            var items = await query.ToListAsync() ?? new List<CastingCall>();
+
+            return new PagedResult<CastingCall> { TotalCount = totalItems, Items = items }; ;
+        }
+
+        private static IQueryable<CastingCall>? ApplyFilters(IQueryable<CastingCall>? query, List<string> locations, List<string> playableAgeRanges, List<string> projectTypes, List<string> roleTypes)
+        {
             // Apply locations filter if provided
             if (locations != null && locations.Count != 0)
             {
@@ -89,18 +131,10 @@ namespace Netflix.Infrastructure.Repositories
                 }
             }
 
-            var totalItems = query.Count();
-
-            // Apply pagination
-            query = query.Skip(skip).Take(take);
-
-
-            var items = await query.ToListAsync() ?? new List<CastingCall>();
-
-            return new PagedResult<CastingCall> { TotalCount = totalItems, Items = items }; ;
+            return query;
         }
 
-        public static List<PlayableRange> ParsePlayableAgeRanges(List<string> ageRangeStrings)
+        private static List<PlayableRange> ParsePlayableAgeRanges(List<string> ageRangeStrings)
         {
             var parsedRanges = new List<PlayableRange>();
             List<string> lowerranges = ageRangeStrings.Select(s => s.ToLower()).ToList();
@@ -150,12 +184,12 @@ namespace Netflix.Infrastructure.Repositories
 
         public async Task<CastingCall?> GetByIdAsync(Guid? id)
         {
-            return await dbContext.CastingCalls.Include(c => c.RoleType).Include(c => c.ProjectType).Include(c => c.Auditions).ThenInclude(a=>a.Location).Include(c => c.EthnicAppearances).Include(c => c.Genders).Include(c => c.Locations).Include(c=>c.Submissions).ThenInclude(s=>s.SubmissionMedias).Include(c=>c.Submissions).SingleOrDefaultAsync(c => c.Id == id);
+            return await dbContext.CastingCalls.Include(c => c.RoleType).Include(c => c.ProjectType).Include(c => c.Auditions).ThenInclude(a => a.Location).Include(c => c.EthnicAppearances).Include(c => c.Genders).Include(c => c.Locations).Include(c => c.Submissions).ThenInclude(s => s.SubmissionMedias).Include(c => c.Submissions).SingleOrDefaultAsync(c => c.Id == id);
         }
 
         public bool ExistsCastingCallById(Guid castingId)
         {
-            return dbContext.CastingCalls.SingleOrDefault(c => c.Id == castingId)is not null;
+            return dbContext.CastingCalls.SingleOrDefault(c => c.Id == castingId) is not null;
         }
 
         public void Add(CastingCall castingCall)

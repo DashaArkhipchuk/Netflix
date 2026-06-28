@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Netflix.Domain.DTOs;
 using Netflix.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -14,5 +15,5 @@ namespace Netflix.Application.Submissions.Queries.GetAllSubmissionsByCastingCall
         Guid CastingCallId,
         int Skip = 0,
         int Take = 0
-    ) : IRequest<List<Submission>>;
+    ) : IRequest<PagedResult<Submission>>;
 }

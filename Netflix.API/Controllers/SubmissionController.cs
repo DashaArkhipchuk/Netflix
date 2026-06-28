@@ -10,6 +10,7 @@ using Netflix.Application.Common.Content;
 using Netflix.Application.Common.Errors;
 using Netflix.Application.Submissions.Commands.RemoveSubmission;
 using Netflix.Application.Submissions.Commands.SubmitToRole;
+using Netflix.Application.Submissions.Commands.SubmitToRoleWithUrls;
 using Netflix.Application.Submissions.Queries.GetAllSubmissionsByCastingCall;
 using Netflix.Application.Submissions.Queries.GetSubmissionsByActorId;
 using Netflix.Contracts.ActorProfile.Common;
@@ -18,6 +19,7 @@ using Netflix.Contracts.Common;
 using Netflix.Contracts.Films.GetFilmById;
 using Netflix.Contracts.Submissions;
 using Netflix.Domain;
+using Netflix.Domain.DTOs;
 using Netflix.Domain.Entities;
 using System.Collections.Generic;
 
@@ -60,6 +62,28 @@ namespace Netflix.API.Controllers
 
         }
 
+        [HttpPost("SubmitToRoleWithUrls")]
+        [Authorize(Policy = "Actor")]
+        public async Task<IActionResult> Submit([FromBody] SubmitToRoleWithUrlsRequest request)
+        {
+            Guid clientId = ClientContextHelper.GetClientId(HttpContext);
+
+            if (request.MediaUrls.Count() != request.MediaUrls.Distinct().Count())
+            {
+                throw new Exception("Duplicate media urls exist. Check if you are trying to upload the same files");
+            }
+
+            var command = _mapper.Map<(Guid, SubmitToRoleWithUrlsRequest), SubmitToRoleWithUrlsCommand>((clientId, request));
+
+            var submission = await _mediator.Send(command);
+            var a = _mapper.Map<ActorProfileResponse>(submission.Actor);
+            var c = new CastingCallDto { Id = submission.CastingCall.Id, Title = submission.CastingCall.Title, SubmissionDue = submission.CastingCall.SubmissionDue, ProjectType = submission.CastingCall.ProjectType.ProjectTypeName, RoleType = submission.CastingCall.RoleType.RoleTypeName, PlayableAgeFrom = submission.CastingCall.PlayableAgeFrom, PlayableAgeTo = submission.CastingCall.PlayableAgeTo, Payment = submission.CastingCall.Payment, UnionDetails = submission.CastingCall.UnionDetails, RoleDescription = submission.CastingCall.RoleDescription, IsAnyGenderAccepted = submission.CastingCall.IsAnyGenderAccepted, Locations = submission.CastingCall.Locations.Select(l => $"{l.LocationName}, {l.RegionName}").ToList(), Genders = submission.CastingCall.Genders.Select(g => g.GenderName).ToList() };
+            //var dto = new SubmissionExtendedDto {Id = submission.Id, Actor = a, CastingCall = c, SubmissionNote = submission.SubmissionNote, SubmissionMedias = submission.SubmissionMedias.Select(x=>x.MediaUrl).ToArray() };
+            var dto = _mapper.Map<SubmissionExtendedDto>(submission);
+            return Ok(dto);
+
+        }
+
         [HttpPost("GetSubmissionByCastingCallId/{castingCallId}/")]
         [Authorize(Policy = "Director")]
         public async Task<IActionResult> GetSubmissionByCastingCall([FromRoute] Guid castingCallId, [FromQuery] GetAllContentRequest request)
@@ -70,9 +94,9 @@ namespace Netflix.API.Controllers
 
             var submissions = await _mediator.Send(command);
 
-            var dtos = submissions.Select(x => _mapper.Map<SubmissionDto>(x)).ToList();
+            var dtos = submissions.Items.Select(x => _mapper.Map<SubmissionDto>(x)).ToList();
 
-            return Ok(dtos);
+            return Ok(new PagedResult<SubmissionDto> { TotalCount = submissions.TotalCount, Items = dtos });
         }
 
         [HttpDelete("RemoveSubmission/{submissionId}/")]

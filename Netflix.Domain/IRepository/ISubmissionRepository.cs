@@ -1,4 +1,5 @@
-﻿using Netflix.Domain.Entities;
+﻿using Netflix.Domain.DTOs;
+using Netflix.Domain.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace Netflix.Domain.IRepository
         void Add(Submission sub);
         Task<Submission?> GetSubmissionByIdAsync(Guid id);
 
-        Task<List<Submission>> GetAllSubmissionsByCastingCallAsync(Guid castingCallId, int skip = 0, int take = 10);
+        Task<PagedResult<Submission>> GetAllSubmissionsByCastingCallAsync(Guid castingCallId, int skip = 0, int take = 10);
         Task<bool> Remove(Guid submissionId);
         Task<List<Submission>> GetSubmissionsByActorIdAsync(Guid actorId, int skip = 0, int take = 10);
     }

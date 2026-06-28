@@ -1,12 +1,15 @@
-﻿using Mapster;
+﻿using Azure.Core;
+using Mapster;
 using Netflix.Application.CastingCalls.Queries.GetAllCastingCalls;
 using Netflix.Application.Submissions.Commands.RemoveSubmission;
 using Netflix.Application.Submissions.Commands.SubmitToRole;
+using Netflix.Application.Submissions.Commands.SubmitToRoleWithUrls;
 using Netflix.Application.Submissions.Queries.GetAllSubmissionsByCastingCall;
 using Netflix.Application.Submissions.Queries.GetSubmissionsByActorId;
 using Netflix.Contracts.CastingCalls;
 using Netflix.Contracts.Common;
 using Netflix.Contracts.Submissions;
+using Netflix.Domain;
 using Netflix.Domain.Entities;
 
 namespace Netflix.API.Common.Mapping
@@ -48,6 +51,12 @@ namespace Netflix.API.Common.Mapping
                 .Map(dest => dest.Skip, src => src.Item2.Skip)
                 .Map(dest => dest.Take, src => src.Item2.Take)
                 .Map(dest => dest.ClientId, src => src.Item1);
+
+            config.NewConfig<(Guid, SubmitToRoleWithUrlsRequest), SubmitToRoleWithUrlsCommand>()
+                .Map(dest => dest.ClientId, src => src.Item1)
+                .Map(dest => dest.CastingId, src => src.Item2.CastingId)
+                .Map(dest => dest.SubmissionNote, src => src.Item2.SubmissionNote)
+                .Map(dest => dest.MediaUrls, src => src.Item2.MediaUrls);
         }
     }
 }

@@ -8,10 +8,10 @@ namespace Netflix.Domain.Entities
 {
     public class Follow
     {
-        public int Id { get; set; }
-        public int FollowerId { get; set; }
+        public Guid Id { get; set; }
+        public Guid FollowerId { get; set; }
         public SocialMediaProfile Follower { get; set; } = null!;
-        public int FollowingId { get; set; }
+        public Guid FollowingId { get; set; }
         public SocialMediaProfile Following { get; set; } = null!;
     }
 }

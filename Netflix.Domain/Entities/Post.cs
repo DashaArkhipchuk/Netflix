@@ -9,8 +9,8 @@ namespace Netflix.Domain.Entities
 {
     public class Post
     {
-        public int Id { get; set; }
-        public int AuthorId { get; set; }
+        public Guid Id { get; set; }
+        public Guid AuthorId { get; set; }
         public SocialMediaProfile Author { get; set; } = null!;
 
         public string PostText { get; set; } = string.Empty; // max 2200 chars

@@ -47,6 +47,11 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
     public virtual DbSet<AuthorModel> Authors { get; set; }
     public virtual DbSet<NewsRelated> NewsRelateds { get; set; }
 
+    public virtual DbSet<SocialMediaProfile> SocialMediaProfiles { get; set; }
+    public virtual DbSet<Post> Posts { get; set; }
+
+
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<ActorModel>(entity =>

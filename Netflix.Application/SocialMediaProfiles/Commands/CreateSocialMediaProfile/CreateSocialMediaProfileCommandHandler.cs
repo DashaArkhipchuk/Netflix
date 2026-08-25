@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Netflix.Application.Common.Errors;
+using Netflix.Application.SocialMediaProfiles.Common;
 using Netflix.Domain;
 using Netflix.Domain.Entities;
 using Netflix.Domain.IRepository;
@@ -11,17 +12,17 @@ using System.Threading.Tasks;
 
 namespace Netflix.Application.SocialMediaProfiles.Commands.CreateSocialMediaProfile
 {
-    internal class CreateSocialMediaProfileCommandHandler : IRequestHandler<CreateSocialMediaProfileCommand, SocialMediaProfile>
+    internal class CreateSocialMediaProfileCommandHandler : IRequestHandler<CreateSocialMediaProfileCommand, SocialMediaProfileResult>
     {
         private readonly IClientRepository _clientRepository;
         private readonly ISocialMediaProfileRepository _profileRepository;
 
-        public CreateSocialMediaProfileCommandHandler(ISocialMediaRepository profileRepository, IClientRepository clientRepository)
+        public CreateSocialMediaProfileCommandHandler(ISocialMediaProfileRepository profileRepository, IClientRepository clientRepository)
         {
             _profileRepository = profileRepository;
             _clientRepository = clientRepository;
         }
-        public async Task<SocialMediaProfile> Handle(CreateSocialMediaProfileCommand request, CancellationToken cancellationToken)
+        public async Task<SocialMediaProfileResult> Handle(CreateSocialMediaProfileCommand request, CancellationToken cancellationToken)
         {
             if (await _clientRepository.GetClientByIdAsync(request.ClientId) is not Client client)
             {
@@ -52,11 +53,9 @@ namespace Netflix.Application.SocialMediaProfiles.Commands.CreateSocialMediaProf
                 AboutMeText = request.AboutMeText
             };
 
-            await _profileRepository.AddAsync(profile);
+            _profileRepository.Add(profile);
 
-            return profile;
-
-
+            return new SocialMediaProfileResult(profile);
         }
     }
 }

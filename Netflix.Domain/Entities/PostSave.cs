@@ -8,9 +8,9 @@ namespace Netflix.Domain.Entities
 {
     public class PostSave
     {
-        public int PostId { get; set; }
+        public Guid PostId { get; set; }
         public Post Post { get; set; } = null!;
-        public int ProfileId { get; set; }
+        public Guid ProfileId { get; set; }
         public SocialMediaProfile Profile { get; set; } = null!;
     }
 }

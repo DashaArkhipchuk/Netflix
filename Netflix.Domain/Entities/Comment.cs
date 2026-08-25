@@ -8,12 +8,12 @@ namespace Netflix.Domain.Entities
 {
     public class Comment
     {
-        public int Id { get; set; }
-        public int PostId { get; set; }
+        public Guid Id { get; set; }
+        public Guid PostId { get; set; }
         public Post Post { get; set; } = null!;
-        public int AuthorId { get; set; }
+        public Guid AuthorId { get; set; }
         public SocialMediaProfile Author { get; set; } = null!;
-        public int? ParentCommentId { get; set; }
+        public Guid? ParentCommentId { get; set; }
         public Comment? ParentComment { get; set; }
         public ICollection<Comment> Replies { get; set; } = new List<Comment>();
         public string Text { get; set; } = string.Empty;

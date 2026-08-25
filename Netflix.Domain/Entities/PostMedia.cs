@@ -8,8 +8,8 @@ namespace Netflix.Domain.Entities
 {
     public class PostMedia
     {
-        public int Id { get; set; }
-        public int PostId { get; set; }
+        public Guid Id { get; set; }
+        public Guid PostId { get; set; }
         public Post Post { get; set; } = null!;
         public string Url { get; set; } = string.Empty;
         public string MediaType { get; set; } = "image"; // image | video

@@ -1,11 +1,15 @@
 ﻿using MapsterMapper;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Netflix.API.Common.Helpers;
 using Netflix.Application.CastingCalls.Commands.CreateCastingCall;
+using Netflix.Application.SocialMediaProfiles.Commands.CreateSocialMediaProfile;
 using Netflix.Contracts.CastingCalls;
 using Netflix.Contracts.CastingCalls.CreateCastingCall;
+using Netflix.Contracts.SocialMediaProfile.Common;
+using Netflix.Contracts.SocialMediaProfile.CreateSocialMediaProfile;
 
 namespace Netflix.API.Controllers
 {
@@ -23,15 +27,16 @@ namespace Netflix.API.Controllers
         }
 
         [HttpPost("Create")]
-        public async Task<IActionResult> Create(CreateCastingCallRequest request)
+        [Authorize]
+        public async Task<IActionResult> Create(CreateSocialMediaProfileRequest request)
         {
             Guid clientId = ClientContextHelper.GetClientId(HttpContext);
 
             var command = _mapper.Map<(Guid, CreateSocialMediaProfileRequest), CreateSocialMediaProfileCommand>((clientId, request));
 
-            var  = await _mediator.Send(command);
+            var profile  = await _mediator.Send(command);
 
-            return Ok(_mapper.Map<CastingCallExtendedDto>(castingCall));
+            return Ok(_mapper.Map<SocialMediaProfileResponse>(profile));
         }
 
     }

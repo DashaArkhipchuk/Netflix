@@ -8,9 +8,9 @@ namespace Netflix.Domain.Entities
 {
     public class PostLike
     {
-        public int PostId { get; set; }
+        public Guid PostId { get; set; }
         public Post Post { get; set; } = null!;
-        public int ProfileId { get; set; }
+        public Guid ProfileId { get; set; }
         public SocialMediaProfile Profile { get; set; } = null!;
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
     }

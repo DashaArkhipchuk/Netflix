@@ -8,7 +8,7 @@ namespace Netflix.Domain.Entities
 {
     public class Hashtag
     {
-        public int Id { get; set; }
+        public Guid Id { get; set; }
         public string Tag { get; set; } = string.Empty;
         public ICollection<Post> Posts { get; set; } = new List<Post>();
     }

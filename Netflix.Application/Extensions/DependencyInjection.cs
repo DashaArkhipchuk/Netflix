@@ -35,6 +35,8 @@ namespace Netflix.Application.Extensions
 
             services.AddScoped<IRelatedNewsClassifier, RelatedNewsClassifier>();
 
+            services.AddHttpClient();
+
 
             return services;
         }

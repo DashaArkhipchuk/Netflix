@@ -3,15 +3,20 @@ using Netflix.Application.Common.Validation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Netflix.Application.SocialMediaProfiles.Commands.CreateSocialMediaProfile
 {
-    internal class CreateSocialMediaProfileCommandValidator: AbstractValidator<CreateSocialMediaProfileCommand>
+    public class CreateSocialMediaProfileCommandValidator: AbstractValidator<CreateSocialMediaProfileCommand>
     {
-        public CreateSocialMediaProfileCommandValidator()
+        private readonly HttpClient _httpClient;
+
+        public CreateSocialMediaProfileCommandValidator(IHttpClientFactory httpClientFactory)
         {
+            _httpClient = httpClientFactory.CreateClient();
+
             RuleFor(x => x.DisplayName)
                 .NotEmpty().WithMessage("Display name is required.")
                 .MaximumLength(100).WithMessage("Display name must not exceed 100 characters.");
@@ -23,11 +28,11 @@ namespace Netflix.Application.SocialMediaProfiles.Commands.CreateSocialMediaProf
                 .WithMessage("Nickname may only contain letters, numbers, dots and underscores.");
 
             RuleFor(x => x.AvatarUrl).MaximumLength(500)
-                .Must(ValidationPredicateHelpers.BeAValidUrl).When(x => ValidationPredicateHelpers.BeNotNullOrWhitespace(x.AvatarUrl))
+                .MustAsync(async (url, cancellationToken) => await ValidationPredicateHelpers.BeAValidImageUrlAsync(url, _httpClient)).When(x => ValidationPredicateHelpers.BeNotNullOrWhitespace(x.AvatarUrl))
                 .WithMessage("Avatar URL must be a valid URL.");
 
             RuleFor(x => x.BackgroundUrl).MaximumLength(500)
-                .Must(ValidationPredicateHelpers.BeAValidUrl).When(x => ValidationPredicateHelpers.BeNotNullOrWhitespace(x.BackgroundUrl))
+                .MustAsync(async (url, cancellationToken) => await ValidationPredicateHelpers.BeAValidImageUrlAsync(url, _httpClient)).When(x => ValidationPredicateHelpers.BeNotNullOrWhitespace(x.BackgroundUrl))
                 .WithMessage("Background URL must be a valid URL.");
 
             RuleFor(x=>x.PhoneNumber).MaximumLength(100)

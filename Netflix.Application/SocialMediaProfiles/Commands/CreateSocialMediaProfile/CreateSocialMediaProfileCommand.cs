@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Netflix.Domain.Entities;
+using Netflix.Application.SocialMediaProfiles.Common;
 
 namespace Netflix.Application.SocialMediaProfiles.Commands.CreateSocialMediaProfile
 {
@@ -20,5 +21,5 @@ namespace Netflix.Application.SocialMediaProfiles.Commands.CreateSocialMediaProf
         string? City,
         string? Gender,
         string? AboutMeText
-    ):IRequest<SocialMediaProfile>;
+    ):IRequest<SocialMediaProfileResult>;
 }

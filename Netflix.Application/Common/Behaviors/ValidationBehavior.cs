@@ -28,8 +28,13 @@ namespace Netflix.Application.Common.Behaviors
 
             var context = new ValidationContext<TRequest>(request);
 
+            var validationResults = await Task.WhenAll(
+               _validators.Select(validator =>
+                   validator.ValidateAsync(context, cancellationToken))
+           );
+
             var validationErrors = 
-                _validators.Select(validator => validator.Validate(context))
+                validationResults
                 .Where(validationResult => validationResult.Errors.Any())
                 .SelectMany(validationResult => validationResult.Errors)
                 .Select(validationFailure => new ValidationError(

@@ -12,11 +12,8 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
 {
     public virtual DbSet<Actor> Actors { get; set; }
     public virtual DbSet<ActorModel> ActorModels { get; set; }
-
     public virtual DbSet<Cinema> Cinemas { get; set; }
-
     public virtual DbSet<Client> Clients { get; set; }
-
     public virtual DbSet<CastingDirector> CastingDirectors { get; set; }
     public virtual DbSet<CastingDirectorType> CastingDirectorTypes { get; set; }
     public virtual DbSet<CastingCall> CastingCalls { get; set; }
@@ -26,53 +23,36 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
     public virtual DbSet<RoleType> RoleTypes { get; set; }
     public virtual DbSet<EthnicAppearance> EthnicAppearances { get; set; }
     public virtual DbSet<Audition> Auditions { get; set; }
-
     public virtual DbSet<Submission> Submissions { get; set; }
     public virtual DbSet<SubmissionMedia> SubmissionMedias { get; set; }
-
     public virtual DbSet<DateTimeSession> DateTimeSessions { get; set; }
-
     public virtual DbSet<Film> Films { get; set; }
-
     public virtual DbSet<FilmActor> FilmActors { get; set; }
-
     public virtual DbSet<FilmGenre> FilmGenres { get; set; }
-
     public virtual DbSet<FilmSession> FilmSessions { get; set; }
-
     public virtual DbSet<GenreModel> GenreModels { get; set; }
-
     public virtual DbSet<OperationLog> OperationLogs { get; set; }
-
     public virtual DbSet<OperationType> OperationTypes { get; set; }
-
     public virtual DbSet<Order> Orders { get; set; }
-
     public virtual DbSet<Product> Products { get; set; }
-
     public virtual DbSet<Series> Series { get; set; }
-
     public virtual DbSet<SeriesActor> SeriesActors { get; set; }
-
     public virtual DbSet<SeriesGenre> SeriesGenres { get; set; }
     public virtual DbSet<SeriesEpisode> SeriesEpisode { get; set; }
-
     public virtual DbSet<Showing> Showings { get; set; }
-
     public virtual DbSet<Ticket> Tickets { get; set; }
 
     public virtual DbSet<News> News { get; set; }
     public virtual DbSet<NewsType> NewsTypes { get; set; }
     public virtual DbSet<AuthorModel> Authors { get; set; }
+    public virtual DbSet<NewsRelated> NewsRelateds { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<ActorModel>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__ActorMod__3213E83FE59845D5");
-
             entity.ToTable("ActorModel");
-
             entity.Property(e => e.Id)
                 .HasDefaultValueSql("(newid())")
                 .HasColumnName("id");
@@ -83,9 +63,7 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
         modelBuilder.Entity<Cinema>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Cinema__3213E83FE2700ADC");
-
             entity.ToTable("Cinema");
-
             entity.Property(e => e.Id)
                 .HasDefaultValueSql("(newid())")
                 .HasColumnName("id");
@@ -96,9 +74,7 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
         modelBuilder.Entity<Client>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Client__3213E83FE3E883EE");
-
             entity.ToTable("Client");
-
             entity.Property(e => e.Id)
                 .HasDefaultValueSql("(newid())")
                 .HasColumnName("id");
@@ -111,12 +87,99 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
             entity.Property(e => e.Password).HasMaxLength(30);
         });
 
+        //Social media profile
+
+        modelBuilder.Entity<SocialMediaProfile>(entity =>
+        {
+            entity.HasOne(p => p.Client)
+                .WithOne(c => c.Profile)
+                .HasForeignKey<SocialMediaProfile>(p => p.ClientId)
+                .OnDelete(DeleteBehavior.Cascade);
+            entity.HasIndex(p => p.Nickname).IsUnique();
+        });
+
+        modelBuilder.Entity<Follow>(entity =>
+        {
+            entity.HasOne(f => f.Follower)
+                .WithMany(p => p.Following)
+                .HasForeignKey(f => f.FollowerId)
+                .OnDelete(DeleteBehavior.Restrict);
+            entity.HasOne(f => f.Following)
+                .WithMany(p => p.Followers)
+                .HasForeignKey(f => f.FollowingId)
+                .OnDelete(DeleteBehavior.Restrict);
+            entity.HasIndex(f => new { f.FollowerId, f.FollowingId }).IsUnique();
+        });
+
+        //Post
+        modelBuilder.Entity<Post>(entity =>
+        {
+            entity.HasOne(p => p.Author)
+                .WithMany(pr => pr.Posts)
+                .HasForeignKey(p => p.AuthorId)
+                .OnDelete(DeleteBehavior.Restrict);
+            entity.Property(p => p.PostText).HasMaxLength(2200);
+            entity.HasMany(p => p.CoAuthors)
+               .WithMany()
+               .UsingEntity(j => j.ToTable("PostCoAuthors"));
+
+            entity.HasMany(p => p.Hashtags)
+                 .WithMany(h => h.Posts)
+                 .UsingEntity(j => j.ToTable("PostHashtags"));
+        });
+
+        modelBuilder.Entity<Hashtag>(entity =>
+        {
+            entity.HasIndex(h => h.Tag).IsUnique();
+        });
+
+        //Comment
+        modelBuilder.Entity<Comment>(entity =>
+        {
+            entity.HasOne(c => c.ParentComment)
+                .WithMany(c => c.Replies)
+                .HasForeignKey(c => c.ParentCommentId)
+                .OnDelete(DeleteBehavior.Restrict);
+        });
+
+        modelBuilder.Entity<Comment>(entity =>
+        {
+            entity.HasOne(c => c.Author)
+                .WithMany()
+                .HasForeignKey(c => c.AuthorId)
+                .OnDelete(DeleteBehavior.Restrict);
+        });
+        // PostLike / CommentLike / PostSave (composite-key join entities) ----
+        modelBuilder.Entity<PostLike>(entity =>
+        {
+            entity.HasKey(x => new { x.PostId, x.ProfileId });
+            entity.HasOne(x => x.Profile)
+                .WithMany()
+                .HasForeignKey(x => x.ProfileId)
+                .OnDelete(DeleteBehavior.Restrict);
+        });
+        modelBuilder.Entity<CommentLike>(entity =>
+        {
+            entity.HasKey(x => new { x.CommentId, x.ProfileId });
+            entity.HasOne(x => x.Profile)
+                .WithMany()
+                .HasForeignKey(x => x.ProfileId)
+                .OnDelete(DeleteBehavior.Restrict);
+        });
+
+        modelBuilder.Entity<PostSave>(entity =>
+        {
+            entity.HasKey(x => new { x.PostId, x.ProfileId });
+            entity.HasOne(x => x.Profile)
+                .WithMany()
+                .HasForeignKey(x => x.ProfileId)
+                .OnDelete(DeleteBehavior.Restrict);
+        });
+            
         modelBuilder.Entity<Actor>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Actor__3213E83F800F5602");
-
             entity.ToTable("Actor");
-
             entity.Property(e => e.Id)
                 .HasDefaultValueSql("(newid())")
                 .HasColumnName("id");
@@ -142,7 +205,6 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
         modelBuilder.Entity<CastingDirector>(entity =>
         {
             entity.HasKey(e => e.Id);
-
             entity.Property(e => e.FullName).IsRequired().HasMaxLength(255);
             entity.Property(e => e.CompanyName).IsRequired().HasMaxLength(255);
             entity.Property(e => e.Website).HasMaxLength(255);
@@ -161,53 +223,13 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
                 .OnDelete(DeleteBehavior.Cascade);
         });
 
-        modelBuilder.Entity<News>(entity =>
-        {
-            entity.HasKey(e => e.Id);
-
-            entity.ToTable("News");
-
-            entity.Property(e => e.Id)
-            .HasDefaultValueSql("(newid())")
-            .HasColumnName("Id");
-            entity.Property(e => e.Title).HasMaxLength(255);
-            entity.Property(e => e.ImageURL).HasColumnName("ImageURL").HasMaxLength(200);
-            entity.Property(e => e.Description).HasMaxLength(1000);
-
-
-            entity.HasOne(cc => cc.Author)
-            .WithMany(pt => pt.NewsCollection)
-            .HasForeignKey(cc => cc.AuthorId);
-
-            entity.HasOne(cc => cc.Type)
-            .WithMany(rt => rt.NewsCollection)
-            .HasForeignKey(cc => cc.TypeId);
-        });
-
-        modelBuilder.Entity<AuthorModel>(entity =>
-        {
-            entity.HasKey(e => e.Id);
-            entity.ToTable("AuthorModel");
-            entity.Property(e => e.Name).HasMaxLength(50);
-            entity.Property(e=>e.Surname).HasMaxLength(50);
-        });
-
-        modelBuilder.Entity<NewsType>(entity =>
-        {
-            entity.HasKey(e => e.Id);
-            entity.ToTable("NewsType");
-            entity.Property(e => e.Name).HasMaxLength(100);
-        });
-
         modelBuilder.Entity<CastingCall>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__CastingC__3214EC07F2204885");
-
             entity.ToTable("CastingCalls");
-
             entity.Property(e => e.Id)
-            .HasDefaultValueSql("(newid())")
-            .HasColumnName("Id");
+                .HasDefaultValueSql("(newid())")
+                .HasColumnName("Id");
             entity.Property(e => e.Title).HasMaxLength(255);
             entity.Property(e => e.PlayableAgeFrom).HasColumnName("PlayableAgeFrom");
             entity.Property(e => e.PlayableAgeTo).HasColumnName("PlayableAgeTo");
@@ -216,54 +238,50 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
             entity.Property(e => e.IsAnyEthnicAppearanceAccepted).HasColumnName("IsAnyEthnicAppearanceAccepted");
             entity.Property(e => e.IsAnyGenderAccepted).HasColumnName("IsAnyGenderAccepted");
 
-
             entity.HasOne(cc => cc.ProjectType)
-            .WithMany(pt => pt.CastingCalls)
-            .HasForeignKey(cc => cc.ProjectTypeId);
-
+                .WithMany(pt => pt.CastingCalls)
+                .HasForeignKey(cc => cc.ProjectTypeId);
             entity.HasOne(cc => cc.RoleType)
-            .WithMany(rt => rt.CastingCalls)
-            .HasForeignKey(cc => cc.RoleTypeId);
+                .WithMany(rt => rt.CastingCalls)
+                .HasForeignKey(cc => cc.RoleTypeId);
 
             entity.HasMany(cc => cc.Locations)
-            .WithMany(l => l.CastingCalls)
-            .UsingEntity<Dictionary<string, object>>(
-                "CastingCallsLocations",
-                cc => cc.HasOne<Location>().WithMany().HasForeignKey("IdLocation"),
-                l => l.HasOne<CastingCall>().WithMany().HasForeignKey("IdCastingCall")
-            );
+                .WithMany(l => l.CastingCalls)
+                .UsingEntity<Dictionary<string, object>>(
+                    "CastingCallsLocations",
+                    cc => cc.HasOne<Location>().WithMany().HasForeignKey("IdLocation"),
+                    l => l.HasOne<CastingCall>().WithMany().HasForeignKey("IdCastingCall")
+                );
 
             entity.HasMany(cc => cc.Genders)
-            .WithMany(g => g.CastingCalls)
-            .UsingEntity<Dictionary<string, object>>(
-                "CastingCallsGenders",
-                cc => cc.HasOne<Gender>().WithMany().HasForeignKey("IdGender"),
-                g => g.HasOne<CastingCall>().WithMany().HasForeignKey("IdCastingCall")
-            );
+                .WithMany(g => g.CastingCalls)
+                .UsingEntity<Dictionary<string, object>>(
+                    "CastingCallsGenders",
+                    cc => cc.HasOne<Gender>().WithMany().HasForeignKey("IdGender"),
+                    g => g.HasOne<CastingCall>().WithMany().HasForeignKey("IdCastingCall")
+                );
 
             entity.HasMany(cc => cc.EthnicAppearances)
             .WithMany(ea => ea.CastingCalls)
-            .UsingEntity<Dictionary<string, object>>(
-                "CastingCallsEthnicAppearances",
-                cc => cc.HasOne<EthnicAppearance>().WithMany().HasForeignKey("IdAppearance"),
-                ea => ea.HasOne<CastingCall>().WithMany().HasForeignKey("IdCastingCall")
-            );
+                .UsingEntity<Dictionary<string, object>>(
+                    "CastingCallsEthnicAppearances",
+                    cc => cc.HasOne<EthnicAppearance>().WithMany().HasForeignKey("IdAppearance"),
+                    ea => ea.HasOne<CastingCall>().WithMany().HasForeignKey("IdCastingCall")
+                );
 
             entity.HasOne(cc => cc.CreatedByDirector)
                   .WithMany(cd => cd.CastingCallsCreated)
                   .HasForeignKey(cc => cc.CreatedByDirectorId)
                   .OnDelete(DeleteBehavior.SetNull);
-
         });
 
         modelBuilder.Entity<Gender>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Genders__3214EC07A43C0DFC");
             entity.ToTable("Genders");
-
             entity.Property(e => e.Id)
-               .HasDefaultValueSql("(newid())")
-               .HasColumnName("Id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("Id");
             entity.Property(e => e.GenderName).HasMaxLength(50);
         });
 
@@ -271,10 +289,9 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
         {
             entity.HasKey(e => e.Id).HasName("PK__Location__3214EC0753CD3C6F");
             entity.ToTable("Locations");
-
             entity.Property(e => e.Id)
-               .HasDefaultValueSql("(newid())")
-               .HasColumnName("Id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("Id");
             entity.Property(e => e.LocationName).HasMaxLength(100);
             entity.Property(e => e.RegionName).HasMaxLength(100);
         });
@@ -282,43 +299,30 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
         modelBuilder.Entity<ProjectType>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__ProjectT__3214EC07A6BDC9AB");
-
             entity.ToTable("ProjectTypes");
-
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("Id");
-
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("Id");
             entity.Property(e => e.ProjectTypeName).HasMaxLength(100);
-
-            
         });
 
         modelBuilder.Entity<RoleType>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__RoleType__3214EC0777BEDD64");
-
             entity.ToTable("RoleTypes");
-
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("Id");
-
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("Id");
             entity.Property(e => e.RoleTypeName).HasMaxLength(100);
-
-           
-
-
         });
 
         modelBuilder.Entity<EthnicAppearance>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__EthnicAp__3214EC0723128B43");
             entity.ToTable("EthnicAppearances");
-
             entity.Property(e => e.Id)
-               .HasDefaultValueSql("(newid())")
-               .HasColumnName("Id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("Id");
             entity.Property(e => e.EthnicAppearanceName).HasMaxLength(70);
         });
 
@@ -326,15 +330,13 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
         {
             entity.HasKey(e => e.Id).HasName("PK__Audition__3214EC076F01C8CC");
             entity.ToTable("Auditions");
-
             entity.Property(e => e.Id)
-               .HasDefaultValueSql("(newid())")
-               .HasColumnName("Id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("Id");
 
             entity.HasOne(a => a.CastingCall)
             .WithMany(cc => cc.Auditions)
             .HasForeignKey(a => a.IdCastingCall);
-
             entity.HasOne(a => a.Location)
             .WithMany(l => l.Auditions)
             .HasForeignKey(a => a.LocationId);
@@ -347,14 +349,12 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
             entity.Property(e => e.Id)
             .HasDefaultValueSql("(newid())")
             .HasColumnName("id");
-
             entity.Property(e => e.SubmissionNote)
             .HasMaxLength(300);
 
             entity.HasOne(a => a.CastingCall)
             .WithMany(cc => cc.Submissions)
             .HasForeignKey(a => a.CastingId);
-
             entity.HasOne(a => a.Actor)
             .WithMany(ac => ac.Submissions)
             .HasForeignKey(a => a.ActorId);
@@ -367,7 +367,6 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
             entity.Property(e => e.Id)
             .HasDefaultValueSql("(newid())")
             .HasColumnName("id");
-
             entity.Property(e => e.MediaUrl)
             .IsRequired()
             .HasMaxLength(300);
@@ -380,25 +379,21 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
         modelBuilder.Entity<DateTimeSession>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__DateTime__3213E83F5DA07817");
-
             entity.ToTable("DateTimeSession");
-
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
         });
 
         modelBuilder.Entity<Film>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Film__3213E83F94EE4918");
-
             entity.ToTable("Film");
-
             entity.HasIndex(e => e.IdProduct, "UQ__Film__5EEC79D03E8FF8F5").IsUnique();
 
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
             entity.Property(e => e.About).HasMaxLength(1000);
             entity.Property(e => e.AgeLimit).HasColumnName("Age_Limit");
             entity.Property(e => e.Country).HasMaxLength(50);
@@ -406,14 +401,14 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
             entity.Property(e => e.IdProduct).HasColumnName("idProduct");
             entity.Property(e => e.Name).HasMaxLength(50);
             entity.Property(e => e.PictureUrl)
-                .HasMaxLength(200)
-                .HasColumnName("PictureURL");
+            .HasMaxLength(200)
+            .HasColumnName("PictureURL");
             entity.Property(e => e.VideoUrl)
-                .HasMaxLength(200)
-                .HasColumnName("VideoURL");
+            .HasMaxLength(200)
+            .HasColumnName("VideoURL");
             entity.Property(e => e.ProductionCompanies)
-                .HasMaxLength(150)
-                .HasColumnName("Production_Companies");
+            .HasMaxLength(150)
+            .HasColumnName("Production_Companies");
             entity.Property(e => e.Rating).HasColumnType("decimal(9, 2)");
             entity.Property(e => e.ReleaseDate).HasColumnName("Release_date");
 
@@ -423,17 +418,15 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
                 .HasConstraintName("FK__Film__idProduct__4316F928");
 
             entity.HasMany<ActorModel>(f => f.Actors).WithMany(a => a.Films).UsingEntity<FilmActor>();
-
             entity.HasMany<GenreModel>(f => f.Genres).WithMany(a => a.Films).UsingEntity<FilmGenre>();
         });
 
         modelBuilder.Entity<FilmActor>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__FilmActo__3213E83F04B84BE4");
-
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
             entity.Property(e => e.IdActorsInRoles).HasColumnName("idActorsInRoles");
             entity.Property(e => e.IdFilm).HasColumnName("idFilm");
 
@@ -449,12 +442,10 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
         modelBuilder.Entity<FilmGenre>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__FilmGenr__3213E83F4F99C09D");
-
             entity.ToTable("FilmGenre");
-
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
             entity.Property(e => e.IdFilm).HasColumnName("idFilm");
             entity.Property(e => e.IdGenreInFilm).HasColumnName("idGenreInFilm");
 
@@ -470,12 +461,10 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
         modelBuilder.Entity<FilmSession>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__FilmSess__3213E83FC9452FF2");
-
             entity.ToTable("FilmSession");
-
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
             entity.Property(e => e.IdCinema).HasColumnName("idCinema");
             entity.Property(e => e.IdFilm).HasColumnName("idFilm");
             entity.Property(e => e.Is3d).HasColumnName("is3d");
@@ -493,24 +482,20 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
         modelBuilder.Entity<GenreModel>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__GenreMod__3213E83F9185B16B");
-
             entity.ToTable("GenreModel");
-
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
             entity.Property(e => e.GenreName).HasMaxLength(50);
         });
 
         modelBuilder.Entity<OperationLog>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Operatio__3213E83FAB818DA6");
-
             entity.ToTable("OperationLog");
-
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
             entity.Property(e => e.IdClient).HasColumnName("idClient");
             entity.Property(e => e.IdProduct).HasColumnName("idProduct");
             entity.Property(e => e.OperationDateTimeEnd).HasColumnType("datetime");
@@ -532,24 +517,20 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
         modelBuilder.Entity<OperationType>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Operatio__3213E83F4359062C");
-
             entity.ToTable("OperationType");
-
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
             entity.Property(e => e.TypeName).HasMaxLength(30);
         });
 
         modelBuilder.Entity<Order>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Order__3213E83F4420113F");
-
             entity.ToTable("Order");
-
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
             entity.Property(e => e.IdClient).HasColumnName("idClient");
             entity.Property(e => e.IdShowing).HasColumnName("idShowing");
             entity.Property(e => e.TicketCount).HasColumnName("Ticket_Count");
@@ -566,24 +547,21 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
         modelBuilder.Entity<Product>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Product__3213E83F8A74FC9E");
-
             entity.ToTable("Product");
-
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
             entity.Property(e => e.Name).HasMaxLength(50);
         });
 
         modelBuilder.Entity<Series>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Series__3213E83F3EA6D419");
-
             entity.HasIndex(e => e.IdProduct, "UQ__Series__5EEC79D036703ABB").IsUnique();
 
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
             entity.Property(e => e.About).HasMaxLength(1000);
             entity.Property(e => e.AgeLimit).HasColumnName("Age_Limit");
             entity.Property(e => e.Country).HasMaxLength(50);
@@ -593,11 +571,11 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
             entity.Property(e => e.IsFinished).HasColumnName("isFinished");
             entity.Property(e => e.Name).HasMaxLength(50);
             entity.Property(e => e.PictureUrl)
-                .HasMaxLength(200)
-                .HasColumnName("PictureURL");
+            .HasMaxLength(200)
+            .HasColumnName("PictureURL");
             entity.Property(e => e.ProductionCompanies)
-                .HasMaxLength(150)
-                .HasColumnName("Production_Companies");
+            .HasMaxLength(150)
+            .HasColumnName("Production_Companies");
             entity.Property(e => e.Rating).HasColumnType("decimal(9, 2)");
             entity.Property(e => e.ReleaseDate).HasColumnName("Release_date");
             entity.Property(e => e.SeasonCount).HasColumnName("Season_Count");
@@ -608,20 +586,15 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
                 .HasConstraintName("FK__Series__idProduc__4AB81AF0");
 
             entity.HasMany<ActorModel>(f => f.Actors).WithMany(a => a.Series).UsingEntity<SeriesActor>();
-
             entity.HasMany<GenreModel>(f => f.Genres).WithMany(a => a.Series).UsingEntity<SeriesGenre>();
-
         });
 
         modelBuilder.Entity<SeriesEpisode>(entity =>
         {
             entity.HasKey(e => e.EpisodeId).HasName("PK__SeriesEp__AC6609F56A616652");
-
-
             entity.Property(e => e.EpisodeId)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("EpisodeId");
-
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("EpisodeId");
             entity.Property(e => e.EpisodeName).HasColumnName("EpisodeName");
             entity.Property(e => e.EpisodeNumber).HasColumnName("EpisodeNumber");
             entity.Property(e => e.EpisodeNumberInSeason).HasColumnName("EpisodeNumberInSeason");
@@ -633,18 +606,14 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
                 .HasForeignKey(d => d.SeriesId)
                 .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK__SeriesEpi__Serie__05D8E0BE");
-            //entity.HasOne(d => d.Series).WithMany(s => s.SeriesEpisodes)
-            //    .HasForeignKey(d => d.SeriesId)
-            //    .OnDelete(DeleteBehavior.Cascade);
         });
 
         modelBuilder.Entity<SeriesActor>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__SeriesAc__3213E83FC5B9A0A9");
-
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
             entity.Property(e => e.IdActorsInRoles).HasColumnName("idActorsInRoles");
             entity.Property(e => e.IdSeries).HasColumnName("idSeries");
 
@@ -660,12 +629,10 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
         modelBuilder.Entity<SeriesGenre>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__SeriesGe__3213E83F320717F9");
-
             entity.ToTable("SeriesGenre");
-
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
             entity.Property(e => e.IdGenreInSeries).HasColumnName("idGenreInSeries");
             entity.Property(e => e.IdSeries).HasColumnName("idSeries");
 
@@ -678,17 +645,13 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
                 .HasConstraintName("FK__SeriesGen__idSer__5629CD9C");
         });
 
-
-
         modelBuilder.Entity<Showing>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Showing__3213E83F1B56C874");
-
             entity.ToTable("Showing");
-
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
             entity.Property(e => e.IdDateTimeSession).HasColumnName("idDateTimeSession");
             entity.Property(e => e.IdFilmSession).HasColumnName("idFilmSession");
 
@@ -704,13 +667,70 @@ public partial class NetflixProjectContext(DbContextOptions<NetflixProjectContex
         modelBuilder.Entity<Ticket>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PK__Ticket__3213E83F613A78B0");
-
             entity.ToTable("Ticket");
-
             entity.Property(e => e.Id)
-                .HasDefaultValueSql("(newid())")
-                .HasColumnName("id");
+            .HasDefaultValueSql("(newid())")
+            .HasColumnName("id");
             entity.Property(e => e.Price).HasColumnType("decimal(9, 2)");
+        });
+
+        modelBuilder.Entity<AuthorModel>(entity =>
+        {
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            entity.Property(e => e.Name).HasMaxLength(255);
+            entity.Property(e => e.Surname).HasMaxLength(255);
+            entity.ToTable("AuthorModels");
+        });
+
+        modelBuilder.Entity<NewsType>(entity =>
+        {
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            entity.Property(e => e.Name).HasMaxLength(255);
+        });
+
+        modelBuilder.Entity<News>(entity =>
+        {
+            entity.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            entity.Property(e => e.ImageUrl).HasColumnName("ImageURL");
+            entity.Property(e => e.PublishedDate).HasDefaultValueSql("(getutcdate())");
+            entity.Property(e => e.Title).HasMaxLength(500);
+
+            entity.HasOne(d => d.Type).WithMany(p => p.News)
+                .HasForeignKey(d => d.TypeId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("FK_News_NewsTypes");
+
+            entity.HasMany(d => d.Authors).WithMany(p => p.News)
+                .UsingEntity<Dictionary<string, object>>(
+                    "NewsAuthor",
+                    r => r.HasOne<AuthorModel>().WithMany()
+                        .HasForeignKey("AuthorId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("FK_NewsAuthors_Authors"),
+                    l => l.HasOne<News>().WithMany()
+                        .HasForeignKey("NewsId")
+                        .HasConstraintName("FK_NewsAuthors_News"),
+                    j =>
+                    {
+                        j.HasKey("NewsId", "AuthorId");
+                        j.ToTable("NewsAuthors");
+                    });
+        });
+
+        modelBuilder.Entity<NewsRelated>(entity =>
+        {
+            entity.ToTable("NewsRelated");
+            entity.HasKey(nr => new { nr.NewsId, nr.RelatedNewsId });
+
+            entity.HasOne(nr => nr.News)
+                .WithMany()
+                .HasForeignKey(nr => nr.NewsId)
+                .OnDelete(DeleteBehavior.NoAction); // self-referencing FKs + cascade = SQL Server error at migration time
+
+            entity.HasOne(nr => nr.RelatedNewsEntity)
+                .WithMany()
+                .HasForeignKey(nr => nr.RelatedNewsId)
+                .OnDelete(DeleteBehavior.NoAction);
         });
 
         OnModelCreatingPartial(modelBuilder);

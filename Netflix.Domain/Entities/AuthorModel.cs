@@ -1,24 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Netflix.Domain.Entities
+namespace Netflix.Domain.Entities;
+
+public partial class AuthorModel
 {
-    public partial class AuthorModel
-    {
-        public Guid Id { get; set; }
+    public Guid Id { get; set; }
 
-        public string Name { get; set; } = null!;
+    public string Name { get; set; } = null!;
 
-        public string Surname { get; set; } = null!;
+    public string Surname { get; set; } = null!;
 
-        public virtual ICollection<News> NewsCollection { get; set; } = new List<News>();
+    public string? AvatarUrl { get; set; }
 
-        public override string? ToString()
-        {
-            return $"{Name} {Surname}";
-        }
-    }
+    public virtual ICollection<News>? News { get; set; } = new List<News>();
 }

@@ -20,6 +20,7 @@ using Netflix.Contracts.Films.GetFilmById;
 using Netflix.Contracts.Submissions;
 using Netflix.Domain;
 using Netflix.Domain.DTOs;
+using Netflix.Domain.DTOs.Common;
 using Netflix.Domain.Entities;
 using System.Collections.Generic;
 

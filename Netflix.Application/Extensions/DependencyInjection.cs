@@ -5,6 +5,7 @@ using Netflix.Application.Cartoons.Common;
 using Netflix.Application.Cartoons.Queries.GetAllCartoons;
 using Netflix.Application.Common.Behaviors;
 using Netflix.Application.Common.Content;
+using Netflix.Application.News.Common;
 using System.Reflection;
 
 namespace Netflix.Application.Extensions
@@ -31,6 +32,8 @@ namespace Netflix.Application.Extensions
             //    ValidateRegisterCommandBehavior>();
 
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+
+            services.AddScoped<IRelatedNewsClassifier, RelatedNewsClassifier>();
 
 
             return services;

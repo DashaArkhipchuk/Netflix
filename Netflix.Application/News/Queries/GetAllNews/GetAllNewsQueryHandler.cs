@@ -1,4 +1,6 @@
 ﻿using MediatR;
+using Netflix.Domain.DTOs.Common;
+using Netflix.Domain.DTOs.News;
 using Netflix.Domain.IRepository;
 using System;
 using System.Collections.Generic;
@@ -8,18 +10,19 @@ using System.Threading.Tasks;
 
 namespace Netflix.Application.News.Queries.GetAllNews
 {
-    internal class GetAllNewsQueryHandler : IRequestHandler<GetAllNewsQuery, List<Netflix.Domain.Entities.News>>
+    internal class GetAllNewsQueryHandler(INewsRepository newsRepository)
+    : IRequestHandler<GetAllNewsQuery, PagedResult<Netflix.Domain.Entities.News>>
     {
-        private readonly INewsRepository _newsRepository;
-
-        public GetAllNewsQueryHandler(INewsRepository newsRepository)
+        public Task<PagedResult<Netflix.Domain.Entities.News>> Handle(GetAllNewsQuery request, CancellationToken ct)
         {
-            _newsRepository = newsRepository;
-        }
+            var filter = new NewsFilter
+            {
+                TypeId = request.Criteria?.TypeId,
+                Search = request.Criteria?.Search,
+                SortBy = request.Criteria is not null ? (NewsSortOption)request.Criteria.SortBy : NewsSortOption.Latest
+            };
 
-        public Task<List<Domain.Entities.News>> Handle(GetAllNewsQuery request, CancellationToken cancellationToken)
-        {
-            return _newsRepository.GetAllAsync(request.Skip, request.Take, request.Criteria?.SortByLatest ?? false);
+            return newsRepository.GetAllAsync(request.Skip, request.Take, filter, ct);
         }
     }
 }

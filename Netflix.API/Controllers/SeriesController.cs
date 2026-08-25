@@ -12,6 +12,7 @@ using Netflix.Contracts.Films.GetFilmById;
 using Netflix.Contracts.Series.GetSeriesById;
 using Netflix.Domain;
 using Netflix.Domain.DTOs;
+using Netflix.Domain.DTOs.Common;
 
 namespace Netflix.API.Controllers
 {

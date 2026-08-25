@@ -9,12 +9,17 @@ namespace Netflix.Contracts.News
     public class NewsExtendedDto
     {
         public Guid Id { get; set; }
-        public string Type { get; set; }
-        public string Description { get; set; }
-        public string Author { get; set; }
-        public string Title { get; set; }
+        public Guid TypeId { get; set; }
+        public string Type { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public IEnumerable<string> Authors { get; set; } = Enumerable.Empty<string>();
+        public string Title { get; set; } = string.Empty;
         public DateTime PublishedDate { get; set; }
-        public string ArticleText { get; set; }
-        public string ImageURL { get; set; }
+        public string ArticleText { get; set; } = string.Empty;
+        public string ImageURL { get; set; } = string.Empty;
+        public int ViewCount { get; set; }
+        public string SourceUrl { get; set; } = string.Empty;
+        public string? SourceName { get; set; }
+        public List<ShortNewsDto> RelatedNews { get; set; } = new();
     }
 }

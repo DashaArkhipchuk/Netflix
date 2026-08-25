@@ -6,10 +6,19 @@ using System.Threading.Tasks;
 
 namespace Netflix.Contracts.News
 {
+    public enum NewsSortOption
+    {
+        Latest,
+        MostViewed,
+        TitleAsc
+    }
+
     public class CriteriaNews
     {
-        public bool SortByLatest { get; set; } = false;
-        //public List<string> Types { get; set; } = [];
-        //public List<string> Authors { get; set; } = [];
+        public NewsSortOption SortBy { get; set; } = NewsSortOption.Latest;
+
+        public Guid? TypeId { get; set; }
+
+        public string? Search { get; set; }
     }
 }

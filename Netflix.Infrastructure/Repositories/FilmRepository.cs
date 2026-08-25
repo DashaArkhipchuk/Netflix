@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Netflix.Domain;
-using Netflix.Domain.DTOs;
+using Netflix.Domain.DTOs.Common;
 using Netflix.Domain.IRepository;
 
 namespace Netflix.Infrastructure.Repositories

@@ -19,20 +19,27 @@ namespace Netflix.API.Common.Mapping
                 .Map(dest => dest.Skip, src => src.Skip)
                 .Map(dest => dest.Take, src => src.Take);
 
-            config.NewConfig<(GetAllContentRequest, CriteriaNews), GetAllNewsQuery>()
-                .Map(dest => dest.Skip, src => src.Item1.Skip)
-                .Map(dest => dest.Take, src => src.Item1.Take)
-                .Map(dest => dest.Criteria, src => src.Item2);
+            config.NewConfig<(GetAllContentRequest Request, CriteriaNews Criteria), GetAllNewsQuery>()
+                .Map(dest => dest.Skip, src => src.Request.Skip)
+                .Map(dest => dest.Take, src => src.Request.Take)
+                .Map(dest => dest.Criteria, src => src.Criteria);
 
             config.NewConfig<Guid, GetContentByIdQuery<News>>()
                 .Map(dest => dest.Id, src => src);
 
             config.NewConfig<News, NewsExtendedDto>()
-                .Map(dest => dest, src => src)
-                .Map(dest => dest.Author, src => $"{src.Author.Name} {src.Author.Surname}")
-                .Map(dest => dest.Type, src => src.Type.Name);
+                .Map(dest => dest.Authors, src => src.Authors.Select(a => $"{a.Name} {a.Surname}"))
+                .Map(dest => dest.Type, src => src.Type.Name)
+                .Map(dest => dest.ImageURL, src => src.ImageUrl);
 
+            config.NewConfig<News, NewsDto>()
+                .Map(dest => dest.Authors, src => src.Authors.Select(a => $"{a.Name} {a.Surname}"))
+                .Map(dest => dest.Type, src => src.Type.Name)
+                .Map(dest => dest.ImageURL, src => src.ImageUrl);
 
+            config.NewConfig<News, ShortNewsDto>()
+                .Map(dest => dest.Authors, src => src.Authors.Select(a => $"{a.Name} {a.Surname}"))
+                .Map(dest => dest.ImageURL, src => src.ImageUrl);
         }
     }
 }

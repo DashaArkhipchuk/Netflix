@@ -1,6 +1,6 @@
 ﻿using Netflix.Application.Animes.Common;
 using Netflix.Application.Common.BaseHandler;
-using Netflix.Domain.DTOs;
+using Netflix.Domain.DTOs.Common;
 using Netflix.Domain.IRepository;
 using System;
 using System.Collections.Generic;

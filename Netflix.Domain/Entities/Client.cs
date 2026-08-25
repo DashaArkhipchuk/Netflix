@@ -27,4 +27,5 @@ public partial class Client
 
     public virtual Actor? Actor { get; set; }
     public virtual CastingDirector? CastingDirector { get; set; }
+    public virtual SocialMediaProfile? Profile { get; set; }
 }

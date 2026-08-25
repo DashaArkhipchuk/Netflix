@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Netflix.Application.Common.Content;
-using Netflix.Domain.DTOs;
+using Netflix.Domain.DTOs.Common;
 
 namespace Netflix.Application.Common.BaseHandler
 {

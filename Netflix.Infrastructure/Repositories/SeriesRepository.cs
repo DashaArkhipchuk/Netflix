@@ -10,7 +10,7 @@ using Netflix.Domain.Entities;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.CodeAnalysis.VisualBasic.Syntax;
 using Microsoft.Extensions.Logging;
-using Netflix.Domain.DTOs;
+using Netflix.Domain.DTOs.Common;
 
 namespace Netflix.Infrastructure.Repositories
 {

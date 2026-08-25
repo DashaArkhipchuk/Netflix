@@ -9,12 +9,13 @@ namespace Netflix.Contracts.News
     public class NewsDto
     {
         public Guid Id { get; set; }
-        public string Type { get; set; }
-        public string Description { get; set; }
-        public string Author { get; set; }
-
-        public string Title { get; set; }
+        public Guid TypeId { get; set; }        // needed so frontend can highlight the active sidebar category
+        public string Type { get; set; } = string.Empty;
+        public string Description { get; set; } = string.Empty;
+        public IEnumerable<string> Authors { get; set; } = Enumerable.Empty<string>();
+        public string Title { get; set; } = string.Empty;
         public DateTime PublishedDate { get; set; }
-        public string ImageURL { get; set; }
+        public string ImageURL { get; set; } = string.Empty;
+        public int ViewCount { get; set; }
     }
 }

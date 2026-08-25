@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Netflix.Application.Submissions.Queries.GetAllSubmissionsByCastingCall;
 using Netflix.Domain;
-using Netflix.Domain.DTOs;
+using Netflix.Domain.DTOs.Common;
 using Netflix.Domain.Entities;
 using Netflix.Domain.IRepository;
 using System;

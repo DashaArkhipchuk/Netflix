@@ -24,7 +24,7 @@ namespace Netflix.Application.Authentication.Commands.Register
             //Validate the user doesn`t exist
             if ( await _clientRepository.GetClientByEmailAsync(command.Email) is not null)
             {
-                throw new DuplicateEmailException("Client with given email already exists");
+                throw new DuplicateIdentifierException("Client with given email already exists");
             }
 
 

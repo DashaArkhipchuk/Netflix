@@ -3,7 +3,7 @@ using Netflix.Application.Common.Content;
 using Netflix.Application.Films.Queries.GetAllFilms;
 using Netflix.Application.Series.Queries.GetAllSeries;
 using Netflix.Domain;
-using Netflix.Domain.DTOs;
+using Netflix.Domain.DTOs.Common;
 using Netflix.Domain.IRepository;
 
 namespace Netflix.Application.Series.Queries.GetAllSeries

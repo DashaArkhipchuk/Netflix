@@ -1,5 +1,6 @@
 ﻿using MediatR;
 using Netflix.Application.News.Common;
+using Netflix.Domain.DTOs.Common;
 using Netflix.Domain.Entities;
 using System;
 using System.Collections.Generic;
@@ -15,5 +16,5 @@ namespace Netflix.Application.News.Queries.GetAllNews
         int Skip = 0,
         int Take = 10,
         QueryCriteriaNews? Criteria = null
-    ) : IRequest<List<Netflix.Domain.Entities.News>>;
+    ) : IRequest<PagedResult<Netflix.Domain.Entities.News>>;
 }

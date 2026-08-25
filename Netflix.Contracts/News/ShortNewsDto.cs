@@ -9,9 +9,9 @@ namespace Netflix.Contracts.News
     public class ShortNewsDto
     {
         public Guid Id { get; set; }
-        public string Author { get; set; }
-        public string Title { get; set; }
+        public IEnumerable<string> Authors { get; set; } = Enumerable.Empty<string>();
+        public string Title { get; set; } = string.Empty;
         public DateTime PublishedDate { get; set; }
-        public string ImageURL { get; set; }
+        public string ImageURL { get; set; } = string.Empty;
     }
 }

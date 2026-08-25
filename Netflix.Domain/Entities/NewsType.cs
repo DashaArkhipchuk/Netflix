@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Netflix.Domain.Entities
+namespace Netflix.Domain.Entities;
+
+public partial class NewsType
 {
-    public partial class NewsType
-    {
-        public Guid Id { get; set; }
-        public string Name { get; set; }
+    public Guid Id { get; set; }
 
-        public ICollection<News> NewsCollection { get; set; } = new List<News>();
-    }
+    public string Name { get; set; } = null!;
+
+    public virtual ICollection<News> News { get; set; } = new List<News>();
 }

@@ -1,5 +1,5 @@
 ﻿using MediatR;
-using Netflix.Domain.DTOs;
+using Netflix.Domain.DTOs.Common;
 using Netflix.Domain.Entities;
 using System;
 using System.Collections.Generic;

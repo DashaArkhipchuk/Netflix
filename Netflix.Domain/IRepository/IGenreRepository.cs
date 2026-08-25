@@ -1,4 +1,4 @@
-﻿using Netflix.Domain.DTOs;
+﻿using Netflix.Domain.DTOs.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;

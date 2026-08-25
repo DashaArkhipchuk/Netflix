@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using Netflix.Domain;
-using Netflix.Domain.DTOs;
+using Netflix.Domain.DTOs.Common;
 using System.Reflection;
 
 namespace Netflix.Application.Common.Content

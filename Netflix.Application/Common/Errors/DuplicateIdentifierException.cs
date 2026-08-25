@@ -2,12 +2,12 @@
 
 namespace Netflix.Application.Common.Errors
 {
-    public class DuplicateEmailException: Exception
+    public class DuplicateIdentifierException: Exception
     {
         public new readonly string Message;
         public readonly int code = (int)HttpStatusCode.Conflict;
 
-        public DuplicateEmailException(string message)
+        public DuplicateIdentifierException(string message)
         {
             this.Message = message;
         }

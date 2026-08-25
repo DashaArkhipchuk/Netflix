@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using Netflix.Application.Common.Content;
 using Netflix.Domain;
-using Netflix.Domain.DTOs;
+using Netflix.Domain.DTOs.Common;
 using Netflix.Domain.IRepository;
 
 namespace Netflix.Application.Films.Queries.GetAllFilms

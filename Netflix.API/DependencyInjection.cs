@@ -11,7 +11,10 @@ namespace Netflix.API
         public static IServiceCollection AddPresentation(this IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(options =>
+            {
+                options.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());
+            });
 
             services.AddEndpointsApiExplorer();
             services.AddSwaggerGen(options =>

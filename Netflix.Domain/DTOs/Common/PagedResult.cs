@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Netflix.Domain.DTOs
+namespace Netflix.Domain.DTOs.Common
 {
     public class PagedResult<T>
     {

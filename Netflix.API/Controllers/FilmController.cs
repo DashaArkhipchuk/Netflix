@@ -8,6 +8,7 @@ using Netflix.Contracts.Common;
 using Netflix.Contracts.Films.GetFilmById;
 using Netflix.Domain;
 using Netflix.Domain.DTOs;
+using Netflix.Domain.DTOs.Common;
 
 namespace Netflix.API.Controllers
 {

@@ -6,10 +6,20 @@ using System.Threading.Tasks;
 
 namespace Netflix.Application.News.Common
 {
-    public record QueryCriteriaNews
+    public enum NewsSortOption
     {
-        public bool SortByLatest { get; set; } = false;
-        //public List<string> Types { get; set; } = [];
-        //public List<string> Authors { get; set; } = [];
+        Latest,
+        MostViewed,
+        TitleAsc
+    }
+
+    public class QueryCriteriaNews
+    {
+        public NewsSortOption SortBy { get; set; } = NewsSortOption.Latest;
+
+        // Maps directly to your sidebar categories (NewsType.Id).
+        public Guid? TypeId { get; set; }
+        
+        public string? Search { get; set; }
     }
 }

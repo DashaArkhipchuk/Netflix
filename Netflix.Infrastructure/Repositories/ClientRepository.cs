@@ -23,7 +23,7 @@ namespace Netflix.Infrastructure.Repositories
 
         public async Task<Client?> GetClientByIdAsync(Guid id)
         {
-            return await _dbContext.Clients.Include(c=>c.Actor).Include(c=>c.CastingDirector).ThenInclude(d=>d.CastingDirectorType).SingleOrDefaultAsync(client => client.Id == id);
+            return await _dbContext.Clients.Include(x=>x.Profile).Include(c=>c.Actor).Include(c=>c.CastingDirector).ThenInclude(d=>d.CastingDirectorType).SingleOrDefaultAsync(client => client.Id == id);
         }
     }
 }

@@ -9,10 +9,14 @@ using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Netflix.Application.Common.Services;
 using Netflix.Application.Interfaces.Authentication;
+using Netflix.Domain.DTOs.NewsApi;
 using Netflix.Domain.IRepository;
+using Netflix.Domain.Services;
 using Netflix.Infrastructure;
 using Netflix.Infrastructure.Authentication;
 using Netflix.Infrastructure.CloudStorage;
+using Netflix.Infrastructure.ExternalApi.NewsApi;
+using Netflix.Infrastructure.ExternalApi.Scraping;
 using Netflix.Infrastructure.Repositories;
 using Netflix.Infrastructure.Services;
 using System.Text;
@@ -51,9 +55,27 @@ namespace Netflix.Application.Extensions
             services.AddScoped<IActorRepository, ActorRepository>();
             services.AddScoped<ICastingDirectorRepository, CastingDirectorRepository>();
 
+            services.Configure<NewsApiOptions>(configuration.GetSection("NewsApi"));
+
+            services.AddHttpClient<INewsApiHttpClientService, NewsApiHttpClientService>((sp, client) =>
+            {
+                var opts = sp.GetRequiredService<IOptions<NewsApiOptions>>().Value;
+                client.BaseAddress = new Uri(opts.BaseUrl);
+                client.DefaultRequestHeaders.Add("X-Api-Key", opts.ApiKey);
+                client.DefaultRequestHeaders.UserAgent.ParseAdd("LocalhostNetflixNewsIngestor/1.0");
+            });
+
+            services.AddHttpClient<IArticleContentScraperService, ArticleContentScraperService>();
+
+            services.AddScoped<INewsApiExternalVendorRepository, NewsApiExternalVendorRepository>();
+            services.AddScoped<INewsRepository, NewsRepository>();
+            services.AddSingleton<INewsPopulationSettings, NewsPopulationSettings>();
+
             services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
 
             services.AddCloudStorage(configuration);
+
+            services.AddHttpClient<NewsApiHttpClientService>();
 
             return services;
         }

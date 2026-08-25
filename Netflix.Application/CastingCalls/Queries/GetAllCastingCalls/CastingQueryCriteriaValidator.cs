@@ -1,4 +1,5 @@
 ﻿using FluentValidation;
+using Netflix.Application.Common.Validation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +17,7 @@ namespace Netflix.Application.CastingCalls.Queries.GetAllCastingCalls
                 .ForEach(rule => rule
                     .NotEmpty()
                     .WithMessage("Project type cannot be empty or whitespace.")
-                    .Must(g => !string.IsNullOrWhiteSpace(g))
+                    .Must(ValidationPredicateHelpers.BeNotNullOrWhitespace)
                     .WithMessage("Project type cannot be whitespace.")
                 );
 
@@ -24,7 +25,7 @@ namespace Netflix.Application.CastingCalls.Queries.GetAllCastingCalls
                 .ForEach(rule => rule
                     .NotEmpty()
                     .WithMessage("Role type cannot be empty or whitespace.")
-                    .Must(g => !string.IsNullOrWhiteSpace(g))
+                    .Must(ValidationPredicateHelpers.BeNotNullOrWhitespace)
                     .WithMessage("Role type cannot be whitespace.")
                 );
 
@@ -32,7 +33,7 @@ namespace Netflix.Application.CastingCalls.Queries.GetAllCastingCalls
                 .ForEach(rule => rule
                     .NotEmpty()
                     .WithMessage("Location cannot be empty or whitespace.")
-                    .Must(g => !string.IsNullOrWhiteSpace(g))
+                    .Must(ValidationPredicateHelpers.BeNotNullOrWhitespace)
                     .WithMessage("Location cannot be whitespace.")
                 );
 
@@ -40,17 +41,10 @@ namespace Netflix.Application.CastingCalls.Queries.GetAllCastingCalls
                 .ForEach(rule => rule
                     .NotEmpty()
                     .WithMessage("Playable age range cannot be empty or whitespace.")
-                    .Must(g => !string.IsNullOrWhiteSpace(g))
+                    .Must(ValidationPredicateHelpers.BeNotNullOrWhitespace)
                     .WithMessage("Playable age range cannot be whitespace.")
-                    .Must(BeAValidRange).WithMessage("Range format is invalid.")
+                    .Must(ValidationPredicateHelpers.BeAValidRange).WithMessage("Range format is invalid.")
                 );
-        }
-
-        private bool BeAValidRange(string range)
-        {
-            // Regex for valid ranges: "18-25", "under 18", "18+" case insensivive
-            string rangePattern = @"^(?i)(under \d+|\d+[\-]\d+|\d+\+)$";
-            return Regex.IsMatch(range, rangePattern);
         }
     }
 }

@@ -20,7 +20,12 @@ namespace Netflix.Application.News.Queries.GetNewsById
 
         public async Task<Domain.Entities.News?> Handle(GetContentByIdQuery<Domain.Entities.News> request, CancellationToken cancellationToken)
         {
-            return await _newsRepository.GetByIdAsync(request.Id);
+            var news = await _newsRepository.GetByIdAsync(request.Id, cancellationToken);
+
+            if (news is not null)
+                await _newsRepository.IncrementViewCountAsync(request.Id, cancellationToken);
+
+            return news;
         }
     }
 }

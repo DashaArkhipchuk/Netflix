@@ -53,7 +53,7 @@ namespace Netflix.API.Middleware
         {
             return ex switch
             {
-                DuplicateEmailException exception => new ProblemDetails
+                DuplicateIdentifierException exception => new ProblemDetails
                 {
                     Type = "Duplicate Value Error",
                     Title = "Duplicate Value",

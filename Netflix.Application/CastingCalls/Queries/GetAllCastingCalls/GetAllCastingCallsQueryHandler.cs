@@ -1,6 +1,6 @@
 ﻿using MediatR;
 using Netflix.Application.ProjectTypes.Queries.GetAllProjectTypes;
-using Netflix.Domain.DTOs;
+using Netflix.Domain.DTOs.Common;
 using Netflix.Domain.Entities;
 using Netflix.Domain.IRepository;
 using System;
